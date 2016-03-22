@@ -1,1 +1,4 @@
-SEFT>IG
+Projektidee:
+
+Unsere Idee ist es eine Art To-do Listen Anwendung zu schreiben, mit der man seine Tage organisieren kann.
+Es soll möglich sein, Listen zu erstellen und in diesen Listen sollen Punkte erstellbar sein, die anzeigen was man wann zutun hat.
