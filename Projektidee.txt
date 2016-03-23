@@ -1,8 +1,7 @@
-Projekt Task-Manager
+Projektidee:
 
-Unser Projekt dreht sich um einen Taskmanager. Der Nutzer 
-kann Tasks erstellen, sortieren, mit "Tags"(farblichen Markierungen
-nach denen auch sortiert werden kann) und einstellen ob er 
-benachrichtigt werden soll wenn die eingestellte Zeit des Tasks 
-erreicht ist.
-Ein Kalender zeigt an an welchen Tagen Tasks anliegen.
+Unsere Idee ist es eine Art To-do Listen Anwendung zu schreiben, 
+mit der man seine Tage organisieren kann.
+Es soll möglich sein, Listen zu erstellen und in diesen Listen 
+sollen Punkte erstellbar sein, 
+die anzeigen was man wann zutun hat.
