@@ -1,6 +1,0 @@
-Zur Nutzung dieser Dateien ist erforderlich:
-
--EasyPHP installiert
--Dateien in den "eds-www" ordner von EasyPHP kopiert.
-
-Wenn der eds-www Ordner über den Apache-Server aufgerufen wird, bitte die IniDB Datei ausführen.
