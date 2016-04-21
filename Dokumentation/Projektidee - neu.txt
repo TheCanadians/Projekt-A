@@ -19,15 +19,3 @@ Dabei gibt es zwei Spielfelder:
 	2. Ein Spielfeld "Mesopotamien" mit 9 Feldern, auf denen "Waren" gegen "Pflanzen"
 	   oder "Aufwertungen" ihrer Karten (Geschwindigkeit der Karawane,
 	   Einkommen oder Prestige) tauschen können.
-
-
-SusannaAlbrecht
-Zusätzlich werden noch benötigt:
--	Bilddateien:	für die Plättchen
--			für die Karten
--			für das Spielfeld
--	aufrufbare Textdatei, die die Spielanleitung beinhaltet
--	Schaltflächen hierfür
--	Eingabefelder für Anzahl der Spieler und deren Namen
--	wenn gewünscht, Hintergrundmusik oder Sounds
--	Anzeigefeld mit Hinweisen, z.B. "Spieler 2 ist an der Reihe", "Ziehen Sie eine Karte"
