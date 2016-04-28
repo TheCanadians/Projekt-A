@@ -1,40 +1,60 @@
-=== Projektidee TheCanadians, 2016-04-05 ===
+=== Projektidee 2016-04-20 ===
 
-Projektidee:
+http://www.brettspiele-report.de/amyitis/
+
+Amyitis ist ein Brettspiel aus dem Jahre 2007, bei welchem das Ziel 
+des Spiels ist am meisten (Prestige-)Punkte zu sammeln.
+
+Dabei gibt es zwei Spielfelder:
+	1. Ein Spielfeld "Babylon" auf welchem die Spieler ihre Punkte
+	   anhand einer Leiste sehen kÃ¶nnen.
+	   Weiterhin sind auf dem Spielplan ein kleines Feld fÃ¼r die
+	   Spielfiguren die letzte Runde gepasst haben und ein Feld(5x2) auf 
+	   mit Spielkarten "Waren" erhalten werden kÃ¶nnen.
+	   Der Kern des Spielplans besteht aus einem 4x4 Feld, wobei jedes
+	   Feld einen "Acker" darstellt und zwischen den Feldern "KanÃ¤le" zum bewÃ¤ssern
+	   verlaufen.
+	   Letztlich gibt es noch drei 4x1 Felder auf denen Spieler mithilfe
+	   eines "Priesters" (Spielkarte) "Belohnungen" erhalten kÃ¶nnen.
+	2. Ein Spielfeld "Mesopotamien" mit 9 Feldern, auf denen "Waren" gegen "Pflanzen"
+	   oder "Aufwertungen" ihrer Karten (Geschwindigkeit der Karawane,
+	   Einkommen oder Prestige) tauschen kÃ¶nnen.
+	   
+=== Projektidee TheCanadians, 2016-04-05 ===
 
 Unsere Idee ist es eine Art To-do Listen Anwendung zu schreiben, 
 mit der man seine Tage organisieren kann.
-Es soll möglich sein, Listen zu erstellen und in diesen Listen 
+Es soll mÃ¶glich sein, Listen zu erstellen und in diesen Listen 
 sollen Punkte erstellbar sein, 
 die anzeigen was man wann zutun hat.
 
 === Feedback Alpers, 2016-04-07 ===
 
-Das ist im Kern eine Datenbankanwendung, die kaum Interaktionsmöglichkeiten bietet. Von daher ist es als "interaktive Anwendung" eher nicht als Projekt geeignet.
+Das ist im Kern eine Datenbankanwendung, die kaum InteraktionsmÃ¶glichkeiten bietet. Von daher ist es als "interaktive Anwendung" eher nicht als Projekt geeignet.
 
-Wichtig ist auch, dass Sie vorerst eine eigene Idee vorstellen und an der Stelle ist es auch schade, dass Sie etwas vorstellen, das es bereits gibt: Diese Funktionalität bietet Ihnen heute eine Vielzahl kostenloser oder kostenpflichtiger Programme. (Beispielsweise MS Outlook) 
+Wichtig ist auch, dass Sie vorerst eine eigene Idee vorstellen und an der Stelle ist es auch schade, dass Sie etwas vorstellen, das es bereits gibt: Diese FunktionalitÃ¤t bietet Ihnen heute eine Vielzahl kostenloser oder kostenpflichtiger Programme. (Beispielsweise MS Outlook) 
 
-Die Gruppenarbeit wird dieses Semester anders organisiert als im letzten Semester. Das hat etwas mit der Verteilung der Veranstaltungen über das Semester zu tun.
+Die Gruppenarbeit wird dieses Semester anders organisiert als im letzten Semester. Das hat etwas mit der Verteilung der Veranstaltungen Ã¼ber das Semester zu tun.
 
-Einen formalen Mangel gibt es allerdings noch: Sie sollten diese Datei in das Verzeichnis Dokumentation einfügen. Holen Sie das bitte nach.
+Einen formalen Mangel gibt es allerdings noch: Sie sollten diese Datei in das Verzeichnis Dokumentation einfÃ¼gen. Holen Sie das bitte nach.
 
-Sie können jetzt zwei Dinge tun: Zum einen können Sie sich individuell überlegen, wie Sie Ihre Idee interaktiver gestalten können, zum anderen können Sie alternativ eine Projektbeschreibung wie in Kap. 5 für das folgende Brettspiel erstellen: Amyitis http://www.brettspiele-report.de/amyitis/
+Sie kÃ¶nnen jetzt zwei Dinge tun: Zum einen kÃ¶nnen Sie sich individuell Ã¼berlegen, wie Sie Ihre Idee interaktiver gestalten kÃ¶nnen, zum anderen kÃ¶nnen Sie alternativ eine Projektbeschreibung wie in Kap. 5 fÃ¼r das folgende Brettspiel erstellen: Amyitis http://www.brettspiele-report.de/amyitis/
 
-=== Zweiter Aufgabenblock (identisch für alle Studierenden) ===
+=== Zweiter Aufgabenblock (identisch fÃ¼r alle Studierenden) ===
 
 Sie haben jetzt gezeigt, dass Sie einfache Arbeiten mit einem Git-Repository beherrschen.
-Als Teil der letzten Aufgabe sollten Sie beschreiben, was Ihre Anwendung tun soll, also was für Funktionalitäten Ihre Anwendung bieten soll.
-Wenn Sie hier nichts angegeben haben, dann werde ich Ihnen einen Vorschlag hochladen, mit dem Sie weiterarbeiten können.
-In der Veranstaltung haben Sie außerdem gelernt, was Markup Languages sind.
+Als Teil der letzten Aufgabe sollten Sie beschreiben, was Ihre Anwendung tun soll, also was fÃ¼r FunktionalitÃ¤ten Ihre Anwendung bieten soll.
+Wenn Sie hier nichts angegeben haben, dann werde ich Ihnen einen Vorschlag hochladen, mit dem Sie weiterarbeiten kÃ¶nnen.
+In der Veranstaltung haben Sie auÃŸerdem gelernt, was Markup Languages sind.
 
-Die nächste Aufgabe besteht aus den folgenden Teilen:
+Die nÃ¤chste Aufgabe besteht aus den folgenden Teilen:
 
 1.) Lesen Sie mein Feedback durch und setzen Sie die beschriebenen Aufgaben um.
 
-Für die folgende Aufgabe sollten Sie mindestens eine halbe Stunde investieren. Zwei Stunden wäre aber etwas zu viel des guten.
-Bearbeiten Sie die Aufgaben 2. und 3. bitte innerhalb von 48 Stunden, weil andere Studierende davon abhängen, dass Sie sie beendet haben.
+FÃ¼r die folgende Aufgabe sollten Sie mindestens eine halbe Stunde investieren. Zwei Stunden wÃ¤re aber etwas zu viel des guten.
+Bearbeiten Sie die Aufgaben 2. und 3. bitte innerhalb von 48 Stunden, weil andere Studierende davon abhÃ¤ngen, dass Sie sie beendet haben.
 Bearbeiten Sie die Aufgaben auf jeden Fall in der vorgegebenen Reihenfolge.
-Und bearbeiten Sie eine Aufgabe nicht nachträglich nochmal. (Wenn Sie also z.B. Aufgabe 3. bearbeiten, dann ändern Sie bitte nichts an Aufgabe 1. nachträglich ab. Dafür wird später noch genug Zeit sein.)
+Und bearbeiten Sie eine Aufgabe nicht nachtrÃ¤glich nochmal. (Wenn Sie also z.B. Aufgabe 3. bearbeiten, dann Ã¤ndern Sie bitte nichts an Aufgabe 1. nachtrÃ¤glich ab. DafÃ¼r wird spÃ¤ter noch genug Zeit sein.)
 
 2.) Bennen Sie die strukturellen Elemente, aus denen Ihre Anwendung bestehen soll.
 Es ist dabei egal, ob es diese Elemente in HTML gibt.
@@ -44,54 +64,73 @@ Speichern Sie diese Aufstellung als HTML-Kommentar in einer Datei mit dem Namen
 
 strukt.html
 
-, die Sie in Ihrem Repository abspeichern. Wichtig: Die Datei soll nicht im Unterverzeichnis Dokumentation des Repositories gespeichert werden, weil sie die Basis für das erste HTML-Dokument werden wird.
+, die Sie in Ihrem Repository abspeichern. Wichtig: Die Datei soll nicht im Unterverzeichnis Dokumentation des Repositories gespeichert werden, weil sie die Basis fÃ¼r das erste HTML-Dokument werden wird.
 
-Wenn Sie noch unsicher sind: Strukturelle Elemente können alles mögliche sein:
+Wenn Sie noch unsicher sind: Strukturelle Elemente kÃ¶nnen alles mÃ¶gliche sein:
 - Tabellen
 - Listen
-- Schaltflächen
+- SchaltflÃ¤chen
 - Textfelder
 - Bildbereiche
 - Hintergrundmusik
-- Absätze
+- AbsÃ¤tze
 - ...
 
 In anderen Worten: Ein strukturelles Element ist etwas, das ein abgegrenzter Teil der Anwendung ist.
 Notieren Sie kurz, welche Funktion jedes der von Ihnen genannten Elemente haben soll.
 
 Hier einige Beispiele:
-- Schaltfläche (Nutzer können per Klick bestätigen, dass eine Eingabe abgeschickt werden soll.)
-- Textfeld für Namen (Nutzer können Ihren Nachnamen eintragen.)
-- Log-In-Maske (Bereich, in dem Nutzer sich einloggen können.)
+- SchaltflÃ¤che (Nutzer kÃ¶nnen per Klick bestÃ¤tigen, dass eine Eingabe abgeschickt werden soll.)
+- Textfeld fÃ¼r Namen (Nutzer kÃ¶nnen Ihren Nachnamen eintragen.)
+- Log-In-Maske (Bereich, in dem Nutzer sich einloggen kÃ¶nnen.)
 - - Teile der Log-In-Maske:
-- - Textfeld für Username
-- - Textfeld, das die Eingabe nicht anzeigt, fürs Passwort
-- Tabelle, 7 x 5 Felder (Jedes Feld soll ein Bild anzeigen, das ein Feld des Spielbretts ist. Wenn Nutzer ein Feld anwählen, soll ein Menü erscheinen.)
-- - Menü für jedes Feld der Tabelle mit Texteinträgen (Eintrag für "Gebäude abreißen", "Feld kaufen")
+- - Textfeld fÃ¼r Username
+- - Textfeld, das die Eingabe nicht anzeigt, fÃ¼rs Passwort
+- Tabelle, 7 x 5 Felder (Jedes Feld soll ein Bild anzeigen, das ein Feld des Spielbretts ist. Wenn Nutzer ein Feld anwÃ¤hlen, soll ein MenÃ¼ erscheinen.)
+- - MenÃ¼ fÃ¼r jedes Feld der Tabelle mit TexteintrÃ¤gen (Eintrag fÃ¼r "GebÃ¤ude abreiÃŸen", "Feld kaufen")
 - Hintergrundbild (Hier sollen einzelne Bilder als Diashow eingeblendet werden.)
 - Werbebanner
-- Schaltfläche für die Maskierung von NSFW (NSFW = Not safe for work)(NutzerInnen können über diese Schaltfläche eine andere Anwendung in der Vordergrund einblenden lassen, damit der Chef nicht sieht, dass sie gerade spielen.)
+- SchaltflÃ¤che fÃ¼r die Maskierung von NSFW (NSFW = Not safe for work)(NutzerInnen kÃ¶nnen Ã¼ber diese SchaltflÃ¤che eine andere Anwendung in der Vordergrund einblenden lassen, damit der Chef nicht sieht, dass sie gerade spielen.)
 
-3.) Schauen Sie jetzt in der Liste der Repositories (nicht in der Tabelle der Accounts) nach, welche zehn Repositories vor und nach Ihrem Repository aufgeführt sind und geben Sie den Besitzern dieser Repositories Zugriffsrechte auf Ihr Repository.
+3.) Schauen Sie jetzt in der Liste der Repositories (nicht in der Tabelle der Accounts) nach, welche zehn Repositories vor und nach Ihrem Repository aufgefÃ¼hrt sind und geben Sie den Besitzern dieser Repositories Zugriffsrechte auf Ihr Repository.
 
 Bsp.: Sie haben das Repository BerndStromberg. Dann folgen die zehn Repositories der Nutzer BlackWolf63, Cantinaband, CaptainWeasle, ColePfeiffer, CurvLietzau,
-DangerDulf, dnbdel, Domsche, Eldinox und Eupuco und vor Ihnen gibt es die fünf Repositories der Nutzer 2238867, amelie-beh, Anger21, anita1997 und Asphalon. all diesen Accounts geben Sie jetzt Zugriffsrechte auf Ihr Repository, so wie Sie das schon für mich getan haben. Wenn Sie, wie BerndStrommberg zu weit am Anfang der Liste stehen (hier gibt es ja nur fünf andere Accounts bis zum Anfang der Liste), dann geben Sie zusätzlich noch den Besitzern der letzten fünf Repositories Zugriffsrechte. Es sollten insgesamt 20 Accounts Zugriffsrecht haben.
+DangerDulf, dnbdel, Domsche, Eldinox und Eupuco und vor Ihnen gibt es die fÃ¼nf Repositories der Nutzer 2238867, amelie-beh, Anger21, anita1997 und Asphalon. all diesen Accounts geben Sie jetzt Zugriffsrechte auf Ihr Repository, so wie Sie das schon fÃ¼r mich getan haben. Wenn Sie, wie BerndStrommberg zu weit am Anfang der Liste stehen (hier gibt es ja nur fÃ¼nf andere Accounts bis zum Anfang der Liste), dann geben Sie zusÃ¤tzlich noch den Besitzern der letzten fÃ¼nf Repositories Zugriffsrechte. Es sollten insgesamt 20 Accounts Zugriffsrecht haben.
 
-Für die nächsten zwei Aufgaben sollten Sie pro Repository zwischen zehn Minuten und einer Stunde aufwenden. Weniger ist zu wenig und mehr ist zu viel.
-Beachten Sie dabei bitte, dass Sie hier letzten Endes Kritik an der Arbeit eines/einer anderen üben und das einige von Ihnen noch nie programmiert haben. Arbeiten Sie deshalb bitte daran, alles, was Sie ergänzen so neutral und höflich wie möglich zu formulieren, denn Unwissenheit und mangelndes Verständnis fürs Programmieren sind eben nicht das selbe wie Dummheit oder Faulheit.
+FÃ¼r die nÃ¤chsten zwei Aufgaben sollten Sie pro Repository zwischen zehn Minuten und einer Stunde aufwenden. Weniger ist zu wenig und mehr ist zu viel.
+Beachten Sie dabei bitte, dass Sie hier letzten Endes Kritik an der Arbeit eines/einer anderen Ã¼ben und das einige von Ihnen noch nie programmiert haben. Arbeiten Sie deshalb bitte daran, alles, was Sie ergÃ¤nzen so neutral und hÃ¶flich wie mÃ¶glich zu formulieren, denn Unwissenheit und mangelndes VerstÃ¤ndnis fÃ¼rs Programmieren sind eben nicht das selbe wie Dummheit oder Faulheit.
 
-Bitte erledigen Sie diese Aufgaben innerhalb der nächsten sieben Tage.
+Bitte erledigen Sie diese Aufgaben innerhalb der nÃ¤chsten sieben Tage.
 
-4.) Als nächstes greifen Sie auf die nach Ihrem Repository nachfolgenden fünf Repositories zu und bearbeiten hier die folgende Aufgabe. (Hier hängen Sie also davon ab, dass andere Kommilitonen Aufgabe 3. erledigt haben.) 
+4.) Als nÃ¤chstes greifen Sie auf die nach Ihrem Repository nachfolgenden fÃ¼nf Repositories zu und bearbeiten hier die folgende Aufgabe. (Hier hÃ¤ngen Sie also davon ab, dass andere Kommilitonen Aufgabe 3. erledigt haben.) 
 
-Lesen Sie sich die Projektidee durch und machen Sie sich ähnlich wie bei 2. einfache Stichpunkte über strukturelle Elemente, die Sie bei dieser Projektidee sinnvoll finden. (Hier erstmal nur Stichpunkte, Details arbeiten Sie unter 5. aus.)
+Lesen Sie sich die Projektidee durch und machen Sie sich Ã¤hnlich wie bei 2. einfache Stichpunkte Ã¼ber strukturelle Elemente, die Sie bei dieser Projektidee sinnvoll finden. (Hier erstmal nur Stichpunkte, Details arbeiten Sie unter 5. aus.)
 
-5.) Öffnen Sie jetzt die Datei strukt.html des Repositories, das Sie gerade bearbeiten. Ergänzen Sie Elemente, die Sie unter 4. notiert haben und die noch nicht eingetragen sind in der unter 2. beschriebenen Form.
+5.) Ã–ffnen Sie jetzt die Datei strukt.html des Repositories, das Sie gerade bearbeiten. ErgÃ¤nzen Sie Elemente, die Sie unter 4. notiert haben und die noch nicht eingetragen sind in der unter 2. beschriebenen Form.
 
-Abschließender Hinweis zu 4. und 5.:
+AbschlieÃŸender Hinweis zu 4. und 5.:
 
-Auch wenn das nirgends explizit steht sollen Sie Änderungen in das Repository pushen, aus dem sie die Datei strukt.html gepullt haben.
-Es ist dabei sehr wahrscheinlich, dass Sie (vielleicht auch erst später während der Projektbearbeitung) einen merge durchführen müssen. Wenn Sie sich noch nicht angesehen haben, wie das geht, dann tun Sie es jetzt.
+Auch wenn das nirgends explizit steht sollen Sie Ã„nderungen in das Repository pushen, aus dem sie die Datei strukt.html gepullt haben.
+Es ist dabei sehr wahrscheinlich, dass Sie (vielleicht auch erst spÃ¤ter wÃ¤hrend der Projektbearbeitung) einen merge durchfÃ¼hren mÃ¼ssen. Wenn Sie sich noch nicht angesehen haben, wie das geht, dann tun Sie es jetzt.
 
-Viele Grüße,
+Viele GrÃ¼ÃŸe,
 Markus Alpers
+
+===================================
+=== Feedback Alpers, 2016-04-28 ===
+===================================
+
+Bitte belassen Sie die komplette Kommunikation rund um die Projektidee in dieser Datei, damit nachvollziehbar ist, wie das Projekt sich weiterentwickelt hat und warum.
+
+Wenn Sie weitegehende Dateien haben, dann verschieben Sie die bitte in ein eigenstÃ¤ndiges Verzeichnis, damit andere Studierende sich leicht in Ihrem Repository zurecht finden kÃ¶nnen.
+
+Hier das Feedback zu Ihrer Projektbeschreibung:
+
+Leider ist das im Grunde eine etwas unsortierte Aufstellung der strukturellen Elemente, die in der strukt.html notiert werden sollen. Hier wird weder klar, was im Spiel passiert noch (besonders wichtig) welche InteraktionsmÃ¶glichkeiten es gibt. Bitte arbeiten Sie das noch nach.
+
+Wertung 2: Projektbeschreibung: gesamt: 2 / 10
+- Pro InteraktionsmÃ¶glichkeit: 0
+- Knappe aber klare Beschreibung: 5
+- Werbeslogans u.Ã¤.: 0
+- Designaspekte: 0
+- Voraussetzung bekannten Wissens: -3
