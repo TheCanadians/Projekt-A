@@ -6,18 +6,44 @@
 
 <body>
 		<!--
+		Vor dem eigentlichen Spiel:
+			Startbildschirm:
+				- Aufmacherbild mit Schriftzug des Spiels (Idee: SusannaAlbrecht)
+					a) durch Click weiter zum Hauptmenü oder (öffnet Seite mit der Login-Maske)
+					b) Schaltläche/Button "Weiter" oder "Zum Spiel" (öffnet Seite mit der Login-Maske)	
+					Login-Maske:
+						- Eingabefeld/Textfeld "Benutzername" (Name des Accounts eingeben)
+						- Eingabefeld/Textfeld "Password" (Password des Accounts eingeben)
+						- Schaltfläche/Button "Bestätigen" (Bestätigt Eingabe der Accountdaten und leitet weiter ins Hauptmenü)
+						Hauptmenü:
+							- Schaltfläche/Button "Neues Spiel"
+								- Eingabefeld/Textfeld "Spielernamen" (Namen der Spieler eingeben)
+								- Schaltfläche/ColorChooser "Farbenwahl" (Farbe der Spielfiguren der einzelnen Spieler wählen; ColorChooser)
+								- Schaltfläche/Button "Bestätigen" (Bestätigt Eingaben und startet das Spiel)
+							- Schaltfläche/Button "Regeln" (entweder Weiterleitung zu einer nicht selbst geschriebenen Seite oder Download
+							  einer PDF der Regeln oder eigenes Fenster mit den Regeln)
+							- Schaltfläche/Button "Weiter" (lädt alten Spielstand)
+							- Schaltfläche/Button "Highscore" (öffnet eine Seite mit den Highscores)
+								- Liste "Highscores" (2 Spalten Liste mit den Accountnamen und dem dazugehörigen Punktestand)
+								- Schaltfläche/Button "Hauptmenü" (öffnet Hauptmenü)
+						- Schaltfläche "Account erstellen" (leitet den Spieler auf eine Seite weiter auf der er einen Account erstellen kann)
+						Account erstellen:
+							- Eingabefeld/Textfeld "Accountname" (gewünschter Name des Accounts eingeben)
+							- Eingabefeld/Textfeld "Password" (gewünschtes Password eingeben)
+							- Eingabefeld/Textfeld "Password bestätigen" (gewünschtes Password bestätigen um Schreibfehler zu vermeiden)
+							- Schaltfläche/Button "Bestätigen" (bestätigt Eingaben)					
 		Im Spiel:
-			Menübar:
-				- Schaltfläche "Neues Spiel"
-					- Eingabefeld "Spielernamen" (Namen der Spieler eingeben)
-					- Schaltfläche "Farbenwahl" (Farbe der Spielfiguren der einzelnen Spieler wählen)
-					- Schaltfläche "Bestätigen" (Bestätigt Eingaben und startet das Spiel)
-				- Schaltfläche "Regeln"
+			Menüleiste:
+				- Schaltfläche/Button "Hautmenü" (öffnet die Seite des Hauptmenüs, pausiert das Spiel)
+				- Schaltfläche/Button "Speichern" (speichert den aktuellen Spielstand)
+				- Schaltfläche/Menü/ComboBox "Spielplan" (beim Anwählen öffnet sich ein Menü mit den Spielplänen)
+				- Schaltfläche "Inventar" (Öffnet eine neue Seite)
+					- Tabelle "Inventarinhalt" (Zeigt an wie viele Gegenstände (Salz, Gerste, etc.) der Spieler besitzt)
 			Spielfeld Babylon:
 				- Hintergrund "Babylon" (Der Hintergrund zeigt die Stadt Babylon mit ihren hängenden Gärten)
-				- Liste "Prestigepunkte" (Zeigt an welcher Spieler wie viele Prestigepunkte hat)
-				- Bildbereich "Passbereich" (Zeigt grafisch welcher Spieler im letzten Zug gepasst hat)
-				- Tabelle "Ackerfeld" (2 x 5 Felder, jedes Feld zeigt ein Bild an. Wenn der Nutzer ein Feld anwählt soll ein Menü erscheinen)
+				- Liste "Spielstand" (Zeigt an welcher Spieler wie viele Prestigepunkte hat)
+				- Bildbereich oder Liste "Passbereich" (Zeigt grafisch welcher Spieler im letzten Zug gepasst hat oder zeigt in einer Liste die Namen der gepassten Spieler an)
+				- Tabelle "Ackerfeld" (2 x 5 Felder, jedes Feld zeigt ein Bild an. Grafische Darstellung was von "Bauern" schon geerntet wurde.)
 				- Tabelle "Spielfeld" (4 x 4 Felder, jedes Feld zeigt ein Bild an, das ein Feld des Spielbretts ist. Wenn der Nutzer ein Feld anwählt soll ein Menü erscheinen)
 				- 3 Tabellen "Tempel" (3 1 x 4 Felder, jedes Feld zeigt ein Bild an. Wenn der Nutzer ein Feld anwählt nimmt dies seine Farbe an)
 				- Hintergrundmusik ("fröhliche", "geschäftige" Musik)
@@ -27,9 +53,7 @@
 				- 9 Bildbereiche "Spielfelder" (Wenn der Nutzer ein Bild anwählt soll ein Menü erscheinen.)
 				- Hintergrundmusik (Wüstenmusik/Reisemusik)
 				- Sounds (für einen abgeschlossenen Handel)
-			Inventar:
-				- Schaltfläche "Inventar" (Öffnet eine neue Seite)
-					- Tabelle "Inventarinhalt" (Zeigt an wie viele Gegenstände (Salz, Gerste, etc.) der Spieler besitzt)
+				
 		 -->
 </body>
 
