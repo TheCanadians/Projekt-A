@@ -23,14 +23,13 @@
 10							- Schaltfläche/Button "Regeln" (entweder Weiterleitung zu einer nicht selbst geschriebenen Seite oder Download
 							  einer PDF der Regeln oder eigenes Fenster mit den Regeln)
 11							- Schaltfläche/Button "Weiter" (lädt alten Spielstand)
-12							- Schaltfläche/Button "Highscore" (öffnet eine Seite mit den Highscores)
-13		V.						- Liste "Highscores" (2 Spalten Liste mit den Accountnamen und dem dazugehörigen Punktestand)
-14								- Schaltfläche/Button "Hauptmenü" (öffnet Hauptmenü)
+13		V.					- Liste "Highscores" (2 Spalten Liste mit den Accountnamen und dem dazugehörigen Punktestand)
 15						- Schaltfläche "Account erstellen" (leitet den Spieler auf eine Seite weiter auf der er einen Account erstellen kann)
 		VI.				Account erstellen:
 16							- Eingabefeld/Textfeld "Accountname" (gewünschter Name des Accounts eingeben)
 17							- Eingabefeld/Textfeld "Password" (gewünschtes Password eingeben)
 18							- Eingabefeld/Textfeld "Password bestätigen" (gewünschtes Password bestätigen um Schreibfehler zu vermeiden)
+36							- Eingabefeld/Textfeld "E-Mail Adresse" (E-Mail Adresse eingeben)
 19							- Schaltfläche/Button "Bestätigen" (bestätigt Eingaben)					
 		Im Spiel:
 	VII.	Menüleiste:
@@ -62,24 +61,21 @@ view_login
 II.		03	textfield		username
 II.		04	textfield		password
 II.		05	button			submit_login
-view_mainmenu
-III.	06 	button			new_game
-III.	10	button			go_to_rules
-III.	11	button			continue
-III.	12	button			go_to_highscore
-III.	15	button			new_account
-view_players
-IV.		07	textfield		player_name
-IV.		08	colorchooser	player_color
-IV.		09	button			submit_player
-view_highscore
-V.		13	list			highscore
-V.		14	button			go_to_mainmenu
+II.		15	button			new_account
 view_new_acc
 VI.		16	textfield		acc_name
 VI.		17	textfield		acc_pw
 VI.		18	textfield		acc_pw_confirm
 VI.		19	button			submit_acc
+VI.		36	textfield		email
+view_mainmenu
+III.	06 	button			new_game
+III.	10	button			go_to_rules
+III.	11	button			continue
+IV.		07	textfield		player_name
+IV.		08	colorchooser	player_color
+IV.		09	button			submit_player
+V.		13	list			highscore
 view_game (ist immer zusammen mit einer der beiden folgenden Sichten zu sehen)
 VII.	20	button			go_to_mainmenu
 VII.	21	button			save_game
