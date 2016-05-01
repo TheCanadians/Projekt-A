@@ -37,23 +37,83 @@
 20				- Schaltfläche/Button "Hautmenü" (öffnet die Seite des Hauptmenüs, pausiert das Spiel)
 21				- Schaltfläche/Button "Speichern" (speichert den aktuellen Spielstand)
 22				- Schaltfläche/Menü/ComboBox "Spielplan" (beim Anwählen öffnet sich ein Menü mit den Spielplänen)
-23				- Schaltfläche "Inventar" (Öffnet eine neue Seite)
-24					- Tabelle "Inventarinhalt" (Zeigt an wie viele Gegenstände (Salz, Gerste, etc.) der Spieler besitzt)
+23				- Tabelle "Inventarinhalt" (Zeigt an wie viele Gegenstände (Salz, Gerste, etc.) der Spieler besitzt)
 	VIII.	Spielfeld Babylon:
-25				- Hintergrund "Babylon" (Der Hintergrund zeigt die Stadt Babylon mit ihren hängenden Gärten)
-26				- Liste "Spielstand" (Zeigt an welcher Spieler wie viele Prestigepunkte hat)
-27				- Bildbereich oder Liste "Passbereich" (Zeigt grafisch welcher Spieler im letzten Zug gepasst hat oder zeigt in einer Liste die Namen der gepassten Spieler an)
-28				- Tabelle "Ackerfeld" (2 x 5 Felder, jedes Feld zeigt ein Bild an. Grafische Darstellung was von "Bauern" schon geerntet wurde.)
-29				- Tabelle "Spielfeld" (4 x 4 Felder, jedes Feld zeigt ein Bild an, das ein Feld des Spielbretts ist. Wenn der Nutzer ein Feld anwählt soll ein Menü erscheinen)
-30				- 3 Tabellen "Tempel" (3 1 x 4 Felder, jedes Feld zeigt ein Bild an. Wenn der Nutzer ein Feld anwählt nimmt dies seine Farbe an)
-31				- Hintergrundmusik ("fröhliche", "geschäftige" Musik)
-32				- Sounds (für bestimmte Aktionen (z.B. für einen Bauern anstellen der das Feld bestellt))
+24				- Hintergrund "Babylon" (Der Hintergrund zeigt die Stadt Babylon mit ihren hängenden Gärten)
+25				- Liste "Spielstand" (Zeigt an welcher Spieler wie viele Prestigepunkte hat)
+26				- Bildbereich oder Liste "Passbereich" (Zeigt grafisch welcher Spieler im letzten Zug gepasst hat oder zeigt in einer Liste die Namen der gepassten Spieler an)
+27				- Tabelle "Ackerfeld" (2 x 5 Felder, jedes Feld zeigt ein Bild an. Grafische Darstellung was von "Bauern" schon geerntet wurde.)
+28				- Tabelle "Spielfeld" (4 x 4 Felder, jedes Feld zeigt ein Bild an, das ein Feld des Spielbretts ist. Wenn der Nutzer ein Feld anwählt soll ein Menü erscheinen)
+29				- Tabelle "Tempel Marduk" (1 x 4 Felder, jedes Feld zeigt ein Bild an. Wenn der Nutzer ein Feld anwählt nimmt dies seine Farbe an)
+30				- Tabelle "Tempel Ishtar" (1 x 4 Felder, jedes Feld zeigt ein Bild an. Wenn der Nutzer ein Feld anwählt nimmt dies seine Farbe an)
+31				- Tabelle "Tempel Tammouz" (1 x 4 Felder, jedes Feld zeigt ein Bild an. Wenn der Nutzer ein Feld anwählt nimmt dies seine Farbe an)
+32				- Hintergrundmusik ("fröhliche", "geschäftige" Musik)
 	IX.		Spielfeld Mesopotamien:
 33				- Hintergrund "Mesopotamien" (Der Hintergrund zeigt eine Karte von Mesopotamien an)
-34				- 9 Bildbereiche "Spielfelder" (Wenn der Nutzer ein Bild anwählt soll ein Menü erscheinen.)
-35				- Hintergrundmusik (Wüstenmusik/Reisemusik)
-36				- Sounds (für einen abgeschlossenen Handel)
+34				- Bildbereich "Spielfeld 1" (Beim anwählen soll ein Menü erscheinen.)
+35				- Bildbereich "Spielfeld 2" (Beim anwählen soll ein Menü erscheinen.)
+36				- Bildbereich "Spielfeld 3" (Beim anwählen soll ein Menü erscheinen.)
+37				- Bildbereich "Spielfeld 4" (Beim anwählen soll ein Menü erscheinen.)
+38				- Bildbereich "Spielfeld 5" (Beim anwählen soll ein Menü erscheinen.)
+39				- Bildbereich "Spielfeld 6" (Beim anwählen soll ein Menü erscheinen.)
+40				- Bildbereich "Spielfeld 7" (Beim anwählen soll ein Menü erscheinen.)
+41				- Bildbereich "Spielfeld 8" (Beim anwählen soll ein Menü erscheinen.)
+42				- Bildbereich "Spielfeld 9" (Beim anwählen soll ein Menü erscheinen.)
+43 				- Hintergrundmusik (Wüstenmusik/Reisemusik)
 				
+				
+Gruppen/Sichten:
+view_index
+I.		01	picture			banner
+I.		02	button			go_to_game
+view_login
+II.		03	textfield		username
+II.		04	textfield		password
+II.		05	button			submit_login
+view_mainmenu
+III.	06 	button			new_game
+III.	10	button			go_to_rules
+III.	11	button			continue
+III.	12	button			go_to_highscore
+III.	15	button			new_account
+view_players
+IV.		07	textfield		player_name
+IV.		08	colorchooser	player_color
+IV.		09	button			submit_player
+view_highscore
+V.		13	list			highscore
+V.		14	button			go_to_mainmenu
+view_new_acc
+VI.		16	textfield		acc_name
+VI.		17	textfield		acc_pw
+VI.		18	textfield		acc_pw_confirm
+VI.		19	button			submit_acc
+view_game
+VII.	20	button			go_to_mainmenu
+VII.	21	button			save_game
+VII.	22	menu			gameboard
+VII.	23	list			inventory
+VIII.	24	image			background_picture_babylon
+VIII.	25	list			score
+VIII.	26	list			pass_players
+VIII.	27	table			field 
+VIII.	28	table			garden
+VIII.	29	table			temple_marduk
+VIII.	30	table			temple_ishtar
+VIII.	31	table			temple_tammouz
+VIII.	32	music			background_music_babylon
+IX.		33	image			background_picture_meso
+IX.		34	image			meso_1
+IX.		35	image			meso_2
+IX.		36	image			meso_3
+IX.		37	image			meso_4
+IX.		38	image			meso_5
+IX.		39	image			meso_6
+IX.		40	image			meso_7
+IX.		41	image			meso_8
+IX.		42	image			meso_9
+IX.		43	music			background_musci_meso
+
 		 -->
 </body>
 
