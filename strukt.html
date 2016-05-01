@@ -7,52 +7,52 @@
 <body>
 		<!--
 		Vor dem eigentlichen Spiel:
-			Startbildschirm:
-				- Aufmacherbild mit Schriftzug des Spiels (Idee: SusannaAlbrecht)
+	I.		Startbildschirm:
+01				- Aufmacherbild mit Schriftzug des Spiels (Idee: SusannaAlbrecht)
 					a) durch Click weiter zum Hauptmenü oder (öffnet Seite mit der Login-Maske)
-					b) Schaltläche/Button "Weiter" oder "Zum Spiel" (öffnet Seite mit der Login-Maske)	
-					Login-Maske:
-						- Eingabefeld/Textfeld "Benutzername" (Name des Accounts eingeben)
-						- Eingabefeld/Textfeld "Password" (Password des Accounts eingeben)
-						- Schaltfläche/Button "Bestätigen" (Bestätigt Eingabe der Accountdaten und leitet weiter ins Hauptmenü)
-						Hauptmenü:
-							- Schaltfläche/Button "Neues Spiel"
-								- Eingabefeld/Textfeld "Spielernamen" (Namen der Spieler eingeben)
-								- Schaltfläche/ColorChooser "Farbenwahl" (Farbe der Spielfiguren der einzelnen Spieler wählen; ColorChooser)
-								- Schaltfläche/Button "Bestätigen" (Bestätigt Eingaben und startet das Spiel)
-							- Schaltfläche/Button "Regeln" (entweder Weiterleitung zu einer nicht selbst geschriebenen Seite oder Download
+02					b) Schaltläche/Button "Weiter" oder "Zum Spiel" (öffnet Seite mit der Login-Maske)	
+	II.				Login-Maske:
+03						- Eingabefeld/Textfeld "Benutzername" (Name des Accounts eingeben)
+04						- Eingabefeld/Textfeld "Password" (Password des Accounts eingeben)
+05						- Schaltfläche/Button "Bestätigen" (Bestätigt Eingabe der Accountdaten und leitet weiter ins Hauptmenü)
+	III.				Hauptmenü:
+06							- Schaltfläche/Button "Neues Spiel"
+07		IV.						- Eingabefeld/Textfeld "Spielernamen" (Namen der Spieler eingeben)
+08								- Schaltfläche/ColorChooser "Farbenwahl" (Farbe der Spielfiguren der einzelnen Spieler wählen; ColorChooser)
+09								- Schaltfläche/Button "Bestätigen" (Bestätigt Eingaben und startet das Spiel)
+10							- Schaltfläche/Button "Regeln" (entweder Weiterleitung zu einer nicht selbst geschriebenen Seite oder Download
 							  einer PDF der Regeln oder eigenes Fenster mit den Regeln)
-							- Schaltfläche/Button "Weiter" (lädt alten Spielstand)
-							- Schaltfläche/Button "Highscore" (öffnet eine Seite mit den Highscores)
-								- Liste "Highscores" (2 Spalten Liste mit den Accountnamen und dem dazugehörigen Punktestand)
-								- Schaltfläche/Button "Hauptmenü" (öffnet Hauptmenü)
-						- Schaltfläche "Account erstellen" (leitet den Spieler auf eine Seite weiter auf der er einen Account erstellen kann)
-						Account erstellen:
-							- Eingabefeld/Textfeld "Accountname" (gewünschter Name des Accounts eingeben)
-							- Eingabefeld/Textfeld "Password" (gewünschtes Password eingeben)
-							- Eingabefeld/Textfeld "Password bestätigen" (gewünschtes Password bestätigen um Schreibfehler zu vermeiden)
-							- Schaltfläche/Button "Bestätigen" (bestätigt Eingaben)					
+11							- Schaltfläche/Button "Weiter" (lädt alten Spielstand)
+12							- Schaltfläche/Button "Highscore" (öffnet eine Seite mit den Highscores)
+13		V.						- Liste "Highscores" (2 Spalten Liste mit den Accountnamen und dem dazugehörigen Punktestand)
+14								- Schaltfläche/Button "Hauptmenü" (öffnet Hauptmenü)
+15						- Schaltfläche "Account erstellen" (leitet den Spieler auf eine Seite weiter auf der er einen Account erstellen kann)
+		VI.				Account erstellen:
+16							- Eingabefeld/Textfeld "Accountname" (gewünschter Name des Accounts eingeben)
+17							- Eingabefeld/Textfeld "Password" (gewünschtes Password eingeben)
+18							- Eingabefeld/Textfeld "Password bestätigen" (gewünschtes Password bestätigen um Schreibfehler zu vermeiden)
+19							- Schaltfläche/Button "Bestätigen" (bestätigt Eingaben)					
 		Im Spiel:
-			Menüleiste:
-				- Schaltfläche/Button "Hautmenü" (öffnet die Seite des Hauptmenüs, pausiert das Spiel)
-				- Schaltfläche/Button "Speichern" (speichert den aktuellen Spielstand)
-				- Schaltfläche/Menü/ComboBox "Spielplan" (beim Anwählen öffnet sich ein Menü mit den Spielplänen)
-				- Schaltfläche "Inventar" (Öffnet eine neue Seite)
-					- Tabelle "Inventarinhalt" (Zeigt an wie viele Gegenstände (Salz, Gerste, etc.) der Spieler besitzt)
-			Spielfeld Babylon:
-				- Hintergrund "Babylon" (Der Hintergrund zeigt die Stadt Babylon mit ihren hängenden Gärten)
-				- Liste "Spielstand" (Zeigt an welcher Spieler wie viele Prestigepunkte hat)
-				- Bildbereich oder Liste "Passbereich" (Zeigt grafisch welcher Spieler im letzten Zug gepasst hat oder zeigt in einer Liste die Namen der gepassten Spieler an)
-				- Tabelle "Ackerfeld" (2 x 5 Felder, jedes Feld zeigt ein Bild an. Grafische Darstellung was von "Bauern" schon geerntet wurde.)
-				- Tabelle "Spielfeld" (4 x 4 Felder, jedes Feld zeigt ein Bild an, das ein Feld des Spielbretts ist. Wenn der Nutzer ein Feld anwählt soll ein Menü erscheinen)
-				- 3 Tabellen "Tempel" (3 1 x 4 Felder, jedes Feld zeigt ein Bild an. Wenn der Nutzer ein Feld anwählt nimmt dies seine Farbe an)
-				- Hintergrundmusik ("fröhliche", "geschäftige" Musik)
-				- Sounds (für bestimmte Aktionen (z.B. für einen Bauern anstellen der das Feld bestellt))
-			Spielfeld Mesopotamien:
-				- Hintergrund "Mesopotamien" (Der Hintergrund zeigt eine Karte von Mesopotamien an)
-				- 9 Bildbereiche "Spielfelder" (Wenn der Nutzer ein Bild anwählt soll ein Menü erscheinen.)
-				- Hintergrundmusik (Wüstenmusik/Reisemusik)
-				- Sounds (für einen abgeschlossenen Handel)
+	VII.	Menüleiste:
+20				- Schaltfläche/Button "Hautmenü" (öffnet die Seite des Hauptmenüs, pausiert das Spiel)
+21				- Schaltfläche/Button "Speichern" (speichert den aktuellen Spielstand)
+22				- Schaltfläche/Menü/ComboBox "Spielplan" (beim Anwählen öffnet sich ein Menü mit den Spielplänen)
+23				- Schaltfläche "Inventar" (Öffnet eine neue Seite)
+24					- Tabelle "Inventarinhalt" (Zeigt an wie viele Gegenstände (Salz, Gerste, etc.) der Spieler besitzt)
+	VIII.	Spielfeld Babylon:
+25				- Hintergrund "Babylon" (Der Hintergrund zeigt die Stadt Babylon mit ihren hängenden Gärten)
+26				- Liste "Spielstand" (Zeigt an welcher Spieler wie viele Prestigepunkte hat)
+27				- Bildbereich oder Liste "Passbereich" (Zeigt grafisch welcher Spieler im letzten Zug gepasst hat oder zeigt in einer Liste die Namen der gepassten Spieler an)
+28				- Tabelle "Ackerfeld" (2 x 5 Felder, jedes Feld zeigt ein Bild an. Grafische Darstellung was von "Bauern" schon geerntet wurde.)
+29				- Tabelle "Spielfeld" (4 x 4 Felder, jedes Feld zeigt ein Bild an, das ein Feld des Spielbretts ist. Wenn der Nutzer ein Feld anwählt soll ein Menü erscheinen)
+30				- 3 Tabellen "Tempel" (3 1 x 4 Felder, jedes Feld zeigt ein Bild an. Wenn der Nutzer ein Feld anwählt nimmt dies seine Farbe an)
+31				- Hintergrundmusik ("fröhliche", "geschäftige" Musik)
+32				- Sounds (für bestimmte Aktionen (z.B. für einen Bauern anstellen der das Feld bestellt))
+	IX.		Spielfeld Mesopotamien:
+33				- Hintergrund "Mesopotamien" (Der Hintergrund zeigt eine Karte von Mesopotamien an)
+34				- 9 Bildbereiche "Spielfelder" (Wenn der Nutzer ein Bild anwählt soll ein Menü erscheinen.)
+35				- Hintergrundmusik (Wüstenmusik/Reisemusik)
+36				- Sounds (für einen abgeschlossenen Handel)
 				
 		 -->
 </body>
