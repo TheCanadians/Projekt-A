@@ -1,3 +1,7 @@
+=== Projektidee 2016-05-30 ===
+
+
+
 === Projektidee 2016-04-20 ===
 
 http://www.brettspiele-report.de/amyitis/
@@ -5,20 +9,224 @@ http://www.brettspiele-report.de/amyitis/
 Amyitis ist ein Brettspiel aus dem Jahre 2007, bei welchem das Ziel 
 des Spiels ist am meisten (Prestige-)Punkte zu sammeln.
 
-Dabei gibt es zwei Spielfelder:
-	1. Ein Spielfeld "Babylon" auf welchem die Spieler ihre Punkte
-	   anhand einer Leiste sehen können.
-	   Weiterhin sind auf dem Spielplan ein kleines Feld für die
-	   Spielfiguren die letzte Runde gepasst haben und ein Feld(5x2) auf 
-	   mit Spielkarten "Waren" erhalten werden können.
-	   Der Kern des Spielplans besteht aus einem 4x4 Feld, wobei jedes
-	   Feld einen "Acker" darstellt und zwischen den Feldern "Kanäle" zum bewässern
-	   verlaufen.
-	   Letztlich gibt es noch drei 4x1 Felder auf denen Spieler mithilfe
-	   eines "Priesters" (Spielkarte) "Belohnungen" erhalten können.
-	2. Ein Spielfeld "Mesopotamien" mit 9 Feldern, auf denen "Waren" gegen "Pflanzen"
-	   oder "Aufwertungen" ihrer Karten (Geschwindigkeit der Karawane,
-	   Einkommen oder Prestige) tauschen können.
+Spielmaterial:
+	- 20 Gartenplättchen (1-3 Qualitätsstufe, 1,2,3,4,5,6,8,10 Punkte wert)
+		-> Baut ein Spieler eine passende Pflanze an, dann erhält er den Bonus, der auf jedem Gartenplättchen
+		   abgedruckt ist (Geld, Kamele, Prestige, ...).
+	- 35 Warenplättchen
+		-> 7 Datteln
+		-> 7 Gerste
+		-> 7 Palmen
+		-> 7 Salz
+		-> 7 Wein
+	- 14 Kamelplättchen
+	- 1 Karawanenplättchen
+	- 30 Münzen/Talente
+	- 56 Karten
+		-> 18 Gewerbe
+			--> 5 Bauern 
+			--> 5 Priester 
+			--> 4 Ingenieure
+			--> 4 Händler
+		-> 4 Pflanzen (dienen zum bepflanzen der Gartenplättchen)
+		-> 31 Hof
+			--> ? Bankierkarten (führen zu mehr Einkommen)
+								(Kosten: 1,2,3)
+			--> ? Karawanenführerkarten (führen zum schnelleren Vorankommen der Karawane)
+										(Kosten: 0,1,2)
+			--> ? Palastkarten (spiegeln das eigene Wohngebäude wieder. Je besser dieser ist, desto mehr Prestige bringt er ein.)
+							   (2,3,4,5,7,10 Prestige wert; Kosten: 1,2,3,4,5,6)
+			--> ? Gärtnerkarten ()
+		-> 2 Amyitis (Bedeutung noch nicht klar)
+		-> 1 Startspieler (nicht wichtig in der Onlineversion)
+	- 4 Markierungssteine für die Anzeige der Prestigepunkte (nicht wichtig in der Onlineversion)
+	- 140 Holzwürfel 
+		-> 30 blau
+		-> 30 rot
+		-> 30 schwarz
+		-> 30 weiß
+		-> 20 grau
+	- Spielplan Babylon
+		-> Wertungsleiste für Prestigepunkte 
+		-> Spielfeld für Spieler die gepasst haben
+		-> 2 Äcker auf denen Spieler, mit Hilfe eines Bauern, Warenplättchen erhalten können 
+		-> Die hängenden Gärten
+						/\
+					   /  \				4. Ebene 									| Nur Pflanzen der Qualität 3
+					   \  /
+					  /\\//\
+					 /  \/  \			3. Ebene, 3. Ebene							| Nur Pflanzen der Qualität 3
+					 \  /\  /
+					/\\//\\//\
+				   /  \/  \/  \			2. Ebene, 3. Ebene, 2. Ebene*				| 3. Ebene nur Pflanzen der Qualität 3, 2. Ebene nur Pflanzen der Qualität 2
+				   \  /\  /\  /
+				  /\\//\\//\\//\
+				 /  \/  \/  \/  \		1. Ebene, 2. Ebene, 2. Ebene, 1. Ebene* 	| 2. Ebene nur Pflanzen der Qualität 2, 1. Ebene nur Pflanzen der Qualität 1
+				 \  /\  /\  /\  /
+				  \//\\//\\//\\/
+				   /  \/  \/  \			1. Ebene, 2. Ebene, 1. Ebene*				| 2. Ebene nur Pflanzen der Qualität 2, 1. Ebene nur Pflanzen der Qualität 1
+				   \  /\  /\  /
+				    \//\\//\\/
+					 /  \/  \			1. Ebene, 1. Ebene							| Nur Pflanzen der Qualität 1
+					 \  /\  /
+					  \//\\/
+					   /  \				1. Ebene									| Nur Pflanzen der Qualität 1
+					   \  /
+					    \/
+		-> 3 Tempel in denen Spieler, mit Hilfe eines Priesters Belohnungen erhalten können 
+	- Spielplan Mesopotamien
+	
+Spielvorbereitung:
+	- Auf die hängenden Gärten werden werden die Gartenplättchen entsprechend ihrer Qualitätsstufe gelegt.
+		-> Das Plättchen der Qualitätsstufe 3 mit dem Wert 10 kommt auf die höchste(vierte) Ebene er Gärten.
+		-> 3 weitere zufällig gezogene Plättchen der Qualitätsstufe 3 werden auf die dritte Ebene
+		   der Gärten gelegt.
+		-> 5 zufällig gezogene Plättchen der Qualitätsstufe 2 werden auf die zweite Ebene gelegt.
+		-> 7 zufällig gezogene Plättchen der Qualitätsstufe 1 werden auf die erste Ebene gelegt.
+		==> BEI ZWEI SPIELERN: Drei Felder (*) werden nicht verwendet und somit 
+			nicht mit einem Gartenplättchen belegt.
+	- Das Karawanenplättchen wird auf dem Mesopotamien-Spielplan auf das Feld "Babylon" gelegt.
+	- Die Pflanzen-Karte mit der Qualitätsstufe 2 auf beiden Seiten wird auf dem Mesopotamien-Spielplan
+	  auf die Stadt Khorsabad gelegt. es spielt keine Rolle welche Seite oben liegt.
+	  Die 3 anderen Pflanzen-Karten werden gemischt und auf die Städte Eshnunna, Ur und Mari verteilt.
+	  Dabei muss die Seite sichtbar sein, die eine Pflanze der Qualitätsstufe 1 zeigt.
+	- Die Hofkarten werden nach Art (Bankier, Karawanenführer, Palast (?)) und Wert (1,2,3/0,1,2/1,2,3,4,5,6) 
+	  sortiert. Auf die beiden Karawanenführerkarten mit dem Wert 2 kommt je ein zufälliges Warenplättchen.
+	- Die Pflanzenkarten werden auf den Spielplan Mesopotamien gelegt.
+	- Von jeder Warensorte, mit Ausnahme des Weins, wird ein Plättchen aus dem allgemeinen Vorrat genommen.
+	  Diese 4 Plättchen werden gemischt und auf jede Karawanenführer-Karte der Stufe 2 (2 bei 4 Spielern, 1 bei 2 oder 3
+	  Spielern.) wird zufällig eins platziert.
+	- Jeder Spieler erhält alle Holzwürfel in einer Farbe, die Karawanenführerkarte mit den Wert 0,
+	  ein Kamelplättchen und 4 Talente (?).
+	
+Spielablauf (allgemein):
+	Phase 1: Aufstellung 
+		- Gewerbe: Gewerbekarten auslegen
+		- Einkommen: Einkommen auf Basis vorhandener Bankierkarten 
+	Phase 2: Aktionen der Spieler in beliebiger Reihenfolge und Häufigkeit
+		- Passen: Zug beenden
+		- Rekrutieren: Gewerbekarten auswählen und die dazugehörige Aktion ausführen
+		- Karawane bewegen: Am Zielort die zum Zielort gehörende Aktion ausführen 
+	Phase 3: Ende der Runde
+		- Prozession: Der Spieler nach dem Startspieler darf kostenlos einen seiner Holzwürfel in einen
+					  beliebigen Tempel legen. In die anderen Tempel wird je 1 grauer Holzwürfel gelegt.
+		- Tempel: Die Mehrheiten in den Tempeln werden ermittelt und der Erst- und Zweitplatzierte führen
+				  die zum Tempel gehörende Aktion aus.
+		- Vorrat: Je nach Karawanenführerkarte darf ein Spieler nur begrenzt Warenplättchen mit in die nächste
+				  Runde nehmen.
+		- Startspielerwechsel
+
+Spielende (allgemein):
+	- Das Spiel endet bei 2 Spielern, wenn nur noch 3 Gartenplättchen, und bei 3 oder 4 Spielern, wenn nur noch
+	  4 Gartenplättchen übrig sind.
+	- Die aktuelle Runde wird noch zu Ende gespielt.
+	- Die Spieler erhalten noch Prestigepunkte für ihre Garten- und Warenplättchen.
+	- Es gewinnt der Spieler mit den meisten Prestigepunkten.
+	
+	
+Spielablauf (Beispiel):
+	1.1. 	Auf die hängenden Gärten (Babylon) werden die Gartenplättchen entsprechend ihrer Qualitätsstufe gelegt.
+	1.2. 	Die Hofkarten werden nach Art und Wert sortiert. 
+	1.2.1. 	Auf die beiden Karawanenführerkarten mit dem Wert 2 kommt
+			je ein zufälliges Warenplättchen.
+	1.3. 	Die Pflanzenkarten werden auf den Spielplan Mesopotamien gelegt.
+	1.4.	Jeder Spieler erhält alle Honlzwürfel einer Farbe, die Karawanenführerkarte mit dem Wert 0,
+			ein Kamelplättchen und 4 Talente.
+	2.1.	Der Startspieler mischt alle Gewerbekarten und legt bei 4 Spielern 4 Gruppen à 3 Karten aus.
+			-------------------------------------
+			| Händler   | Ingenieur | Ingenieur |
+			-------------------------------------
+			| Ingenieur | Händler   | Priester  |
+			-------------------------------------
+			| Händler   | Bauer     | Ingenieur |
+			-------------------------------------
+			| Bauer     | Bauer     | Priester  |
+			-------------------------------------
+	3.1.	Spieler 1 (Startspieler) sucht sich eine Karte einer Gruppe aus. Da dies 
+			die erste Karte der Gruppe ist welche verwendet wird ist sie kostenlos.
+	3.1.2.	Die Karte wird anschließend umgedreht.
+	3.2.	Spieler 1 hat sich für einen Bauern entschieden und führt daher die entsprechende Aktion aus.
+	3.2.1.	In diesem Fall einen Holzwürfel auf einen Acker legen.
+	3.2.2.	Er muss dabei eine der beiden Reihen nehmen und in dieser Reihe das freie Feld, welches am weitesten
+			links ist.
+	3.3.	Spieler 1 erhält durch diese Aktion 1 Salz (Warenplättchen). (festgelegt auf dem Plan)
+	4.1.	Spieler 2 macht das gleiche und erhält 1 Gerste (Warenplättchen).
+	5.1.	Spieler 3 entscheidet sich für einen Priester.
+	5.2.	Er sucht sich einen der drei Tempel (Tammouz) aus und legt einen seiner Holzwürfel auf das linkeste, frei Feld.
+	6.1.	Spieler 4 wählt einen Ingenieur.
+	6.2.	Er sucht sich eine Bewässerungszone (zwischen den Gartenplättchen auf den hängenden Gärten) aus
+			und legt einen Holzwürfel darauf.
+	6.2.1.	Die Bewässerungszone muss dabei eine durchgehende Verbindung zum Fluss aufweisen.
+	6.3.	Da der Ingenieur 2 Prestigepunkte bringt, rückt sein Markierungsstein auf der Prestigepunkteleiste
+			um 2 Felder nach rechts.
+	7.1.	Spieler 1 ist dran und wählt einen Priester.
+	7.1.1.	Für diese Wahl muss er 1 Talent (Münze?) bezahlen.
+	7.1.2.	Der Preis ergibt sich aus den schon umgedrehten Karten der entsprechenden Reihe.
+	7.2.	Spieler 1 setzt seinen Holzwürfel in einen Tempel (Ishtar).
+	8.1.	Spieler 2 wählt einen Händler, bezahlt 1 Talent und erhält 1 weiteres Kamelplättchen.
+	9.1.	Spieler 3 bewässert.
+	10.1.	Spieler 4 bewässert auch wieder.
+	11.1.	Spieler 2 nutzt seinen Karawanenführer, um die Karawane zu bewegen (Mesopotamien).
+	11.2.	Er bewegt die Karawane um 1 Feld.
+	11.2.1.	Hierzu muss er 1 Kamelplättchen abgeben und für das Zielfeld 1 Salz (wird vom Spielplan festgelegt).
+	11.3.	Anschließend führt er die Aktion des Zielfeldes aus.
+	11.3.1.	In diesem Fall eine Pflanze Stufe 1 anbauen.
+	11.3.2.	Hierzu wählt er ein Stufe 1-Gartenplättchen aus und nimmt dieses an sich.
+	11.4.	Auswählen darf er nur Gartenplättchen, die bewässert sind.
+	11.4.1.	Von welchem Spieler sie bewässert werden ist egal.
+	11.5.	Spieler 1 erhält 1 Prestigepunkt für das Gartenplättchen und 2 weitere für die Palastkarte Stufe 1
+			die er sich nehmen darf. (wegen dem Pflanzen anbauen (wird vom Spielfeld festgelegt))
+	11.5.1.	Das Gartenplättchen bleibt beim Spieler liegen und der leere Platz wird nicht wieder gefüllt.
+	11.6.	Abschließend muss Spieler 1 die Pflanzenkarte umdrehen (Mesopotamien).
+	11.7.	Spieler 4 erhält noch einen Prestigepunkt, da er das Meiste zur Bewässerung des ausgewählten
+			Gartenplättchens beigetragen hat.
+	11.7.1.	Die Punkte richten sich hierbei nach der Stufe der Pflanze.
+			Stufe 1 Pflanze = 1 Prestigepunkt.
+	12.1.	Spieler 2 bewegt auch die Karawane.
+	12.1.1.	Er darf sich auf dem Zielfeld entweder eine bessere Karawanenführer- oder die erste 
+			Bankierkarte nehmen.
+	12.2.	Er nimmt die Bankierkarte Stufe 1.
+	12.3.	Spieler 3 passt.
+	12.3.1.	Hierzu stellt er einen seiner Holzwürfel auf das Passenfeld.
+	13.1.	Spieler 4 passt.
+	14.1.	Spieler 1 passt.
+	15.1.	Spieler 2 macht weiter und kauft für 2 Talente einen Bauern.
+	15.2.	Er holt sich eine Palme.
+	15.3.	Alle Spieler die passen, während andere Spieler noch weiterspielen, erhalten 1 Talent.
+	16.1.	Spieler 3 passt.
+	17.1.	Spieler 4 passt.
+	18.1.	Spieler 1 passt.
+	19.1.	Spieler 2 macht noch einen Zug und verschiebt die Karawane um ein Feld.
+	19.2.	Auch er baut jetzt eine Pflanze Stufe 1 an.
+	19.2.1.	Er erhält dafür den Palast Stufe 1 und 4 Prestigepunkte (2+2).
+	19.3.	Spieler 3, 4 und 1 erhalten wieder 1 Talent.
+	20.1.	Spieler 2 passt jetzt auch, womit die Phase endet.
+	21.		Phase 3: Ende der Runde
+	21.1.	Prozession: Der Spieler rechts vom Startspieler (Spieler 2) darf einen seiner Holzwürfel in einen 
+			Tempel seiner Wahl setzen (Marduk).
+	21.1.1.	In die anderen beiden Tempel (Tammouz & Ishtar) wird ein neutraler/grauer Würfel gelegt.
+	21.2.	Tempel: Die Tempel werden der Reihe nach gewertet.
+	21.2.1.	Der Spieler mit den meisten Holzwürfeln darf wählen, ob er lieber 1 Kamel oder 1 Talent 
+			haben möchte.
+	21.2.2.	Er entscheidet sich für ein Kamel.
+	21.3.	Spieler 4 erhält 2 Siegpunkte (Marduk-Tempel).
+	21.4.	Spieler 3 darf die Fähigkeit eines Bauern nutzen.
+	21.4.1.	Er erhält so 1 Dattel.
+	22.1.	Die Startspielerkarte/Der Startspieler wandert im Uhrzeigersinn weiter.
+	23.1.	Der neue Startspieler mischt alle Gwerbekarten und legt wieder 4 Dreiergruppen aus.
+			-------------------------------------
+			| Händler   | Bauer     | Bauer     |
+			-------------------------------------
+			| Priester  | Händler   | Bauer     |
+			-------------------------------------
+			| Ingenieur | Ingenieur | Priester  |
+			-------------------------------------
+			| Bauer     | Priester  | Ingenieur |
+			-------------------------------------
+	24.1.	Spieler 2 erhält außerdem als einziger Spieler Einkommen in Höhe von 1 Talent, da er eine
+			Bankierkarte Stufe 1 hat.
+	25.1.	Start Runde 2 mit neuen möglichen Aktionen...
+	
 	   
 === Projektidee TheCanadians, 2016-04-05 ===
 
