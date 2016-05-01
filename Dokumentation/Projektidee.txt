@@ -18,25 +18,25 @@ Spielmaterial:
 		-> 7 Gerste
 		-> 7 Palmen
 		-> 7 Salz
-		-> 7 Wein
+		-> 7 Wein (Joker-Ware: kann jede beliebige Ware ersetzen)
 	- 14 Kamelplättchen
 	- 1 Karawanenplättchen
 	- 30 Münzen/Talente
 	- 56 Karten
 		-> 18 Gewerbe
-			--> 5 Bauern 
-			--> 5 Priester 
-			--> 4 Ingenieure
-			--> 4 Händler
+			--> 5 Bauern (bringen auf den Feldern Ernte ein)
+			--> 5 Priester (gehen in die Tempel)
+			--> 4 Ingenieure (sorgen für die Bewässerung)
+			--> 4 Händler (liefern Kamele)
 		-> 4 Pflanzen (dienen zum bepflanzen der Gartenplättchen)
 		-> 31 Hof
 			--> ? Bankierkarten (führen zu mehr Einkommen)
 								(Kosten: 1,2,3)
-			--> ? Karawanenführerkarten (führen zum schnelleren Vorankommen der Karawane)
+			--> ? Karawanenführerkarten (zeigt die zusätzlichen Felder an, um die der Spieler die Karawane vorrücken darf, sowie die Anzahl der Warenplättchen, die er am Ende der Runde in seinem Vorrat haben darf.)
 										(Kosten: 0,1,2)
 			--> ? Palastkarten (spiegeln das eigene Wohngebäude wieder. Je besser dieser ist, desto mehr Prestige bringt er ein.)
 							   (2,3,4,5,7,10 Prestige wert; Kosten: 1,2,3,4,5,6)
-			--> ? Gärtnerkarten ()
+			--> ? Gärtnerkarten (verbessern die Qualität der Pflanzen)
 		-> 2 Amyitis (Bedeutung noch nicht klar)
 		-> 1 Startspieler (nicht wichtig in der Onlineversion)
 	- 4 Markierungssteine für die Anzeige der Prestigepunkte (nicht wichtig in der Onlineversion)
@@ -100,27 +100,119 @@ Spielvorbereitung:
 	  ein Kamelplättchen und 4 Talente (?).
 	
 Spielablauf (allgemein):
-	Phase 1: Aufstellung 
-		- Gewerbe: Gewerbekarten auslegen
-		- Einkommen: Einkommen auf Basis vorhandener Bankierkarten 
-	Phase 2: Aktionen der Spieler in beliebiger Reihenfolge und Häufigkeit
-		- Passen: Zug beenden
-		- Rekrutieren: Gewerbekarten auswählen und die dazugehörige Aktion ausführen
-		- Karawane bewegen: Am Zielort die zum Zielort gehörende Aktion ausführen 
-	Phase 3: Ende der Runde
-		- Prozession: Der Spieler nach dem Startspieler darf kostenlos einen seiner Holzwürfel in einen
-					  beliebigen Tempel legen. In die anderen Tempel wird je 1 grauer Holzwürfel gelegt.
-		- Tempel: Die Mehrheiten in den Tempeln werden ermittelt und der Erst- und Zweitplatzierte führen
-				  die zum Tempel gehörende Aktion aus.
-		- Vorrat: Je nach Karawanenführerkarte darf ein Spieler nur begrenzt Warenplättchen mit in die nächste
-				  Runde nehmen.
-		- Startspielerwechsel
+	Die Partie verläuft über mehrere Runden. Eine Runde besteht aus 3 Phasen.
+		Phase 1: Aufstellung 
+			- Gewerbe: Der Startspieler nimmt alle Gewerbe-Karten und mischt sie. Dann legt er die Karten in 3er-Gruppen und zwar nach Spielerzahl:
+				-> 2 Spieler: 2 3er-Gruppen 
+				-> 3 Spieler: 3 3er-Gruppen 
+				-> 4 Spieler: 4 3er-Gruppen
+			- Einkommen: Einkommen auf Basis vorhandener Bankierkarten (Talente und evtl. Prestigepunkte)
+		Phase 2: Aktionen der Spieler (im Uhrzeigersinn; Die Spieler dürfen so lange weitere Aktionen ausführen, bis alle gepasst haben)
+			- Passen: Zug beenden
+				-> ABER: Jedes Mal, wenn der Spieler der passt, nun an die Reihe kommt, so lange es noch Spieler gibt die nicht gepasst haben, bekommt er ein Talent.
+			- Rekrutieren: Gewerbekarten auswählen und die dazugehörige Aktion ausführen
+				-> Kosten der Gewerbekarten: erste gewählte Karte kostet nichts, zweite kostet 1 Talent, dritte kostet 2 Talente 
+				-> Nach dem Wählen einer Gewerbekarte dreht er diese um, sodass die Rückseite zu sehen ist und führt die Aktion der gewählten Gewerbekarte aus
+					--> Bauer: Spieler platziert einen Würfel auf einem verfügbare Acker und erhält ein Warenplättchen, dessen Art mit der Art des Ackers übereinstimmt.
+						---> Äcker werden von links nach rechts besetzt
+						---> Die Würfel bleiben liegen bis die Reihe voll ist
+						---> Sobald eine Reihe voll ist gewinnt derjenige Spielerm der die meisten Würfel in diese Reihe gelegt hat, eine Gärtner-Karte, wenn noch eine vorhanden ist.
+							----> Bei Gleichstand erhält niemand die Karte
+						---> Die Reihe wird leer geräumt
+						---> WEIN: Wein ist eine Joker-Ware, d.h. ein Weinplättchen kann jede beliebige Ware ersetzen, jedoch keine Kamele oder Talente
+					--> Priester: Spieler platziert einen Würfel in einem Tempel
+						---> Jeder Tempel hat 4 Felder, die von links nach rechts aufgefüllt werden 
+						---> Ein Spieler platziert seinen Würfel immer auf dem Feld ganz links und verschiebt die Würfel die dort vorher lagen um ein Feld nach rechts
+							----> Wenn vor dem Schieben ein Würfel auf dem 4. und letzten Feld liegt, wird dieser aus dem Tempel hinausgeschoben
+						---> In Phase 3 bringen die Tempel demjenigen Spieler eine Belohnung ein, der darin eine Mehrheit an Würfeln hat.
+					--> Ingenieur: Spieler platziert einen Würfel in einer der Bewässerungszonen der Gärten und bekommt 2 Prestige
+						---> Damit ein Spieler seine Würfel in eine Bewässerungszone legen darf, muss er einen ununterbrochenen Weg durch bewässerte Zonen vom Fluss zur gewählten Zone haben
+							----> Kann ganz oder teilweise aus Würfeln anderer Spieler bestehen
+							----> Die nicht bewässerten Zonen am Ufer des Flusses sind immer verfügbar
+					--> Händler: Der Spieler erhält ein Kamelplättchen
+			- Karawane bewegen: 
+				-> bewegt sich im Uhrzeigersinn vorwärts
+				-> Wer diese Aktion wählt, kann die Karawane pro Kamel, das er ausgibt, um ein Feld vorwärts ziehen.
+					--> Außerdem kann der Spieler die Karawane je nach Stufe seines Karawanenführers um zusätzliche Felder bewegen 
+						---> Stufe 0: +0 Felder
+						---> Stufe 1: +2 Felder 
+						---> Stufe 2: +4 Felder
+				-> Es ist NICHT möglich stehen zu bleiben, die Karawane muss sich um mindestens ein Feld nach vorne bewegen 
+				-> Der Spieler muss mindestens ein Kamel abgeben um die Karawane zu bewegen
+				-> Der Spieler MUSS auf dem Feld handeln, auf dem die Karawane stehen bleibt
+					--> Es ist nicht möglich, die Karawane zu bewegen, wenn man die nachfolgend aufgeführten Bedingungen nicht erfüllt
+						---> Verkauf an Babylon: Der Spieler verkauft (identische oder unterschiedliche) Warenplättchen um Prestigepunkte zu erhalten und kostenlos eine Bewässerung durchzuführen
+							----> Auf die Platzierung seines Bewässerungswürfels darf der Spieler NICHT verzichten
+							----> 1 Ware verkaufen = 3 Prestigepunkte und 1 Bewässerung 
+							----> 2 Waren verkaufen = 6  Prestigepunkte und 1 Bewässerung
+						---> Kauf von Hof-Karten: Auf dem Feld auf dem die Karawane zum stehen kommt, ist eine Kartenart abgebildet; der Spieler kauft eine Karte der abgebildeten Art
+							----> Dafür zahlt er ein Plättchen der Ware, welche durch die Stadt vorgegeben ist, in der sich die Karawane befindet
+							----> Anschließend sucht er sich eine der zwei Kartenarten aus, die in dieser Stadt verfügbar sind
+								-----> Wenn der Spieler noch keine Hof-Karte der gewählten Art besitzt, nimmt er die entsprechende Karte der Stufe 1 
+								-----> Wenn der Spieler bereits eine Hof-Karte der gewählten Art besitzt, nimmt er sich die Karte mit der nächshöheren Stufe
+									------> Anmerkung: Wenn ein Spieler die Karawanenführerkarte der Stufe 2 nimmt, erhält er das darauf befindliche Warenplättchen
+									------> Anmerkung: Ein Spieler der eine Palast-Karte nimmt, bekommt sofort die darauf angegebene Zahl an Prestigepunkten
+										-------> Wenn keine Hof-Karte der entsprechenden Stufe mehr verfügbar ist, kann der Spieler diesen Bereich bis zum Spielende nicht mehr aufwerten
+						---> kauf von Pflanzen: Der Spieler kauft eine Pflanze, welche auf dem Feld abgebildet ist, auf dem die Bewegung der Karawane endet
+							----> Er zahlt ein Plättchen der Ware, welche durch die Stadt vorgegeben ist 
+								-----> Bei Pflanzen der Qualitätsstufe 2: zusätzlich die Ware, die auf der Karte abgebildet ist
+							----> dann pflanzt er die neue Pflanze sofort in den Garten
+								-----> Anpflanzen: Der Garten besteht aus 16 Feldern auf 4 Ebenen
+									------> Auf diesen Feldern pflanzen die Spieler die auf dem Mesopotamien-Spielplan gekauften Pflanzen an 
+									------> Dafür wählt der Spieler ein Gartenplättchen aus, das er entfernt ( Die Pflanzen-Karte bleibt auf dem Mesopotamien-Spielplan liegen)
+									------> Es müssen allerdings folgende Bedingungen zum Anpflanzen erfüllt sein:
+										-------> Bewässerung: Ein Feld darf nur gewählt werden, wenn es von mindestens einer Seite VOLLSTÄNDIG bewässert wird
+											--------> An Seiten die zwei Bewässerungszonen haben (Ebenen 3 & 4) müssen beide bewässert sein, bevor auf dem Feld etwas angepflanzt werden darf
+										-------> Qualität der Pflanzen: Ein Feld darf nur ausgewählt werden, wenn die Qualitätsstufe der Pflanzen, die der Spieler dort anpflanzen will, mindestens der Ebene des Gartens entspricht
+										-------> Gärtner: Der Spieler darf Gärtner-Karten einsetzen, um die Qualität seiner Pflanze zu verbessern
+											--------> Jede abgegebene Gärtner-Karte verbessert die Qualität der Pflanze um eine Stufe
+									------> Der Spieler wählt ein Feld aus auf dem er anpflanzen darf erhält das entsprechende Gartenplättchen und die darauf angegebenen Prestigepunkte und Bonusse
+										-------> Auf diesem Feld kann im restlichen Spielverlauf keine weitere Pflanze angebaut werden 
+									------> Nachdem das Gartenplättchen entfernt wurde, bekommt der Spieler mit den meisten Bewässerungssteinen um das Feld Prestigepunkte in Höhe der Qualitätsstufe der Pflanze
+										-------> Haben mehrere Spieler gleich viele Bewässerungssteine bekommt niemand den Bonus 
+										-------> Anmerkung: Falls der Spieler Gärtner-Karten eingesetzt hat, werden diese bei der Ermittlung des Bonus nicht mitgerechnet
+									------> Nachdem das Gartenplättchen entfernt wurde, wird überprüft, ob das Feld an eine oder mehrere bereits bepflanzte Felder angrenzt
+										-------> Ist das der Fall, werden alle unbesetzten Bewässerungszonen zwischen diesen Feldern mit grauen Würfeln besetzt und gelten nun als bewässert
+		Phase 3: Ende der Runde (beginnt wenn in Phase 2 alle Spieler gepasst haben)
+			- Prozession: Der Spieler nach dem Startspieler darf kostenlos einen seiner Holzwürfel in einen
+						  beliebigen Tempel legen (gemäß den unter Priester erläuterten Regeln). In die anderen Tempel wird je 1 grauer Holzwürfel gelegt (gemäß den Priester Regeln).
+			- Tempel: Die Mehrheiten in den Tempeln werden ermittelt und der Erst- und Zweitplatzierte führen
+					  die zum Tempel gehörende Aktion aus.
+				-> Ishtar: 
+					--> Der Erste erhält ein Kamel oder 1 Talent.
+					--> Der Zweite bekommt die verbleibende der beiden Belohnungen 
+				-> Marduk:
+					--> Der Erste erhält 2 Prestigepunkte 
+					--> Der Zweite erhält 1 Prestigepunkt 
+				-> Tammouz:
+					--> Der Erste legt einen Würfel auf einen der beiden verfügbare Äcker und erhält die entsprechende Ware (siehe Bauer)
+					--> Der Zweite kann eine Ware aus seinem Inventar gegen eine beliebige Ware außer Wein tauschen
+				-> Gleichstand:
+					--> Derjenige bekommt die Belohnung, dessen Würfel am weitesten rechts liegen
+				==> Bei 2 Spielern: Wer die meisten Würfel hat, bekommt die Belohnung für den ersten Platz, der Zweite kriegt nichts
+			- Vorrat: Je nach Karawanenführerkarte darf ein Spieler nur begrenzt Warenplättchen mit in die nächste
+					  Runde nehmen.
+				-> Stufe 0 oder 1: Der Spieler darf höchstens 2 Warenplättchen behalten
+				-> Stufe 2: Der Spieler darf höchstens 4 Warenplättchen behalten
+					--> Überzählige Plättchen werden weggelegt (Spieler dürfen wählen was sie behalten und was sie wegwerfen)
+						---> Anzahl der Kamele und Talente ist nicht beschränkt
+			- Startspielerwechsel: Im Uhrzeigersinn an den nächsten Spieler und die nächste Runde beginnt mit Phase 1
 
 Spielende (allgemein):
 	- Das Spiel endet bei 2 Spielern, wenn nur noch 3 Gartenplättchen, und bei 3 oder 4 Spielern, wenn nur noch
 	  4 Gartenplättchen übrig sind.
 	- Die aktuelle Runde wird noch zu Ende gespielt.
 	- Die Spieler erhalten noch Prestigepunkte für ihre Garten- und Warenplättchen.
+		-> Bei 2 Spielern:
+			--> 5 oder 6 Plättchen: 5 Punkte 
+			--> 7 Plättchen oder mehr: 10 Punkte
+		-> Bei 3 Spielern:
+			--> 4 oder 5 Plättchen: 5 Punkte 
+			--> 6 Plättchen oder mehr: 10 Punkte 
+		-> Bei 4 Spielern:
+			--> 3 oder 4 Plättchen: 5 Punkte 
+			--> 5 Plättchen oder mehr: 10 Punkte
+		=> Außerdem erhält jeder Spieler 1 Prestigepunkt pro Ware, die sich noch in seinem Inventar befindet (Kamele und Talente bringen keine Prestigepunkte ein)
 	- Es gewinnt der Spieler mit den meisten Prestigepunkten.
 	
 	
