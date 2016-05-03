@@ -1,7 +1,7 @@
 # Projekt-A SS16: Amyitis
 
-Das Projekt ist eine Umsetzung des Brettspiels Amyitis von Ystari Games aus dem Jahre 2007. 
-Weitere Informationen zum Spiel:
+Das Projekt ist eine Umsetzung des Brettspiels Amyitis von Ystari Games aus dem Jahre 2007.   
+Weitere Informationen zum Spiel:  
 http://www.brettspiele-report.de/amyitis/
 
 ---
