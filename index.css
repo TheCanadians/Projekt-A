@@ -1,0 +1,25 @@
+body {
+	background-image:url(images/amyitis_background.jpeg);
+	background-size:100vh;
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+.wrapper {
+	position:absolute;
+	left:30vw;
+	background-color:grey;
+	margin-top:34vh;
+	padding:10px;
+}
+.login {
+	background-color:lightgrey;
+	border-radius:10px;
+	padding:10px
+}
+.login-content {
+	margin-top:1vh;
+}
+.acc {
+	margin:3px;
+	
+}
