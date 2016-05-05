@@ -1,22 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Amyitys Login</title>
+	<link rel="stylesheet" href="index.css">
+	<style>
+		a.nav-link:link
+		{
+		   color: black;
+		   text-decoration: none;
+		}
+		a.nav-link:visited
+		{
+		   color: black;
+		   text-decoration: none;
+		}
+		a.nav-link:hover
+		{
+		   cursor:default;
+		   color: black;
+		   text-decoration: none;
+		}
+		a.nav-link:active
+		{
+		   color: black;
+		   text-decoration: none;
+		}
+		.modalDialog {
+			position: fixed;
+			font-family: Arial, Helvetica, sans-serif;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0,0,0,0.8);
+			z-index: 99999;
+			opacity:0;
+			-webkit-transition: opacity 400ms ease-in;
+			-moz-transition: opacity 400ms ease-in;
+			transition: opacity 400ms ease-in;
+			pointer-events: none;
+		}
+		.modalDialog:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+
+		.modalDialog > div {
+			width: 400px;
+			position: relative;
+			margin: 10% auto;
+			padding: 5px 20px 13px 20px;
+			border-radius: 10px;
+			background: #fff;
+			background: -moz-linear-gradient(#fff, #999);
+			background: -webkit-linear-gradient(#fff, #999);
+			background: -o-linear-gradient(#fff, #999);
+		}
+		.close {
+			background: #606061;
+			color: #FFFFFF;
+			line-height: 25px;
+			position: absolute;
+			right: -12px;
+			text-align: center;
+			top: -10px;
+			width: 24px;
+			text-decoration: none;
+			font-weight: bold;
+			-webkit-border-radius: 12px;
+			-moz-border-radius: 12px;
+			border-radius: 12px;
+			-moz-box-shadow: 1px 1px 3px #000;
+			-webkit-box-shadow: 1px 1px 3px #000;
+			box-shadow: 1px 1px 3px #000;
+		}
+
+		.close:hover { background: #00d9ff; }
+	</style>
 </head>
-<body style="background-image:url(images/amyitis_background.jpeg);background-size:100vh;background-position:center top;background-repeat:no-repeat">
-<div style="position:absolute;left:30vw;background-color:grey;margin-top:34vh;padding:10px">
-	<div style="background-color:lightgrey;border-radius:10px;padding:10px">
+<body>
+<div class="wrapper">
+	<div class="login">
 		<form action="login.php" method="set">
-			<label for="username" style="margin-top:1vh">Username:</label>
-			<input type="text" name="username" style="margin-top:1vh" required><br>
-			<label for="password" style="margin-top:1vh">Password:</label>
-			<input type="password" name="password" style="margin-top:1vh" required><br>
-			<button type="submit" style="margin-top:1vh">Login</button>
+			<label for="username" class="login-content">Username:</label>
+			<input type="text" name="username" class="login-content" required><br>
+			<label for="password" class="login-content">Password:</label>
+			<input type="password" name="password" class="login-content" required><br>
+			<button type="submit" class="login-content">Login</button>
 		</form>
-		<form action="new_acc.html" method="get">
-			<button style="margin-top:1vh">Neuer Account</button>
-		</form>
+		
+			<form>
+				<button><a href="#openModal" class="nav-link">Neuer Account</a></button>
+				
+				<div id="openModal" class="modalDialog">
+						<div>
+							<a href="#close" title="Close" class="close">X</a>
+											<form style="margin-left:10px;">
+												<fieldset>
+													<legend><h3>Account erstellen</h3></legend>
+													<label for="acc_name">Accountname*: </label><br>
+													<input type="text" name="acc_name" class="acc" required><br>
+													<label for="pw">Passwort*: </label><br>
+													<input type="text" name="pw" class="acc" required><br>
+													<label for="pw_c">Passwort bestätigen*: </label><br>
+													<input type="text" name="pw_c" class="acc" required><br>
+													<label for="email">E-Mail Adresse: </label><br>
+													<input type="text" name="email" class="acc"><br>
+													<button style="margin:1vh">Account erstellen</button>
+												</fieldset>
+											</form>
+						</div>
+				</div>		
+			</form>
+			
 	</div>
-	</div>
+</div>
+	
 </body>
 </html>
