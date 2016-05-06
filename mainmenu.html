@@ -2,28 +2,8 @@
 <html>
 <head>
 	<title>Hauptmenü</title>
-	<style>
-		a.nav-link:link
-		{
-		   color: black;
-		   text-decoration: none;
-		}
-		a.nav-link:visited
-		{
-		   color: black;
-		   text-decoration: none;
-		}
-		a.nav-link:hover
-		{
-		   cursor:default;
-		   color: black;
-		   text-decoration: none;
-		}
-		a.nav-link:active
-		{
-		   color: black;
-		   text-decoration: none;
-		}
+	<link rel="stylesheet" href="index.css">
+	<style>	
 		.modalDialog {
 			position: fixed;
 			font-family: Arial, Helvetica, sans-serif;
@@ -84,32 +64,41 @@
 		<div id="openModal" class="modalDialog">
 			<div>
 				<a href="#close" title="Close" class="close">X</a>
-				<h2>Spielerdaten</h2>
-				<form action="new_players.php">
-					<label for="player1">Player 1: </label>
-					<input type="text" name="player1" required>
-					<input type="color" name="color_player1" required><br>
-					<label for="player2">Player 2: </label>
-					<input type="text" name="player2" required>
-					<input type="color" name="color_player2" required><br>
-					<label for="player3">Player 3: </label>
-					<input type="text" name="player3">
-					<input type="color" name="color_player3"><br>
-					<label for="player4">Player 4: </label>
-					<input type="text" name="player4">
-					<input type="color" name="color_player4"><br>
-					<button style="margin:5px">Bestätigen</button>
+				
+				<form action="new_players.php" method="post" id="new_players" style="margin-left:10px;">
+				
+					<fieldset>
+					
+						<legend><h3>Spielerdaten</h3></legend>
+						
+						<label for="player1">Player 1: </label>
+						<input type="text" name="player1" required>
+						<input type="color" name="color_player1" required><br>
+						<label for="player2">Player 2: </label>
+						<input type="text" name="player2" required>
+						<input type="color" name="color_player2" required><br>
+						<label for="player3">Player 3: </label>
+						<input type="text" name="player3">
+						<input type="color" name="color_player3"><br>
+						<label for="player4">Player 4: </label>
+						<input type="text" name="player4">
+						<input type="color" name="color_player4"><br>
+						
+						<button type="submit" form="new_players" style="margin:5px">Bestätigen</button>
+					</fieldset>
 				</form>
 			</div>
 		</div>
 	</form>
-	<form action="continue_game">
+
 		<button>Spiel fortsetzen</button>
-	</form>
+
 	<form action="http://www.ystari.com/amyitis/AmG.pdf">
 		<button>Regeln</button>
 	</form>
-	<table>
+		<button>Logout</button>
+
+	<table style="float:right;">
 		<tr>
 			<th>Name</th>
 			<th>Score</th>
