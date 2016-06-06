@@ -1,15 +1,43 @@
+html {
+	font-size: 16px;
+	font-family: "Times New Roman", Times, serif;
+	color: #fff;
+}
+body {
+	width: 100%;
+	background-color: lightgrey;
+}
 body#index {
 	background-image:url(images/amyitis_background.jpeg);
 	background-size:100vh;
 	background-position:center top;
 	background-repeat:no-repeat;
 }
-
+body#mainmenu {
+	min-height: 100%;
+	position: relative;
+	top: 0px;
+}
 img#babylon {
 	height:100vh;
 	position:absolute;
 	opacity: 0.5;
 	z-index: -99999;
+}
+button {
+	border-radius: 5px;
+	background-color: #000;
+	color: #fff;
+}
+.nav {
+	width: 100%;
+	float: left;
+	margin-right: 1em;
+	padding; 0;
+	border-style: solid;
+	border-width; 1px;
+	border-color: black;
+	background-color: #30A6E6;
 }
 .wrapper {
 	position:absolute;
@@ -74,7 +102,7 @@ img#babylon {
 }
 li:hover ul#submenu {
 	opacity: 1;
-	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+	top: 40px;	
 	visibility: visible;
 }
 #submenu li {
@@ -100,7 +128,7 @@ td, th {
 	border-bottom: 1px solid #ddd;
 }
 tr:nth-child(even) {
-	background-color: #f2f2f2;
+	background-color: #000;
 }
 th {
 	background-color: #4CAF50;
@@ -110,7 +138,7 @@ th {
 	height: 100%;
 	display: inline-block;
 	float: right;
-	margin-right: 20px;
-	padding: 10px;
+	margin-right: 0;
+	padding: 1em;
 	background-color: #30A6E6;
 }
