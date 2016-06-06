@@ -3,48 +3,50 @@
 <head>
 	<meta charset="URF-8">
 	<title>Amyitis</title>
-	<link rel="stylesheet" href="game.css">
+	<link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
 	<header>
-		
-		<form action="mainmenu.html">
-			<!--Leitet zurück zum Hauptmenü-->
-			<button>Hauptmenü</button>
-		</form>
-		
-		<!--speichert das Spiel-->
-		<button>Spiel speichern</button>
-		
-		<!--ComboBox zum selektieren des Spielfeldes-->
-		<select>
-			<option value="babylon">Babylon</option>
-			<option value="meso">Mesopotamien</option>
-		</select>
-		
-		<!--Tabelle für das Inventar des Spielers (Objektname | Anzahl | Stufe)-->
-		<table>
-			<tr>
-				<th>Objektname</th>
-				<th>Anzahl</th>
-				<th>Stufe</th>
-			</tr>
-			<tr>
-				<td>Talente</td>
-				<td>3</td>
-				<td></td>
-			<tr>
-			<tr>
-				<td>Kamele</td>
-				<td>1</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Karawanenführer</td>
-				<td>1</td>
-				<td>0</td>
-			</tr>
-		</table>
+		<nav class="dropdownmenu">
+			<ul>
+				<li>
+					<a href="mainmenu.html">Hauptmenü</a>
+				</li>
+				<li>
+					<a href="save.php">Spiel speichern</a>
+				</li>
+				<li>
+					<a href="babylon.html">Babylon</a>
+				<li>
+					<a href="meso.html">Mesopotamien</a>
+				</li>
+			</ul>
+
+					<!--Tabelle für das Inventar des Spielers (Objektname | Anzahl | Stufe)-->
+<!--					<table>
+						<tr>
+							<th>Objektname</th>
+							<th>Anzahl</th>
+							<th>Stufe</th>
+						</tr>
+						<tr>
+							<td>Talente</td>
+							<td>3</td>
+							<td></td>
+						<tr>
+						<tr>
+							<td>Kamele</td>
+							<td>1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Karawanenführer</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+					</table>
+-->
+		</nav>
 	</header>
 	
 </body>
