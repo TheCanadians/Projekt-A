@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Hauptmenü</title>
-	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="stylesheet.css">
 	<style>
 		.modalDialog {
 			position: fixed;
@@ -58,103 +58,109 @@
 		.close:hover { background: #00d9ff; }
 	</style>
 </head>
-<body>
-		<!--Öffnet eine Modal Box zur Eingabe der Spielernamen und -Farben-->
-		<button><a href="#openModal" class="nav-link">Neues Spiel</a></button>
-		<!--Modal Box-->
-		<div id="openModal" class="modalDialog">
-			<div>
-				<!--Zum Schließen der Modal Box-->
-				<a href="#close" title="Close" class="close">X</a>
-				
-				<form action="new_players.php" method="post" id="new_players">
-				
-					<fieldset>
-					
-						<legend><h3>Spielerdaten</h3></legend>
-						
-						<label for="player1">Player 1: </label>
-						<!--Eingabefeld für Spieler 1-->
-						<input type="text" name="player1" required>
-						<!--ColorChooser für die Spielerfarbe von Spieler 1-->
-						<input type="color" name="color_player1" required><br>
-						<label for="player2">Player 2: </label>
-						<!--Eingabefeld für Spieler 2-->
-						<input type="text" name="player2" required>
-						<!--ColorChooser für die Spielerfarbe von Spieler 2-->
-						<input type="color" name="color_player2" required><br>
-						<label for="player3">Player 3: </label>
-						<!--Eingabefeld für Spieler 3-->
-						<input type="text" name="player3">
-						<!--ColorChooser für die Spielerfarbe von Spieler 3-->
-						<input type="color" name="color_player3"><br>
-						<label for="player4">Player 4: </label>
-						<!--Eingabefeld für Spieler 4-->
-						<input type="text" name="player4">
-						<!--ColorChooser für die Spielerfarbe von Spieler 4-->
-						<input type="color" name="color_player4"><br>
-						<!--Submit Button sendet die Spielerdaten an ein PHP Skript-->
-						<button type="submit" form="new_players" style="margin:5px">Bestätigen</button>
-					</fieldset>
-				</form>
-			</div>
-		</div>
-		
-	<!--Lädt ein gespeichertes Spiel-->
-	<button>Spiel fortsetzen</button>
-
-	<form action="http://www.ystari.com/amyitis/AmG.pdf">
-		<!--Öffnet eine Online-PDF mit den Regeln-->
-		<button>Regeln</button>
-	</form>
+<body style="min-height: 100%; position:relative; top:0px; font-size:16px; width: 100%">
+	<header style="width:100%; float:left; margin: 0 0 1em 0; padding: 0; background-color: #30A6E6">
+		<nav class="dropdownmenu">
+			<ul>
+				<li>
+					<a href="#openModal">Neues Spiel</a>
+					<!--Modal Box-->
+					<div id="openModal" class="modalDialog">
+						<div>
+							<!--Zum Schließen der Modal Box-->
+							<a href="#close" title="Close" class="close">X</a>
+							
+							<form action="new_players.php" method="post" id="new_players">
+							
+								<fieldset>
+								
+									<legend><h3>Spielerdaten</h3></legend>
+									
+									<label for="player1">Player 1: </label>
+									<!--Eingabefeld für Spieler 1-->
+									<input type="text" name="player1" required>
+									<!--ColorChooser für die Spielerfarbe von Spieler 1-->
+									<input type="color" name="color_player1" required><br>
+									<label for="player2">Player 2: </label>
+									<!--Eingabefeld für Spieler 2-->
+									<input type="text" name="player2" required>
+									<!--ColorChooser für die Spielerfarbe von Spieler 2-->
+									<input type="color" name="color_player2" required><br>
+									<label for="player3">Player 3: </label>
+									<!--Eingabefeld für Spieler 3-->
+									<input type="text" name="player3">
+									<!--ColorChooser für die Spielerfarbe von Spieler 3-->
+									<input type="color" name="color_player3"><br>
+									<label for="player4">Player 4: </label>
+									<!--Eingabefeld für Spieler 4-->
+									<input type="text" name="player4">
+									<!--ColorChooser für die Spielerfarbe von Spieler 4-->
+									<input type="color" name="color_player4"><br>
+									<!--Submit Button sendet die Spielerdaten an ein PHP Skript-->
+									<button type="submit" form="new_players" style="margin:5px">Bestätigen</button>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="load.php">Spiel fortsetzen</a>
+				</li>
+				<li>
+					<a href="http://www.ystari.com/amyitis/AmG.pdf">Regeln</a>
+				</li>
+				<li>
+					<a href="logout.php">Logout</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 	
-		<!--Logout für den Spieler. Öffnet index.html-->
-	<form action="index.html">
-		<button>Logout</button>
-	</form>
-		
-	<!--Tabelle mit Highscores-->	
-	<table style="float:right;">
-		<tr>
-			<th>Name</th>
-			<th>Score</th>
-		</tr>
-		<tr>
-			<td>TheCanadians</td>
-			<td>999</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-	</table>
+	<div id="highscore">
+				<!--Tabelle mit Highscores-->	
+				<table>
+					<h3>Highscore</h3>
+					<tr>
+						<th>Name</th>
+						<th>Score</th>
+					</tr>
+					<tr>
+						<td>TheCanadians</td>
+						<td>999</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+	</div>
 </body>
 </html>
