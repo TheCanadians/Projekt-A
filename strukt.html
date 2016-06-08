@@ -1,15 +1,10 @@
-<html>
+<!--
+== 2016-05-05 ==
 
-<head>
-	<title></title>
-</head>
+======================
+== Gruppen/Sichten: ==
+======================
 
-<body>
-		<!--
-		
-		== 2016-05-05 ==
-	
-	Gruppen/Sichten:
 view_index
 I.		01	picture			banner
 I.		03	textfield		username
@@ -21,6 +16,7 @@ VI.		17	textfield		acc_pw
 VI.		18	textfield		acc_pw_confirm
 VI.		36	textfield		ema
 VI.		19	button			submit_accil
+
 view_mainmenu
 III.	06 	button			new_game
 III.	10	button			go_to_rules
@@ -29,93 +25,110 @@ IV.		07	textfield		player_name
 IV.		08	colorchooser	player_color
 IV.		09	button			submit_player
 V.		13	table			highscore
+
 view_game (ist immer zusammen mit einer der beiden folgenden Sichten zu sehen)
 VII.	20	button			go_to_mainmenu
 VII.	21	button			save_game
 VII.	22	menu			gameboard
 VII.	23	list			inventory
 VII.	25	list			score
-	view_babylon
-	VIII.	24	image			background_picture_babylon
-	VIII.	26	list			pass_players
-	VIII.	27	table			field 
-	VIII.	28	table			garden
-	VIII.	29	table			temple_marduk
-	VIII.	30	table			temple_ishtar
-	VIII.	31	table			temple_tammouz
-	VIII.	32	music			background_music_babylon
-	view_meso
-	IX.		33	image			background_picture_meso
-	IX.		34	table			mesopotamien
-	IX.		35	music			background_musci_meso
-	
-	
 
-		Legende:	01..36		Numerierung der Strukturelemente
-					I...IX.		Numerierung der Sichten 
-					a			aussortiertes Strukturelement
-		
-	I.		Startbildschirm:
-01				- Aufmacherbild mit Schriftzug des Spiels (Idee: SusannaAlbrecht)
-					a) durch Click weiter zum Hauptmenü oder (öffnet Seite mit der Login-Maske)
-02		a			b) Schaltläche/Button "Weiter" oder "Zum Spiel" (öffnet Seite mit der Login-Maske)	
-	II.				Login-Maske:
-03						- Eingabefeld/Textfeld "Benutzername" (Name des Accounts eingeben)
-04						- Eingabefeld/Textfeld "Password" (Password des Accounts eingeben)
-05						- Schaltfläche/Button "Bestätigen" (Bestätigt Eingabe der Accountdaten und leitet weiter ins Hauptmenü)
-	III.				Hauptmenü:
-06							- Schaltfläche/Button "Neues Spiel"
-07		IV.						- Eingabefeld/Textfeld "Spielernamen" (Namen der Spieler eingeben)
-08								- Schaltfläche/ColorChooser "Farbenwahl" (Farbe der Spielfiguren der einzelnen Spieler wählen; ColorChooser)
-09								- Schaltfläche/Button "Bestätigen" (Bestätigt Eingaben und startet das Spiel)
-10							- Schaltfläche/Button "Regeln" (entweder Weiterleitung zu einer nicht selbst geschriebenen Seite oder Download
-							  einer PDF der Regeln oder eigenes Fenster mit den Regeln)
-11							- Schaltfläche/Button "Weiter" (lädt alten Spielstand)
-13		V.					- Liste "Highscores" (2 Spalten Liste mit den Accountnamen und dem dazugehörigen Punktestand)
-15						- Schaltfläche "Account erstellen" (leitet den Spieler auf eine Seite weiter auf der er einen Account erstellen kann)
-		VI.				Account erstellen:
-16							- Eingabefeld/Textfeld "Accountname" (gewünschter Name des Accounts eingeben)
-17							- Eingabefeld/Textfeld "Password" (gewünschtes Password eingeben)
-18							- Eingabefeld/Textfeld "Password bestätigen" (gewünschtes Password bestätigen um Schreibfehler zu vermeiden)
-36							- Eingabefeld/Textfeld "E-Mail Adresse" (E-Mail Adresse eingeben)
-19							- Schaltfläche/Button "Bestätigen" (bestätigt Eingaben)					
-		Im Spiel:
-	VII.	Menüleiste:
-20				- Schaltfläche/Button "Hautmenü" (öffnet die Seite des Hauptmenüs, pausiert das Spiel)
-21				- Schaltfläche/Button "Speichern" (speichert den aktuellen Spielstand)
-22				- Schaltfläche/Menü/ComboBox "Spielplan" (beim Anwählen öffnet sich ein Menü mit den Spielplänen)
-23				- Tabelle "Inventarinhalt" (Zeigt an wie viele Gegenstände (Salz, Gerste, etc.) der Spieler besitzt)
-25				- Liste "Spielstand" (Zeigt an welcher Spieler wie viele Prestigepunkte hat)	
-	VIII.	Spielfeld Babylon:
-24				- Hintergrund "Babylon" (Der Hintergrund zeigt die Stadt Babylon mit ihren hängenden Gärten)
-26				- Bildbereich oder Liste "Passbereich" (Zeigt grafisch welcher Spieler im letzten Zug gepasst hat oder zeigt in einer Liste die Namen der gepassten Spieler an)
-27				- Tabelle "Ackerfeld" (2 x 5 Felder, jedes Feld zeigt ein Bild an. Grafische Darstellung was von "Bauern" schon geerntet wurde.)
-28				- Tabelle "Spielfeld" (4 x 4 Felder, jedes Feld zeigt ein Bild an, das ein Feld des Spielbretts ist. Wenn der Nutzer ein Feld anwählt soll ein Menü erscheinen)
-29				- Tabelle "Tempel Marduk" (1 x 4 Felder, jedes Feld zeigt ein Bild an. Wenn der Nutzer ein Feld anwählt nimmt dies seine Farbe an)
-30				- Tabelle "Tempel Ishtar" (1 x 4 Felder, jedes Feld zeigt ein Bild an. Wenn der Nutzer ein Feld anwählt nimmt dies seine Farbe an)
-31				- Tabelle "Tempel Tammouz" (1 x 4 Felder, jedes Feld zeigt ein Bild an. Wenn der Nutzer ein Feld anwählt nimmt dies seine Farbe an)
-32				- Hintergrundmusik ("fröhliche", "geschäftige" Musik)
-	IX.		Spielfeld Mesopotamien:
-33				- Hintergrund "Mesopotamien" (Der Hintergrund zeigt eine Karte von Mesopotamien an)
-34 				- Tabelle "Mesopotamien" (3 x 3 Felder, jedes Feld zeigt ein Bild an. Wenn der Nutzer ein Feld anwählt öffnet sich ein Menü)
-35 				- Hintergrundmusik (Wüstenmusik/Reisemusik)
-				
-				
-Gruppen/Sichten:
+view_babylon
+VIII.	24	image			background_picture_babylon
+VIII.	26	list			pass_players
+VIII.	27	table			field 
+VIII.	28	table			garden
+VIII.	29	table			temple_marduk
+VIII.	30	table			temple_ishtar
+VIII.	31	table			temple_tammouz
+VIII.	32	music			background_music_babylon
+
+view_meso
+IX.		33	image			background_picture_meso
+IX.		34	table			mesopotamien
+IX.		35	music			background_musci_meso
+
+	Legende:	
+01..36		Numerierung der Strukturelemente
+I...IX.		Numerierung der Sichten 
+a			aussortiertes Strukturelement
+	
+I. Startbildschirm:
+01 - Aufmacherbild mit Schriftzug des Spiels (Idee: SusannaAlbrecht)
+a) durch Click weiter zum Hauptmenü oder (öffnet Seite mit der Login-Maske)
+02 a b) Schaltläche/Button "Weiter" oder "Zum Spiel" (öffnet Seite mit der Login-Maske)	
+
+II.	Login-Maske:
+03 - Eingabefeld/Textfeld "Benutzername" (Name des Accounts eingeben)
+04 - Eingabefeld/Textfeld "Password" (Password des Accounts eingeben)
+05 - Schaltfläche/Button "Bestätigen" (Bestätigt Eingabe der Accountdaten und leitet weiter ins Hauptmenü)
+
+III. Hauptmenü:
+06 - Schaltfläche/Button "Neues Spiel"
+07 
+
+IV. - Eingabefeld/Textfeld "Spielernamen" (Namen der Spieler eingeben)
+08 - Schaltfläche/ColorChooser "Farbenwahl" (Farbe der Spielfiguren der einzelnen Spieler wählen; ColorChooser)
+09 - Schaltfläche/Button "Bestätigen" (Bestätigt Eingaben und startet das Spiel)
+10 - Schaltfläche/Button "Regeln" (entweder Weiterleitung zu einer nicht selbst geschriebenen Seite oder Download einer PDF der Regeln oder eigenes Fenster mit den Regeln)
+11 - Schaltfläche/Button "Weiter" (lädt alten Spielstand)
+13
+
+V. - Liste "Highscores" (2 Spalten Liste mit den Accountnamen und dem dazugehörigen Punktestand)
+15 - Schaltfläche "Account erstellen" (leitet den Spieler auf eine Seite weiter auf der er einen Account erstellen kann)
+
+VI.	Account erstellen:
+16 - Eingabefeld/Textfeld "Accountname" (gewünschter Name des Accounts eingeben)
+17 - Eingabefeld/Textfeld "Password" (gewünschtes Password eingeben)
+18 - Eingabefeld/Textfeld "Password bestätigen" (gewünschtes Password bestätigen um Schreibfehler zu vermeiden)
+36 - Eingabefeld/Textfeld "E-Mail Adresse" (E-Mail Adresse eingeben)
+19 - Schaltfläche/Button "Bestätigen" (bestätigt Eingaben)					
+
+Im Spiel:
+
+VII. Menüleiste:
+20 - Schaltfläche/Button "Hautmenü" (öffnet die Seite des Hauptmenüs, pausiert das Spiel)
+21 - Schaltfläche/Button "Speichern" (speichert den aktuellen Spielstand)
+22 - Schaltfläche/Menü/ComboBox "Spielplan" (beim Anwählen öffnet sich ein Menü mit den Spielplänen)
+23 - Tabelle "Inventarinhalt" (Zeigt an wie viele Gegenstände (Salz, Gerste, etc.) der Spieler besitzt)
+25 - Liste "Spielstand" (Zeigt an welcher Spieler wie viele Prestigepunkte hat)	
+
+VIII. Spielfeld Babylon:
+24 - Hintergrund "Babylon" (Der Hintergrund zeigt die Stadt Babylon mit ihren hängenden Gärten)
+26 - Bildbereich oder Liste "Passbereich" (Zeigt grafisch welcher Spieler im letzten Zug gepasst hat oder zeigt in einer Liste die Namen der gepassten Spieler an)
+27 - Tabelle "Ackerfeld" (2 x 5 Felder, jedes Feld zeigt ein Bild an. Grafische Darstellung was von "Bauern" schon geerntet wurde.)
+28 - Tabelle "Spielfeld" (4 x 4 Felder, jedes Feld zeigt ein Bild an, das ein Feld des Spielbretts ist. Wenn der Nutzer ein Feld anwählt soll ein Menü erscheinen)
+29 - Tabelle "Tempel Marduk" (1 x 4 Felder, jedes Feld zeigt ein Bild an. Wenn der Nutzer ein Feld anwählt nimmt dies seine Farbe an)
+30 - Tabelle "Tempel Ishtar" (1 x 4 Felder, jedes Feld zeigt ein Bild an. Wenn der Nutzer ein Feld anwählt nimmt dies seine Farbe an)
+31 - Tabelle "Tempel Tammouz" (1 x 4 Felder, jedes Feld zeigt ein Bild an. Wenn der Nutzer ein Feld anwählt nimmt dies seine Farbe an)
+32 - Hintergrundmusik ("fröhliche", "geschäftige" Musik)
+
+IX. Spielfeld Mesopotamien:
+33 - Hintergrund "Mesopotamien" (Der Hintergrund zeigt eine Karte von Mesopotamien an)
+34 - Tabelle "Mesopotamien" (3 x 3 Felder, jedes Feld zeigt ein Bild an. Wenn der Nutzer ein Feld anwählt öffnet sich ein Menü)
+35 - Hintergrundmusik (Wüstenmusik/Reisemusik)
+
+======================
+== Gruppen/Sichten: ==
+======================
+
 view_index
 I.		01	picture			banner
 I.		02	button			go_to_game
+
 view_login
 II.		03	textfield		username
 II.		04	textfield		password
 II.		05	button			submit_login
 II.		15	button			new_account
+
 view_new_acc
 VI.		16	textfield		acc_name
 VI.		17	textfield		acc_pw
 VI.		18	textfield		acc_pw_confirm
 VI.		19	button			submit_acc
 VI.		36	textfield		email
+
 view_mainmenu
 III.	06 	button			new_game
 III.	10	button			go_to_rules
@@ -124,41 +137,45 @@ IV.		07	textfield		player_name
 IV.		08	colorchooser	player_color
 IV.		09	button			submit_player
 V.		13	list			highscore
+
 view_game (ist immer zusammen mit einer der beiden folgenden Sichten zu sehen)
 VII.	20	button			go_to_mainmenu
 VII.	21	button			save_game
 VII.	22	menu			gameboard
 VII.	23	list			inventory
-	view_babylon
-	VIII.	24	image			background_picture_babylon
-	VIII.	25	list			score
-	VIII.	26	list			pass_players
-	VIII.	27	table			field 
-	VIII.	28	table			garden
-	VIII.	29	table			temple_marduk
-	VIII.	30	table			temple_ishtar
-	VIII.	31	table			temple_tammouz
-	VIII.	32	music			background_music_babylon
-	view_meso
-	IX.		33	image			background_picture_meso
-	IX.		34	table			mesopotamien
-	IX.		35	music			background_musci_meso
 
+view_babylon
+VIII.	24	image			background_picture_babylon
+VIII.	25	list			score
+VIII.	26	list			pass_players
+VIII.	27	table			field 
+VIII.	28	table			garden
+VIII.	29	table			temple_marduk
+VIII.	30	table			temple_ishtar
+VIII.	31	table			temple_tammouz
+VIII.	32	music			background_music_babylon
 
-		 -->
-</body>
+view_meso
+IX.		33	image			background_picture_meso
+IX.		34	table			mesopotamien
+IX.		35	music			background_musci_meso
 
-</html>
+-->
 
 <!--Die Struktur sieht gut aus -->
 <!--Keine Ergänzungen-->
 
+<!--
 SusannaAlbrecht
 -	Bilddateien für die Plättchen und Karten
 -	wenn gewünscht, beim Öffnen des Spiels ein Opener: Aufmacherbild im Vollbildmodus mit Schriftzug des Spiels (z.B. als Anzeige, während
 	das Spiel noch lädt), zum eigentlichen Spiel geht es weiter mit Klick
+-->
 
+<!--
+===================================
 === Feedback Alpers, 2016-04-28 ===
+===================================
 
 Wie dort beschrieben ist die Projektbeschreibung leider noch recht dürftig. Bitte holen Sie das nach.
 
@@ -180,108 +197,23 @@ Wenn Sie das entsprechend umgesetzt haben, setzen Sie sich bitte an die folgende
 ======================================================
 === Aufgabe 3, identisch für alle, die soweit sind ===
 ======================================================
+(gelöscht, da im Lernraum für alle einsehbar)
+--> 
 
-ACHTUNG! Bearbeiten Sie diese Aufgaben dann und NUR DANN, wenn ich Sie in Ihr Repository geladen habe.
-
-Sie haben jetzt eine Grundstruktur für Ihre Anwendung ausgearbeitet. Genauer gesagt haben Sie die Elemente der Struktur Ihrer Anwendung ausgearbeitet. Jetzt geht es um die folgenden Aufgaben, die Sie bitte wieder alleine bearbeiten. (Bitte werfen Sie außerdem in Projekte anderer Studierender, wie das schon bei der letzten Aufgabe der Fall war. Es ist durchaus möglich, dass die nochmal zurück zur ersten Aufgabe gehen und das Projekt massiv ändern mussten. In dem Fall unterstützen Sie dann bitte wieder mit Ergänzungen zur strukt.html.)
-
+<!--
 ===================================
-== (1) Strukturierung von Ansichten
+=== Feedback Alpers, 2016-06-08 ===
 ===================================
 
-Für die folgende Aufgabe gilt: Arbeiten Sie hier mit der Datei strukt.html weiter.
-Lassen Sie die bisher erstellen Notizen zu jedem strukturellen Element am Anfang stehen und nummerieren Sie sie fortlaufend. Wenn Sie weitere Element hinzufügen, dann ändern Sie keinesfalls die bisherige Nummerierung ab, sondern fügen Sie neue Elemente ans Ende der fortlaufenden Nummerierung an. Sie können jedoch (um deutlich zu machen, das später eine Ergänzung folgt) kleine Hinweise verfassen.
+Auf den ersten Blick sieht das sehr gut (weil systematisch und knapp) aus. Allerdings besteht der Sinn dieser Aufgabe darin, dass Sie später Änderungen schnell einpflegen können und genau da liegt der Hase im Pfeffer:
 
-Hier ein Beispiel: Bislang haben Sie 97 strukturelle Elemente definiert:
+- Sie haben die strukturellen Elemente nicht als eigenständige Liste notiert. Wenn Sie also später neue strukturelle Elemente hinzufügen wollen, haben Sie keine Möglichkeit, schnell zu prüfen, ob Sie diese Elemente bereits als Teil Ihres Projektes haben. Damit sind Doubletten vorprogrammiert und Doubletten sind einer der Hauptgründe für fehlerhafte oder zumindest inkonsistente Software. Bitte tragen Sie deshalb die Liste der strukturellen Elemente nach. (Die brauchen Sie nicht zusätzlich in der Liste der Ansichten aufzuführen, da sie bereits bei den Gruppen notiert sein werden.)
 
--01- Interaktionsmöglichkeit / laufen nach links
--02- Interaktionsmöglichkeit / laufen nach rechts
--03- Textfeld / Eingabe Nutzername
-...
--97- Schaltfläche / Submit
+- Als nächstes haben Sie zweimal die Gruppen/Ansichten notiert. Bitte prüfen Sie, welche der beiden Listen aktuell ist (oder ob es sich ggf. um eine zufällige Kopie handelt.)
 
-Jetzt fällt Ihnen ein, dass Sie eine Interaktion "springen" gut wäre. Fügen Sie die jetzt nicht als Nr. 3 ein, sondern ans Ende. Wenn Sie sicher gehen wollen, können Sie einen Kommentar hinter dem strukturellen Element einfügen, zu dem es Ihrer Ansicht nach am besten passt.)
+- Bitte fügen Sie noch eine Überschrift ein, um zu verdeutlichen, wo die Definition der Gruppen beginnt. (Momentan bin ich nicht sicher, ob Sie da oben Gruppen definiert haben oder ob der entsprechende Teil ein veralteter Teil der strukt.html ist.)
 
--01- Interaktionsmöglichkeit / Spielfigur: Laufen nach links
--02- Interaktionsmöglichkeit / Spielfigur: Laufen nach rechts (Ergänzung: springen siehe -98-)
--03- Textfeld / Eingabe Nutzername
-...
--97- Schaltfläche / Submit
--98- Interaktionsmöglichkeit / Spielfigur: springt
+- Leider haben Sie oben geschrieben, dass Sie die Ansichten mit römischen Ziffern notiert haben. Bitte ändern Sie das entsprechend der Vorgaben ab: Demnach sollen Gruppen mit römischen Ziffern notiert werden.
 
-=======================
-== (1.1) Gruppen bilden
-=======================
-
-Nehmen Sie nun Ihre strukturellen Elemente und stellen Sie jeweils diejenigen zusammen, die ein sinnvolles Ganzes ergeben. Ein einfaches Beispiel dafür wäre eine Log-In-Maske: Darin hätten Sie ein Eingabefeld für den Username und das Passwort, aber ggf. auch weitere Elemente (denken Sie an so etwas wie ein Captcha, oder eine Eingabefläche, in der Nutzer ein Muster eingeben müssen anstelle eines Passworts.)
-
-Nummerieren Sie die resultierenden Gruppen bitte mit römischen Ziffern.
-
-Denken Sie dabei daran, dass es Elemente geben wird, die in mehreren Gruppen sinnvoll sein. Z.B. kann die Anzeige des Username nach dem Log-In an mehreren Stellen genutzt werden. Deswegen ist es wichtig, dass Sie die Elemente nummerieren und Ihnen einen kurzen Namen geben. Der Name ist gleichzeitig eine Vorbereitung auf die Verwendung durch PHP. Die Nummer ist nur da, weil es in aller Regel einfacher ist, nach Zahlen zu sortieren als alphbetisch nach Namen.
-
-=========================
-== (1.2) Ansichten bilden
-=========================
-
-Gruppieren Sie nun die erhaltenen Gruppen so zusammen, dass Sie Ansichten erhalten. Mit einer Ansicht ist hier gemeint, dass es sich um eine Ansammlung von strukturellen Elementen handelt, die gleichzeitig angezeigt werden. Sie werden unter Umständen feststellen, dass Ihre Anwendung nur eine einzige Ansicht hat, aber das ist im Moment in Ordnung. Ggf. werde ich Ihnen Hinweise geben, was für Ansichten Sie noch erstellen sollten.
-
-Auch die Ansichten sollten einen Namen bekommen. Hier brauchen wir aber keine Zahlen. Benennen Sie die Ansichten als 
------------------
---- view_name ---
------------------
-, wobei name der Name ist, den Sie der Ansicht geben wollen. (Tipp: Wenn bei Ihnen eines oder mehrere Elemente tatsächlich view_name... heißen, haben Sie das missverstanden.) Es sollte sich dabei um einen Namen handeln, der ohne Internationalisierung auf jedem Rechner angezeigt werden kann. (Ersetzen Sie Umlaute ggf. durch mehrere Buchstaben.)
-
-Unterhalb notieren Sie dann ohne Hinweis auf die Anordnung die strukturellen Elemente.
-
-Prüfen Sie erst am Ende, welche der Ansichten als allererstes angezeigt werden soll und bennen Sie die in view_index um.
-
-====================
-== (2.) Erstes HTML
-====================
-
-Erstellen Sie jetzt für jede view_name ein HTML-Dokument mit dem Namen einer Ansicht.
-Programmieren Sie darin die Container, die den strukturellen Elementen entsprechen und tragen Sie jeweils als kurzen Kommentar ein, welcher Inhalt/welche Funktionalität usw. mit diesem Container verbunden werden soll. Erweitern Sie jedes Dokument so, dass es internationalisiert und lokalisiert ist. Nutzen Sie ausschließlich Container, die für HTML5 vorgesehen sind. 
-
-Wenn Sie sich bereits in HTML4.01 eingearbeitet hatte: Im Skript können Sie anhand der Beispiele leicht prüfen, ob Ihre Programmierung passt. Ich kann Ihnen jedoch sagen, dass die meisten HTML4.01-Programmierer beim Umstieg auf Version 5 vergessen, dass Anführungszeichen weitgehend überflüssig sind und <div>-Container nicht ohne Grund nur ganz kurz in der Veranstaltung behandelt wurden: In 19 von 20 Fällen wir jetzt ein anderer Container für die gleiche Aufgabe verwendet. Auch das style-Attribut hat in HTML5 so gut wie nichts mehr verloren.
-
--- Bsp.: --
-<input id=username name=username><!-- Eingabe des Nutzernamens -->
-<img><!-- Hier das Logo der Seite einfügen -->
-
--- Wichtig: --
-Wenn Sie das Gefühl haben, Sie könnten eine Struktur z.B. mit einer for-Schleife ganz schnell programmieren, dann schreiben Sie diese Schleife (oder was auch immer Sie aus Java/PHP kennen) in einen <?php ?> Container. Es ist nicht wichtig, ob die Syntax und Semantik stimmt. Darum kümmern wir uns später. Wichtig ist nur, dass Sie sich keine unnötige Arbeit machen.
-
--- Ebenfalls wichtig: --
-Erstellen Sie ein Verzeichnis Gruppen_de in Ihrem Repository.
-
-Erstellen Sie für jede Gruppe, die Sie bei Schritt (1.1) gebildet haben und die in mehreren Ansichten vorkommt ein eigenständiges Dokument, das Sie unter dem Namen der Gruppe (ohne Nummer) im Verzeichnis Gruppen_de speichern. Nutzen Sie <?php include(url zur datei) ?>, um die entsprechenden Codefragmente an allen Stellen einzubinden, wo das nötig ist.
-
-=================================
-== (3.) Erste Schritte hin zu PHP
-=================================
-
-Sie haben in Programmieren 1 grundlegende imperative Programmiermethoden kennen gelernt. Und auch wenn die Syntax in PHP anders ist als in Java, können Sie doch vieles mit wenig Anpassung weiterverwenden, müssen "nur" daran denken, dass PHP dynamisch typisiert ist.
-
-Jetzt, wo Sie eine erste Struktur in HTML geschaffen haben, Formulare und interaktive Elemente programmiert haben, können Sie dazu übergehen, den Programmablauf bzw. die Logik bzw. die Interaktion zu programmieren. Und auch wenn das im Moment natürlich nicht funktionieren wird, machen Sie jetzt bitte folgendes: 
-
-Erstellen Sie jetzt eine Datei mit dem Namen php_code.php im Repository im Wurzelverzeichnis (also da, wo auch die HTML-Dokumente liegen). Ggf. werden Sie später zusätzliche PHP-Dateien erstellen, das müssen wir noch sehen.
-
-Wenn Sie mehrere Formulare entworfen haben, dann erstellen Sie ein Verzeichnis mit dem Namen Formulare im Repository und speichern Sie dort für jedes Formular (das ja eine Gruppe ist) unter dem Namen form_eval_gruppenname.php
-
-Und nun programmieren Sie so ähnlich wie Sie in Java programmieren würden. Wenn Sie sich nicht sicher sind, dann programmieren Sie genauso, als wenn es Java wäre; die PHP-Syntax lernen Sie ja in der Veranstaltung kennen und können dann den Code nach und nach anpassen.
-
-Wenn Sie nicht wissen, wie Sie etwas programmieren sollen (z.B. weil Sie keine Idee haben, wie Sie das Bild einer Schaltfläche per PHP austauschen sollen), dann tragen Sie das als Kommentar in den PHP/Java-Code ein.
-
-Denken Sie bitte daran, dass Variablen in PHP mit einem $ am Anfang geschrieben werden. Die Java-Variable summe wird also in PHP $summe notiert. Benutzen Sie für eigenen Variablen bitte vorrangig Kleinbuchstaben.
-
-Wenn Sie ein Formular auswerten, dann erzeugt PHP einen Dictionary mit dem Namen $POST, dessen Einträge die Namen der Formularfelder sind. Wenn Sie nicht wissen, was ein Dictionary ist: Das ist etwas, das so ähnlich wie ein Array funktioniert, nur dass die Einträge nicht nummeriert sind, sondern mit beliebigen Variablen bezeichnet werden können.
-
-Nehmen wir an, Sie hätten im HTML-Formular ein Feld mit dem Namen username und eines mit dem Namen password erstellt. Dann können Sie im zugehörigen PHP-Formular die Eingaben von Nutzern durch $POST[$username] bzw. $POST[$password] auslesen. Aber keine Sorge, wenn Ihnen das jetzt noch nicht ganz klar ist, warten Sie die nächsten zwei Veranstaltungen ab, dann werden wir das besprechen.
-
-===============================
-
-Wie gesagt sind das alles Aufgaben, die Sie wieder alleine bearbeiten sollen.
-Bei der nächsten Aufgabe werden Sie dann wieder an Projekten anderer Studierender arbeiten und so ein weiters Mal die geforderte Gruppenarbeit im Projekt leisten.
-
-Viele Grüße und viel Erfolg,
-Markus Alpers
+Momentan habe ich noch keine Wertung eingetragen, aber das liegt einzig daran, dass wegen der fehlenden Liste der strukturellen Elemente noch nicht klar erkennbar ist, ob Sie hier sinnvoll Duplikate eliminiert haben. Wenn Sie diese und die Anmerkungen in den HTML-Dokumenten umsetzen, wird nicht mehr viel bis zum erfolgreichen Abschluss des Projekts fehlen.
+-->
