@@ -14,52 +14,6 @@
 	<main>
 		<img src=images/amyitis_background.jpeg alt="Amyitis Hintergrund" id=index_background>
 		<hr>
-		<div class=login>
-		<!--Sendet die Login Informationen an ein PHP-Skript, wenn der Button gedrückt wird-->
-		<form action=login.php method=set>
-			<label for=username class=login-content>Username:</label>
-			<!--Textfeld für die Eingabe des Benutzernamens-->
-			<input type=text name=username class=login-content required><br>
-			<label for=password class=login-content>Password: </label>
-			<!--Textfeld für die Eingabe des Passwortes-->
-			<input type=password name=password class=login-content required><br>
-			<!--Submit Button zum Abschicken der Login-Informationen-->
-			<button type=submit class=login-content>Login</button>
-		</form>
-				<!--Button zum Öffnen einer Modal Box für die Erstellung eines neuen Accounts-->
-				<!--Wurde ein bisschen getrickst (<a>-Container in einem <button>-Container), da sich die Modal
-				Box nicht nur mit dem Button öffnen lies.-->
-				<a href=#openModal class=nav-link>Neuer Account</a>
-				<!--Modal Box die beim Drücken auf den Button erscheint. Durch Drücken des "X" oder durch klicken
-				neben das Fenster schließt sich dieses wieder-->
-				<div id=openModal class=modalDialog>
-						<div>
-							<!--Schließen der Modal Box-->
-							<a href=#close title=Close class=close>X</a>
-											<form>
-												<!--Fasst die Felder zur Erstellung des neuen Accounts zusammen-->
-												<fieldset>
-													<legend>Account erstellen</legend>
-													<label for=acc_name>Accountname*: </label><br>
-													<!--Eingabefeld für den gewünschten Benutzernamen-->
-													<input type=text name=acc_name class=acc required><br>
-													<label for=pw>Passwort*: </label><br>
-													<!--Eingabefeld für das gewünschte Passwort-->
-													<input type=text name=pw class=acc required><br>
-													<label for=pw_c>Passwort bestätigen*: </label><br>
-													<!--Eingabefeld zum Bestätigen des gewünschten Passwortes um Schreibfehler zu vermeiden-->
-													<input type=text name=pw_c class=acc required><br>
-													<label for=email>E-Mail Adresse: </label><br>
-													<!--Eingabefeld für die E-Mail Adresse-->
-													<input type=text name=email class=acc><br>
-													<!--Submit Button zum Abschicken der Login-Informationen-->
-													<button type=submit>Account erstellen</button>
-												</fieldset>
-											</form>
-						</div>
-				</div>		
-			
-	</div>
 	</main>
 	<footer>
 	
