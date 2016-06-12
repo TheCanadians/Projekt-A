@@ -70,38 +70,38 @@ img#babylon {
 /* Navigationsleiste */
 /* Header */
 .nav {
-	width: 100%;
+	width: 99%;
 	float: left;
 	margin-right: 1em;
 	padding; 0;
 	border-style: solid;
-	border-width; 1px;
+	border-width; 0.5em;
 	border-color: black;
 	background-color: #30A6E6;
 }
 /* Nav-Leiste */
-.dropdownmenu {
+.nav_header {
 	background: #30A6E6;
 }
 
 /* Unterpunkte */
-.dropdownmenu ul, .dropdownmenu li {
+.nav_header ul, .nav_header li {
 	margin: 0;
 	padding: 0;
 }
-.dropdownmenu ul {
+.nav_header ul {
 	background: gray;
 	list-style: none;
 	width: 100%;
 }
-.dropdownmenu li {
+.nav_header li {
 	float: left;
 	position: relative;
 	width:auto;
 }
 
 /* Verlinkungen */
-.dropdownmenu a {
+.nav_header a {
 	background: #30A6E6;
 	color: #FFFFFF;
 	display: block;
@@ -109,13 +109,8 @@ img#babylon {
 	padding: 10px 25px;
 	text-align: center;
 	text-decoration: none;
-	-webkit-transition: all .25s ease;
-	-moz-transition: all .25s ease;
-	-ms-transition: all .25s ease;
-	-o-transition: all .25s ease;
-	transition: all .25s ease;
 }
-.dropdownmenu li:hover a {
+.nav_header li:hover a {
 	background: #000000;
 }
 
