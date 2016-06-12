@@ -68,16 +68,23 @@ img#babylon {
 
 
 /* Navigationsleiste */
-/* Header */
 .nav {
 	width: 99%;
 	float: left;
 	margin-right: 1em;
 	padding; 0;
 	border-style: solid;
+	border-width; 0.3em;
+	border-color: black;
+	background-color: #30A6E6;
+}
+.nav_side {
+	padding; 0;
+	border-style: solid;
 	border-width; 0.5em;
 	border-color: black;
 	background-color: #30A6E6;
+	
 }
 /* Nav-Leiste */
 .nav_header {
@@ -113,6 +120,24 @@ img#babylon {
 .nav_header li:hover a {
 	background: #000000;
 }
+/* Seitennavigation */
+#sidenav_left {
+	height: 90vh;
+	width: 15%;
+	padding: 1em;
+	background-color: #30A6E6;
+	float: left;
+	border-top: none;
+}
+#sidenav_right {
+	height: 90vh;
+	width: 15%;
+	padding: 1em;
+	background-color: #30A6E6;
+	float:right;
+	margin-right: 0.7em;
+	border-top: none;
+}
 
 /* */
 .login {
@@ -139,6 +164,8 @@ img#babylon {
 table {
 	border-collapse:collapse;
 	margin-top:10px;
+	background-color: #fff;
+	width: 100%;
 }
 table, th, td {
 	--border: 1px solid black;
@@ -146,16 +173,37 @@ table, th, td {
 td, th {
 	padding:5px;
 	text-align:left;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #000;
 }
 tr:nth-child(even) {
-	background-color: #000;
+	background-color: #fff;
 }
 th {
 	background-color: #4CAF50;
 	color: white;
 }
-
+.field th{
+	background-color: #fff;
+}
+.field_img {
+	width: 2vw;
+}
+.temple table, th, td{
+	border: 1px solid black;
+}
+.temple th {
+	width: 2vw;
+	height: 3vh;
+}
+#marduk th{
+	background-color: #fff;
+}
+#ishtar th{
+	background-color: #fff;
+}
+#tammouz th{
+	background-color: #fff;
+}
 
 
 /* Modalfenster */
