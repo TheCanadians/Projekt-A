@@ -1,20 +1,158 @@
 <!DOCTYPE html>
 <html lang=de>
-<head>
-	<meta charset=UTF-8>
-	<title>Babylon</title>
-	<link rel=stylesheet type="text/css" href=stylesheet.css>
-</head>
-<body id=babylon>
-	<img src=images/babylon_4.jpg alt=Babylon id=babylon>
-	<section id=p_players>
-		<h3>Passende Spieler</h3>
-		<ul>
-			<li>Spieler 1</li>
-			<li>Spieler 2</li>
-			<li>Spieler 3</li>
-			<li>Spieler 4</li>
-		</ul>
-	</section>
-</body>
+	<head>
+		<meta charset=UTF-8>
+		<title>Babylon</title>
+		<link rel=stylesheet type="text/css" href=stylesheet.css>
+	</head>
+	<body>
+		<header class=nav>
+			<nav class=nav_header>
+				<ul>
+				<li>
+					<a href=mainmenu.html>Hauptmenü</a>
+				</li>
+				<li>
+					<a href=save.php>Spiel speichern</a>
+				</li>
+				<li>
+					<a href=babylon.html>Babylon</a>
+				<li>
+					<a href=meso.html>Mesopotamien</a>
+				</li>
+				<li class=user>
+					<!--Button zum Öffnen einer Modal Box für die Erstellung eines neuen Accounts-->
+					<!--Wurde ein bisschen getrickst (<a>-Container in einem <button>-Container), da sich die Modal
+					Box nicht nur mit dem Button öffnen lies.-->
+					<a href=#openReg class=nav-link>Neuer Account</a>
+					<!--Modal Box die beim Drücken auf den Button erscheint. Durch Drücken des "X" oder durch klicken
+					neben das Fenster schließt sich dieses wieder-->
+					<div id=openReg class=modalDialog>
+						<div>
+							<!--Schließen der Modal Box-->
+							<a href=#close title=Close class=close>X</a>
+											<form>
+												<!--Fasst die Felder zur Erstellung des neuen Accounts zusammen-->
+												<fieldset>
+													<legend>Account erstellen</legend>
+													<label for=acc_name>Accountname*: </label><br>
+													<!--Eingabefeld für den gewünschten Benutzernamen-->
+													<input type=text name=acc_name class=acc required><br>
+													<label for=pw>Passwort*: </label><br>
+													<!--Eingabefeld für das gewünschte Passwort-->
+													<input type=text name=pw class=acc required><br>
+													<label for=pw_c>Passwort bestätigen*: </label><br>
+													<!--Eingabefeld zum Bestätigen des gewünschten Passwortes um Schreibfehler zu vermeiden-->
+													<input type=text name=pw_c class=acc required><br>
+													<label for=email>E-Mail Adresse: </label><br>
+													<!--Eingabefeld für die E-Mail Adresse-->
+													<input type=text name=email class=acc><br>
+													<!--Submit Button zum Abschicken der Login-Informationen-->
+													<button type=submit>Account erstellen</button>
+												</fieldset>
+											</form>
+						</div>
+					</div>		
+				</li>
+				<li class=user>
+					<!--Button zum Öffnen einer Modal Box für die Erstellung eines neuen Accounts-->
+					<!--Wurde ein bisschen getrickst (<a>-Container in einem <button>-Container), da sich die Modal
+					Box nicht nur mit dem Button öffnen lies.-->
+					<a href=#openLogin class=nav-link>Login</a>
+					<!--Modal Box die beim Drücken auf den Button erscheint. Durch Drücken des "X" oder durch klicken
+					neben das Fenster schließt sich dieses wieder-->
+					<div id=openLogin class=modalDialog>
+						<div>
+							<!--Schließen der Modal Box-->
+							<a href=#close title=Close class=close>X</a>
+											<form action=login.php method=set>
+											<label for=username class=login-content>Username:</label>
+											<!--Textfeld für die Eingabe des Benutzernamens-->
+											<input type=text name=username class=login-content required><br>
+											<label for=password class=login-content>Password: </label>
+											<!--Textfeld für die Eingabe des Passwortes-->
+											<input type=password name=password class=login-content required><br>
+											<!--Submit Button zum Abschicken der Login-Informationen-->
+											<button type=submit class=login-content>Login</button>
+										</form>
+						</div>
+					</div>		
+				</li>
+				
+			</ul>
+			</nav>
+		</header>
+		<main>
+			<section class=nav_side id=sidenav_left>
+				<h3>Prestigepunkte</h3>
+				<table>
+					<tr>
+						<th>Name</th>
+						<th>Punkte</th>
+					</tr>
+					<tr>
+						<td>TheCanadians</td>
+						<td>112</td>
+					</tr>
+				</table>
+				<h3>Inventar</h3>
+				<table>
+					<tr>
+						<th>Name</th>
+						<th>Anzahl</th>
+					</tr>
+				</table>
+			</section>
+			<section class=nav_side id=sidenav_right>
+				<h3>Felder</h3>
+				<table class=field>
+					<tr>
+						<th><img src=images/salt.png alt="Salz" id=field_1a class=field_img></th>
+						<th><img src=images/palm.jpg alt="Palme" id=field_2a class=field_img></th>
+						<th><img src=images/wheat.png alt="Weizen" id=field_3a class=field_img></th>
+						<th><img src=images/dattel.jpg alt="Datteln" id=field_4a class=field_img></th>
+						<th><img src=images/grapes.png alt="Wein" id=field_5a class=field_img></th>
+					</tr>
+					<tr>
+						<th><img src=images/wheat.png alt="Weizen" id=field_1b class=field_img></th>
+						<th><img src=images/dattel.jpg alt="Datteln" id=field_2b class=field_img></th>
+						<th><img src=images/salt.png alt="Salz" id=field_3b class=field_img></th>
+						<th><img src=images/palm.jpg alt="Palme" id=field_4b class=field_img></th>
+						<th><img src=images/grapes.png alt="Wein" id=field_5b class=field_img></th>
+					</tr>
+				</table>
+				<h3>Tempel</h3>
+				<h4>Marduk</h4>
+					<table class=temple id=marduk>
+						<tr>
+							<th id=temple_1a></th>
+							<th id=temple_1b></th>
+							<th id=temple_1c></th>
+							<th id=temple_1d></th>
+						</tr>
+					</table>
+				<h4>Ishtar</h4>
+					<table class=temple id=ishtar>
+						<tr>
+							<th id=temple_2a></th>
+							<th id=temple_2b></th>
+							<th id=temple_2c></th>
+							<th id=temple_2d></th>
+						</tr>
+					</table>
+				<h4>Tammouz</h4>
+					<table class=temple id=tammouz>
+						<tr>
+							<th id=temple_3a></th>
+							<th id=temple_3b></th>
+							<th id=temple_3c></th>
+							<th id=temple_3d></th>
+						</tr>
+					</table>
+			</section>
+		</main>
+		<footer>
+		
+		</footer>
+	</body>
 </html>
