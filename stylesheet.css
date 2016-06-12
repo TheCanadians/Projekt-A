@@ -2,7 +2,7 @@
 html {
 	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif;
-	color: #fff;
+	color: #000;
 }
 body {
 	width: 100%;
@@ -13,8 +13,17 @@ button {
 	background-color: #000;
 	color: #fff;
 }
+h1 {
+	text-align: center;
+}
+hr {
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	border-style: inset;
+	border-width; 2px;
+}
 
----------------------------------------------------------------
 
 /* CSS mainmenu.html */
 
@@ -34,7 +43,7 @@ body#mainmenu {
 	background-color: #30A6E6;
 }
 
----------------------------------------------------------------
+
 
 /* CSS babylon.html */
 
@@ -45,16 +54,18 @@ img#babylon {
 	z-index: -99999;
 }
 
-----------------------------------------------------------------
+
 
 /* CSS index.html */
 
 /* Bilder */
 #index_background {
 	max-width: 25%;
+	margin: 0px auto;
+	display: block;
 }
 
-----------------------------------------------------------------
+
 
 /* Navigationsleiste */
 /* Header */
@@ -126,7 +137,7 @@ img#babylon {
 	
 }
 
-----------------------------------------------------------------
+
 
 /* Tabellen */
 
@@ -150,7 +161,7 @@ th {
 	color: white;
 }
 
---------------------------------------------------------------------
+
 
 /* Modalfenster */
 
@@ -207,5 +218,4 @@ th {
 	background: #00d9ff; 
 }
 
--------------------------------------------------------------------------
 	
