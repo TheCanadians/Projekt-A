@@ -5,6 +5,7 @@
 	<title>Amyitys Login</title>
 	<link rel=stylesheet type=text/css href=stylesheet.css>
 </head>
+<<<<<<< HEAD
 <body>
 
 	<header>
@@ -64,5 +65,88 @@
 	
 	</footer>
 
+=======
+<body id="index">
+	<!--Bildet einen Rahmen um das Login-Fenster (nur stylistischer Nutzen)-->
+	<div class="wrapper">
+		<!--Container für die Login-Maske-->
+		<div class="login">
+			<!--Sendet die Login Informationen an ein PHP-Skript, wenn der Button gedrückt wird-->
+			<form action="login.php" method="set">
+				<!--Label für das Benutzernamen-Feld-->
+				<label for="username" class="login-content">Username:</label>
+				<!--Textfeld für die Eingabe des Benutzernamens-->
+				<input type="text" name="username" class="login-content" required><br>
+				<!--Label für das Passwort-Eingabe-Feld-->
+				<label for="password" class="login-content">Password: </label>
+				<!--Textfeld für die Eingabe des Passwortes-->
+				<input type="password" name="password" class="login-content" required><br>
+				<!--Submit Button zum Abschicken der Login-Informationen-->
+				<button type="submit" class="login-content">Login</button>
+			</form>
+
+			<!--Button zum Öffnen einer Modal Box für die Erstellung eines neuen Accounts-->
+			<!--Wurde ein bisschen getrickst (<a>-Container in einem <button>-Container), da sich die Modal
+			Box nicht nur mit dem Button öffnen lies.-->
+
+			<button><a href="#openModal" class="nav-link">Neuer Account</a></button>
+			<!--Modal Box die beim Drücken auf den Button erscheint. Durch Drücken des "X" oder durch klicken
+			neben das Fenster schließt sich dieses wieder-->
+
+			<div id="openModal" class="modalDialog">
+				<div>
+					<!--Schließen der Modal Box-->
+					<a href="#close" title="Close" class="close">X</a>
+					<form style="margin-left:10px;">
+						<!--Fasst die Felder zur Erstellung des neuen Accounts zusammen-->
+						<fieldset>
+							<legend><h3>Account erstellen</h3></legend>
+							<label for="acc_name">Accountname*: </label><br>
+							<!--Eingabefeld für den gewünschten Benutzernamen-->
+							<input type="text" name="acc_name" class="acc" required><br>
+							<label for="pw">Passwort*: </label><br>
+							<!--Eingabefeld für das gewünschte Passwort-->
+							<input type="text" name="pw" class="acc" required><br>
+							<label for="pw_c">Passwort bestätigen*: </label><br>
+							<!--Eingabefeld zum Bestätigen des gewünschten Passwortes um Schreibfehler zu vermeiden-->
+							<input type="text" name="pw_c" class="acc" required><br>
+							<label for="email">E-Mail Adresse: </label><br>
+							<!--Eingabefeld für die E-Mail Adresse-->
+							<input type="text" name="email" class="acc"><br>
+							<!--Submit Button zum Abschicken der Login-Informationen-->
+							<button type="submit" style="margin:1vh">Account erstellen</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>		
+		</div>
+	</div>
+>>>>>>> refs/remotes/origin/master
 </body>
 </html>
+
+<!--
+=== Feedback Alpers, 2016-06-08 ===
+
+- Leider haben Sie hier fast ausschließlich HTML 4.01 programmiert. Bitte ändern Sie die Dokumente auf HTML 5 um. (div-Container werden in HTML5 nur noch in 5% all der Fälle genutzt, wo das bei HTML 4.01 der Fall war.)
+
+Ändern Sie alle <div>-Container in die entsprechenden Container von HTML5 ab, außer in den Fällen, wo es keine Alternative gibt.
+
+- Es fehlt die Internationalisierung.
+
+- Das zeigt sich auch dadurch, dass Sie das style-Attribut bzw. einen style-Container genutzt haben. In HTML5 wird das Design grundsätzlich in eigene Dateien ausgelagert, damit eine klare Trennung zwischen Design und Struktur vorhanden ist. Auf diese Weise können wir Änderungen am Design durchführen, ohne die HTML-Dokumente ändern zu müssen und umgekehrt Änderungen an der Struktur durchführen, ohne Änderungen an den CSS-Dateien durchführen zu müssen.
+
+In den HTML-Dokumenten des Projekts 1 ist die Verwendung von "style" ein Verstoß gegen die Vorgaben. Sie dürfen CSS einsetzen, aber nicht mittels style.
+
+- Bei HTML5 gibt es auch einen Änderung, was die Notwendigkeit von Anführungszeichen angeht. Arbeiten Sie das bitte in Ihre Dokumente ein.
+
+- Kommentare sollten Sie nur dann erstellen, wenn es nötig ist, zu erklären, was eine Programmzeile oder ein Programmteil bewirken soll. Dass ein label-Container einer Beschriftung für einen anderen Container enthält ist beispielsweise ein HTML-Standard und damit nichts, was dokumentiert/kommentiert werden müsste.
+
+- Benutzen Sie innerhalb von Formularen bitte ausschließlich input-Container für Elemente, die Nutzer bedienen können (also auch für Schaltflächen).
+
+- Der legend-Container ist die Überschrift eines Formulars. Eine Designvorgabe, indem Sie einen h3-Container verwenden ist nicht zulässig.
+
+- Bitte seien Sie mit der Verwendung von Einrückungen sparsam: Eine Einrückung für Elemente innerhalb eines Rumpfes ist gut. Mehr oder weniger Einrückungen verschlechtern die Lesbarkeit.
+
+- Im Aufgabenteil (2.) HTML der abschließenden Aufgabenstellung ist vorgegeben, dass Gruppen als eigenständige PHP-Datei programmiert werden sollen. Holen Sie das bitte nach.
+-->
