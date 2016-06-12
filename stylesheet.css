@@ -120,6 +120,9 @@ img#babylon {
 .nav_header li:hover a {
 	background: #000000;
 }
+li.user {
+	float: right;
+}
 /* Seitennavigation */
 #sidenav_left {
 	height: 90vh;
@@ -217,9 +220,6 @@ th {
 	background: rgba(0,0,0,0.8);
 	z-index: 99999;
 	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
 	pointer-events: none;
 }
 .modalDialog:target {
