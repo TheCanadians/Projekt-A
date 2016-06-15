@@ -25,14 +25,6 @@ hr {
 }
 
 
-/* CSS mainmenu.html */
-
-body#mainmenu {
-	min-height: 100%;
-	position: relative;
-	top: 0px;
-}
-
 /* Highscore Tabelle */
 #highscore {
 	height: 100%;
@@ -43,8 +35,6 @@ body#mainmenu {
 	background-color: #30A6E6;
 }
 
-
-
 /* CSS babylon.html */
 
 img#babylon {
@@ -52,6 +42,9 @@ img#babylon {
 	position:absolute;
 	opacity: 0.5;
 	z-index: -99999;
+}
+h3#index_message {
+	text-align: center;
 }
 
 
