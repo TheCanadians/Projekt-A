@@ -21,9 +21,7 @@
 					<a href=meso.html>Mesopotamien</a>
 				</li>
 				<li class=user>
-					<!--Button zum Öffnen einer Modal Box für die Erstellung eines neuen Accounts-->
-					<!--Wurde ein bisschen getrickst (<a>-Container in einem <button>-Container), da sich die Modal
-					Box nicht nur mit dem Button öffnen lies.-->
+					<!--Tab öffnet Modal Fenster zum Erstellen eines neuen Accounts-->
 					<a href=#openReg class=nav-link>Neuer Account</a>
 					<!--Modal Box die beim Drücken auf den Button erscheint. Durch Drücken des "X" oder durch klicken
 					neben das Fenster schließt sich dieses wieder-->
@@ -55,9 +53,7 @@
 					</div>		
 				</li>
 				<li class=user>
-					<!--Button zum Öffnen einer Modal Box für die Erstellung eines neuen Accounts-->
-					<!--Wurde ein bisschen getrickst (<a>-Container in einem <button>-Container), da sich die Modal
-					Box nicht nur mit dem Button öffnen lies.-->
+					<!--Tab öffnet Modal Fenster zum einloggen-->
 					<a href=#openLogin class=nav-link>Login</a>
 					<!--Modal Box die beim Drücken auf den Button erscheint. Durch Drücken des "X" oder durch klicken
 					neben das Fenster schließt sich dieses wieder-->
@@ -83,8 +79,10 @@
 			</nav>
 		</header>
 		<main>
+			<!--Linke Spalte mit Tabelle für Prestigepunkte-->
 			<section class=nav_side id=sidenav_left>
 				<h3>Prestigepunkte</h3>
+				<!--Tabelle die die Punkte der einzelnen Spieler anzeigt-->
 				<table>
 					<tr>
 						<th>Name</th>
@@ -96,6 +94,7 @@
 					</tr>
 				</table>
 				<h3>Inventar</h3>
+				<!--Tabelle für das Inventar der Spieler-->
 				<table>
 					<tr>
 						<th>Name</th>
@@ -103,7 +102,9 @@
 					</tr>
 				</table>
 			</section>
+			<!--Mittlere Spalte welche das Spielfeld anzeigt-->
 			<section class=nav_side id=sidenav_center>
+				<!--Tabelle für das Spielfeld Mesopotamien-->
 				<table class=meso_gamefield>
 					<tr>
 						<td></td>
@@ -122,8 +123,10 @@
 					</tr>
 				</table>
 			</section>
+			<!--Rechte Spalte die Spielfeldelemente anzeigt, wie das Ackerland und die drei Tempel-->
 			<section class=nav_side id=sidenav_right>
 				<h3>Felder</h3>
+				<!--Tabelle, die die Ackerfelder anzeigt-->
 				<table class=field>
 					<tr>
 						<th><img src=images/salt.png alt="Salz" id=field_1a class=field_img></th>
@@ -142,6 +145,7 @@
 				</table>
 				<h3>Tempel</h3>
 				<h4>Marduk</h4>
+					<!--Tabelle für einen der Tempel. Alle drei Tempel sind identisch-->
 					<table class=temple id=marduk>
 						<tr>
 							<th id=temple_1a></th>
