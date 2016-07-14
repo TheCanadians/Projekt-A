@@ -322,3 +322,51 @@ Spielablauf (Beispiel):
 ===================================
 
 Stellen Sie bitte alle Feedbacks der Vergangenheit wieder her. Vorher ist ein weiteres Feedback von mir nicht möglich.
+
+===================================
+=== Feedback Alpers, 2016-06-08 ===
+===================================
+
+Schade, Sie haben hier zwar eine sehr umfangreiche (aber dabei noch relativ knapp gehaltene) Beschreibung 
+des Spiels notiert, aber es handelt sich noch um die Beschreibung des Brettspiels.
+(Wenn die Aufgabe die Entwicklung eines Brettspiels wäre, 
+dann wäre diese Lösung weitaus umfangreicher als nötig.) 
+Für die Beschreibung müssen Sie diese Beschreibung jetzt so anpassen, 
+dass daraus die Grundlage einer webbasierten Anwendung wird, 
+die wie in den FAQ des Lernraums beschrieben interaktiv ist.
+P.S. Bitte fügen Sie den Inhalt der zusätzlichen Dateien im Verzeichnis Dokumentation 
+noch in dieses Dokument oder die strukt.html ein und löschen Sie dann die Dateien, 
+damit das Verzeichnis übersichtlicher wird.
+
+===================================
+=== Feedback Alpers, 2016-04-28 ===
+===================================
+
+Bitte belassen Sie die komplette Kommunikation rund um die Projektidee in dieser Datei, 
+damit nachvollziehbar ist, wie das Projekt sich weiterentwickelt hat und warum.
+Wenn Sie weitegehende Dateien haben, 
+dann verschieben Sie die bitte in ein eigenständiges Verzeichnis, 
+damit andere Studierende sich leicht in Ihrem Repository zurecht finden können.
+Hier das Feedback zu Ihrer Projektbeschreibung:
+Leider ist das im Grunde eine etwas unsortierte Aufstellung der strukturellen Elemente, 
+die in der strukt.html notiert werden sollen. 
+Hier wird weder klar, was im Spiel passiert 
+noch (besonders wichtig) welche Interaktionsmöglichkeiten es gibt. Bitte arbeiten Sie das noch nach.
+
+===================================
+=== Feedback Alpers, 2016-04-07 ===
+===================================
+
+Das ist im Kern eine Datenbankanwendung, die kaum Interaktionsmöglichkeiten bietet. 
+Von daher ist es als "interaktive Anwendung" eher nicht als Projekt geeignet.
+Wichtig ist auch, dass Sie vorerst eine eigene Idee vorstellen und an der Stelle ist es auch schade, 
+dass Sie etwas vorstellen, das es bereits gibt: 
+Diese Funktionalität bietet Ihnen heute eine Vielzahl kostenloser oder kostenpflichtiger Programme. (Beispielsweise MS Outlook)
+Die Gruppenarbeit wird dieses Semester anders organisiert als im letzten Semester. 
+Das hat etwas mit der Verteilung der Veranstaltungen über das Semester zu tun.
+Einen formalen Mangel gibt es allerdings noch: 
+Sie sollten diese Datei in das Verzeichnis Dokumentation einfügen. Holen Sie das bitte nach.
+Sie können jetzt zwei Dinge tun: 
+Zum einen können Sie sich individuell überlegen, wie Sie Ihre Idee interaktiver gestalten können, 
+zum anderen können Sie alternativ eine Projektbeschreibung 
+wie in Kap. 5 für das folgende Brettspiel erstellen: Amyitis http://www.brettspiele-report.de/amyitis/
