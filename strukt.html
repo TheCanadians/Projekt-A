@@ -1,55 +1,41 @@
 <!--
 Gruppen/Sichten:
 
-Legende: Gruppen	I..X 	  
-		 Ansichten	view_xyz
+Legende: Gruppen										I..XVI
+		 Modale Fenster (Spezialfall in den Ansichten) 	(...)
+		 Ansichten										view_xyz
 		 
 Gruppen:
 
-		I - Startbildschirm
-			01 - Überschrift
-			02 - Bild das beim darauf Klicken die Seite mit dem Spiel öffnet
-			03 - Schriftzug mit Info wie man zum Spiel kommt
-		II - Navigationsleiste oben
-			05 - Link zu den Regeln
-			06 - Link zum Spiel speichern
-			07 - Link zum Spielfeld Babylon 
-			08 - Link zum Spielfeld Mesopotamien	
-			III - Account erstellen Maske
-				09 - Link um einen Neuen Account zu erstellen (öffnet modales Fenster)
-						10 - Formular in Modalem Fenster
-							11 - Input für Accountnamen
-							12 - Input für Passwort
-							13 - Input für Passwort bestätigen
-							14 - Input für E-Mail Adresse
-							15 - Button zum Abschicken der Infos
-			IV - Login-Maske
-				16 - Link zum Einloggen
-					17 - Formular in Modalem Fenster
-						18 - Input Benutzername
-						19 - Input Passwort
-						20 - Button zum Abschicken der Infos
-		V - Leiste links
-			22 - Tabelle 2xP (P=Anzahl der Spieler) mit den Prestigepunkten der Spieler
-			23 - Tabelle 2xP (P=Anzahl der Spieler) mit dem Inventar/den Spielsteinen der Spieler
-		VI - Spielfeld Babylon
-			25 - Tabelle 4x4 mit dem Hauptspielbrett Babylon
-		VII - Spielfeld Mesopotamien
-			32 - Tabelle 4x4 mit dem Hauptspielbrett Babylon
-		VIII - Leiste rechts
-			27 - Tabelle 2x5 Spielelement "Felder"
-			28 - Tabelle 1x4 Spielelement "Tempel 1"
-			29 - Tabelle 1x4 Spielelement "Tempel 2"
-			30 - Tabelle 1x4 Spielelement "Tempel 3"
+		I 	- Startbildschirm: 	01, 02, 03
+		II 	- Hauptmenü:			04, 05, 06, 07, 08, 16
+		III - Account:			09, 10, 11, 12, 13, 14, 15
+		IV 	- Login:			17, 18, 19, 20
+		V	- Sidemenu:			21, 22, 23, 60, 61
+		VI	- Spielfeldmenü:	24, 25, 26, 27
+		VII	- Spielzug:			29, 39, 49 
+		VIII- Rekrutieren:		30, 31
+		IX	- Bauer:			32, 33
+		X	- Priester:			34, 35, 36, 37, 38
+		XI	- Handel:			40, 41, 42, 43, 44
+		XII	- Pflanzen:			45, 46, 47, 48
+		XIII- Rundenende:		50, 51, 52
+		XIV	- Babylon:			(53), 54 
+		XV	- Mesopotamien:		(53), 55
+		XVI	- Sonstiges:		(53), 56, 57, 58, 59 
 
 Ansichten:
 
 	view_index
 		Gruppe I
+	view_game
+		Gruppen II, (III), (IV), V, VI, VII, (VIII), (IX), (X), (XI), (XII), (XIII)
 	view_babylon
-		Gruppen II, III, IV, V, VI, VIII
+		Gruppe XIV
 	view_mesopotamien
-		Gruppen II, III, IV, V, VII, VIII
+		Gruppe XV
+	view_sonstiges
+		Gruppe XVI 
 			
 Liste strukturelle Elemente:
 
@@ -78,37 +64,37 @@ Liste strukturelle Elemente:
 					18 - Input Accountname
 					19 - Input Passwort
 					20 - Button "Einloggen"
-			21 - Leiste links (Status)
-				60 - Anzeige der aktuellen Runde und Phase des Spiels
-				61 - Tabelle 2x4 mit dem Status der Spieler (Spieler passt gerade, spielt aktuell oder wartet)
-				22 - Tabelle 2xP (P=Anzahl der Spieler) mit den Prestigepunkten der Spieler
-				23 - Tabelle 2x10 mit dem Inventar des Spielers
-			24 - Navigation Spielfeldmenü
-				25 - Link "Mesopotamien" öffnet im iframe das Spielfeld Mesopotamien
-				26 - Link "Babylon" öffnet im iframe das Spielfeld Babylon
-				27 - Link "Sonstiges" öffnet im iframe die restlichen Spieltabellen
-			28 - Navigation Spielzug
-				29 - Button "Rekrutieren" öffnet modales Fenster
-					30 - Modales Fenster "Rekrutieren"
-						31 - Tabelle 1xP (P=Anzahl der Spieler) mit zufälligen Bildern und festen Kosten aus denen der Spieler eines auswählen kann, was seine nächste Aktion bestimmt (neues modales Fenster)
-							32 - Modales Fenster "Bauer"
-								33 - Tabelle 1x2 mit Bilderlinks von zwei zufälligen Waren, von denen der Spieler eine auswählen muss
-							34 - Modales Fenster "Priester"
-								35 - Tabelle 5x3 der "Tempel", in der oberen Reihe steht der Name des Tempels, darunter sieht man mit welchen die Farben der Tempel zur Zeit belegt sind
-								36 - Button "Ishtar" für den ersten Tempel
-								37 - Button "Marduk" für den zweiten Tempel
-								38 - Button "Tammouz" für den dritten Tempel
-				39 - Button "Karawane bewegen" öffnet modales Fenster
-					40 - Modales Fenster "Handel"
-						41 - Button "Verkauf"
-						42 - Tabelle 2xS (S=Anzahl der unterschiedlichen Waren des Spielers bei denen die Anzahl > 0 ist) mit den Waren und deren Anzahl
-						43 - Button "Kaufen"
-						44 - Tabelle Yx3 (Y=Anzahl der Handelsmöglichkeiten, unterschiedlich je nach Feld auf dem der Spieler steht) mit den Handelsbedingungen (bspw. Palast | -> | Gerste; heißt: eine Palastaufwertung für 1 x Gerste)
-							45 - wenn eine Pflanze gekauft wurde: öffnet neues modales Fenster
-								46 - Modales Fenster "Babylon"
-									47 - Tabelle 4x4 mit den Gärten, die Felder auf denen angebaut werden kann sind markiert
-									48 - Button "Pflanze aufwerten" (wertet die Pflanzenkarte auf wenn der Spieler einen Gärtner besitzt)
-				49 - Button "Passen" setzt den Status des eigenen Spielers auf "passen"
+		21 - Leiste links (Status)
+			60 - Anzeige der aktuellen Runde und Phase des Spiels
+			61 - Tabelle 2x4 mit dem Status der Spieler (Spieler passt gerade, spielt aktuell oder wartet)
+			22 - Tabelle 2xP (P=Anzahl der Spieler) mit den Prestigepunkten der Spieler
+			23 - Tabelle 2x10 mit dem Inventar des Spielers
+		24 - Navigation Spielfeldmenü
+			25 - Link "Mesopotamien" öffnet im iframe das Spielfeld Mesopotamien
+			26 - Link "Babylon" öffnet im iframe das Spielfeld Babylon
+			27 - Link "Sonstiges" öffnet im iframe die restlichen Spieltabellen
+		28 - Navigation Spielzug
+			29 - Button "Rekrutieren" öffnet modales Fenster
+				30 - Modales Fenster "Rekrutieren"
+					31 - Tabelle 1xP (P=Anzahl der Spieler) mit zufälligen Bildern und festen Kosten aus denen der Spieler eines auswählen kann, was seine nächste Aktion bestimmt (neues modales Fenster)
+						32 - Modales Fenster "Bauer"
+							33 - Tabelle 1x2 mit Bilderlinks von zwei zufälligen Waren, von denen der Spieler eine auswählen muss
+						34 - Modales Fenster "Priester"
+							35 - Tabelle 5x3 der "Tempel", in der oberen Reihe steht der Name des Tempels, darunter sieht man mit welchen die Farben der Tempel zur Zeit belegt sind
+							36 - Button "Ishtar" für den ersten Tempel
+							37 - Button "Marduk" für den zweiten Tempel
+							38 - Button "Tammouz" für den dritten Tempel
+			39 - Button "Karawane bewegen" öffnet modales Fenster
+				40 - Modales Fenster "Handel"
+					41 - Button "Verkauf"
+					42 - Tabelle 2xS (S=Anzahl der unterschiedlichen Waren des Spielers bei denen die Anzahl > 0 ist) mit den Waren und deren Anzahl
+					43 - Button "Kaufen"
+					44 - Tabelle Yx3 (Y=Anzahl der Handelsmöglichkeiten, unterschiedlich je nach Feld auf dem der Spieler steht) mit den Handelsbedingungen (bspw. Palast | -> | Gerste; heißt: eine Palastaufwertung für 1 x Gerste)
+						45 - wenn eine Pflanze gekauft wurde: öffnet neues modales Fenster
+							46 - Modales Fenster "Babylon"
+								47 - Tabelle 4x4 mit den Gärten, die Felder auf denen angebaut werden kann sind markiert
+								48 - Button "Pflanze aufwerten" (wertet die Pflanzenkarte auf wenn der Spieler einen Gärtner besitzt)
+			49 - Button "Passen" setzt den Status des eigenen Spielers auf "passen"
 		50 - Modales Fenster "Ende der Runde" 
 			51 - Anzeige wie viele Waren der Spieler mit in die nächste Runde nehmen darf 
 			52 - Tabelle 3x5 mit den Waren des Spielers und deren Anzahl, sowie einem input-Feld wie viele der Ware er mit in die nächste Runde nehmen will (darf nicht <0, größer als die Menge der Ware sein und die maximale Anzahl behaltener Waren darf die Anzahl der Waren die der Spieler mit in die nächste Runde nehmen darf nicht überschreiten)
