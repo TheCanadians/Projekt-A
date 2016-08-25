@@ -20,7 +20,6 @@ Materialarten:
 	Karten:
 		- Bauern
 		- Priester
-		- Ingenieure
 		- Händler
 		- Pflanzen
 		- Bankier (geben mehr "Einkommen" -> mehr Talente und Prestigepunkte pro Runde)
@@ -62,9 +61,6 @@ Spielablauf:
 							- Es wird immer nur das erste Feld neu belegt, alle anderen belegten Felder wandern weiter nach rechts. 
 								-> Sind alle Felder belegt und ein Spieler wählt ein weiteres Feld in diesem Tempel, so wird das letzte belegte Feld "rausgeschoben" und alle anderen Felder um eine Position nach rechts verschoben.
 							- In Phase 3 bekommt der Spieler mit den meisten belegten Feldern eine Belohnung.
-						Ingenieur:
-							- bewässert die Bewässerungsgräben zwischen den Felder (Babylon-Spielfeld).
-							-> noch nicht sicher ob diese Karte implementiert wird.
 						Händler:
 							- Spieler bekommt ein Kamel
 				3: Karawane bewegen:
@@ -94,7 +90,7 @@ Spielablauf:
 					2. Erhält 1 Prestigepunkt
 				-> Tammouz-Tempel:
 					1. Belegt ein Feld der "Acker"-Tabelle und bekommt die entsprechende Ware.
-					2. Kann eine beliebige Ware aus seinem Inventar gegen eine beliebige andere Ware (außer Wein) tauschen.
+					2. Bekommt eine zufällige Ware.
 				-> Gleichstand:
 					- Es bekommt derjenige die Belohnung, dessen Würfel am weitesten "rechts" liegen (auf einem der hinteren Felder der Tabelle).
 			- Je nach Karawanenführerlevel darf der Spieler nur begrenzt viele Waren mit in die nächste Runde nehmen.
