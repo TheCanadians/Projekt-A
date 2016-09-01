@@ -4,8 +4,9 @@
 		<meta charset=UTF-8>
 		<title>Amyitis</title>
 		<link rel=stylesheet type="text/css" href=stylesheet.css>
+		<link rel=stylesheet type="text/css" href=game.css>
 	</head>
-	<body>
+	<body class=game>
 		<!-- Start Main Nav -->
 		<header class=w100>
 			<nav class=nav>
@@ -39,19 +40,19 @@
 				<table>
 					<tr>
 						<th>Runde</th>
-						<th>Phase</th>
+						<th class=last>Phase</th>
 					</tr>
 					<tr>
 						<td id=round></td>
-						<td id=phase></td>
+						<td id=phase class=last></td>
 					</tr>
 				</table>
 				<!-- Tabelle mit dem aktuellen Status (passt, spielt, wartet) und den Prestigepunkten der Spieler -->
 				<table>
 					<tr>
 						<th>Spieler</th>
-						<th>Status</th>
-						<th>Punkte</th>
+						<th class=middle>Status</th>
+						<th class=last>Punkte</th>
 					</tr>
 				</table>
 				<hr>
@@ -59,90 +60,94 @@
 				<table>
 					<tr>
 						<th>Item</th>
-						<th>Anzahl</th>
+						<th class=last>Anzahl</th>
 					</tr>
 					<tr>
 						<td>Münzen</td>
-						<td id=münzen></td>
+						<td id=münzen class=last></td>
 					</tr>
 					<tr>
 						<td>Datteln</td>
-						<td id=datteln></td>
+						<td id=datteln class=last></td>
 					</tr>
 					<tr>
 						<td>Gerste</td>
-						<td id=gerste></td>
+						<td id=gerste class=last></td>
 					</tr>
 					<tr>
 						<td>Palmen</td>
-						<td id=palmen></td>
+						<td id=palmen class=last></td>
 					</tr>
 					<tr>
 						<td>Salz</td>
-						<td id=palmen></td>
+						<td id=palmen class=last></td>
 					</tr>
 					<tr>
 						<td>Wein</td>
-						<td id=wein></td>
+						<td id=wein class=last></td>
 					</tr>
 					<tr>
 						<td>Kamele</td>
-						<td id=kamele></td>
+						<td id=kamele class=last></td>
 					</tr>
 					<tr>
 						<td>Pflanzen</td>
-						<td id=pflanzen></td>
+						<td id=pflanzen class=last></td>
 					</tr>
 					<tr>
 						<td>Karawanenführer</td>
-						<td id=karawane></td>
+						<td id=karawane class=last></td>
 					</tr>
 					<tr>
 						<td>Bankier</td>
-						<td id=bankier></td>
+						<td id=bankier class=last></td>
 					</tr>
 					<tr>
 						<td>Palast</td>
-						<td id=palast></td>
+						<td id=palast class=last></td>
 					</tr>
 					<tr>
 						<td>Gärtner</td>
-						<td id=gärtner></td>
+						<td id=gärtner class=last></td>
 					</tr>
 				</table>
 			</div>
 			<!-- Start Navigation Spielfeldmenü -->
-			<nav class=w70>
-				<ul>
-					<li>
-						<a href=babylon.html target=gameboard>Babylon</a>
-					</li>
-					<li>
-						<a href=meso.html target=gameboard>Mesopotamien</a>
-					</li>
-					<li>
-						<a href=tables.html target=gameboard>Sonstiges</a>
-					</li>
-				</ul>
-			</nav>
-			<!-- iframe der das aktuell gewählte Spielfeld darstellt -->
-			<iframe src=babylon.html name=gameboard class=w70>
-			
-			</iframe>
-			<!-- Start Navigation Spielzug -->
-			<nav class=w70>
-				<ul>
-					<li>
-						<a href=#openRekrut>Rekrutieren</a>
-					</li>
-					<li>
-						<a href=#openHandel>Karawane bewegen</a>
-					</li>
-					<li>
-						<button type=submit formaction=gameHandler.php formmethod=post name=pass value=1>
-					</li>
-				</ul>
-			</nav>
+			<div class=w70>
+				<nav class=nav>
+					<ul>
+						<li>
+							<a href=babylon.html target=gameboard>Babylon</a>
+						</li>
+						<li>
+							<a href=meso.html target=gameboard>Mesopotamien</a>
+						</li>
+						<li>
+							<a href=tables.html target=gameboard>Sonstiges</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- iframe der das aktuell gewählte Spielfeld darstellt -->
+				<div class=fluid>
+					<iframe src=babylon.html name=gameboard frameborder=0>
+					
+					</iframe>
+				</div>
+				<!-- Start Navigation Spielzug -->
+				<nav class="w70 nav">
+					<ul>
+						<li>
+							<a href=#openRekrut>Rekrutieren</a>
+						</li>
+						<li>
+							<a href=#openHandel>Karawane bewegen</a>
+						</li>
+						<li>
+							<button class=navBut type=submit formaction=gameHandler.php formmethod=post name=pass value=1>Passen</button>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</main>
 		
 <!-------------------------------------------------------------------------------------MODALE FENSTER-------------------------------------------------------------------------------->
@@ -275,30 +280,30 @@
 							<tr>
 								<td>Datteln</td>
 								<td id=datteln></td>
-								<input type=number name=num_dat placeholder=0>
+								<td><input type=number name=num_dat placeholder=0></td>
 							</tr>
 							<tr>
 								<td>Gerste</td>
 								<td id=gerste></td>
-								<input type=number name=num_ger placeholder=0>
+								<td><input type=number name=num_ger placeholder=0></td>
 							</tr>
 							<tr>
 								<td>Palmen</td>
 								<td id=palmen></td>
-								<input type=number name=num_palm placeholder=0>
+								<td><input type=number name=num_palm placeholder=0></td>
 							</tr>
 							<tr>
 								<td>Salz</td>
 								<td id=salz></td>
-								<input type=number name=num_salz placeholder=0>
+								<td><input type=number name=num_salz placeholder=0></td>
 							</tr>
 							<tr>
 								<td>Wein</td>
 								<td id=wein></td>
-								<input type=number name=num_wein placeholder=0>
+								<td><input type=number name=num_wein placeholder=0></td>
 							</tr>
 						</table>
-						<button type=submit>Verkaufen</button>
+						<button type=submit id=ButVerk>Verkaufen</button>
 					</form>
 			</div>
 		</div>
