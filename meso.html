@@ -4,107 +4,10 @@
 		<meta charset=UTF-8>
 		<title>Mesopotamien</title>
 		<link rel=stylesheet type="text/css" href=stylesheet.css>
+		<link rel=stylesheet type="text/css" href=meso.css>
 	</head>
 	<body>
-		<header class=nav>
-			<nav class=nav_header>
-				<ul>
-				<li>
-					<a href=www.ystari.com/amyitis/AmG.pdf>Regeln</a>
-				</li>
-				<li>
-					<a href=save.php>Spiel speichern</a>
-				</li>
-				<li>
-					<a href=babylon.html>Babylon</a>
-				<li>
-					<a href=meso.html>Mesopotamien</a>
-				</li>
-				<li class=user>
-					<!--Tab öffnet Modal Fenster zum Erstellen eines neuen Accounts-->
-					<a href=#openReg class=nav-link>Neuer Account</a>
-					<!--Modal Box die beim Drücken auf den Button erscheint. Durch Drücken des "X" oder durch klicken
-					neben das Fenster schließt sich dieses wieder-->
-					<div id=openReg class=modalDialog>
-						<div>
-							<!--Schließen der Modal Box-->
-							<a href=#close title=Close class=close>X</a>
-											<form>
-												<!--Fasst die Felder zur Erstellung des neuen Accounts zusammen-->
-												<fieldset>
-													<legend>Account erstellen</legend>
-													<label for=acc_name>Accountname*: </label><br>
-													<!--Eingabefeld für den gewünschten Benutzernamen-->
-													<input type=text name=acc_name class=acc required><br>
-													<label for=pw>Passwort*: </label><br>
-													<!--Eingabefeld für das gewünschte Passwort-->
-													<input type=text name=pw class=acc required><br>
-													<label for=pw_c>Passwort bestätigen*: </label><br>
-													<!--Eingabefeld zum Bestätigen des gewünschten Passwortes um Schreibfehler zu vermeiden-->
-													<input type=text name=pw_c class=acc required><br>
-													<label for=email>E-Mail Adresse: </label><br>
-													<!--Eingabefeld für die E-Mail Adresse-->
-													<input type=text name=email class=acc><br>
-													<!--Submit Button zum Abschicken der Login-Informationen-->
-													<button type=submit>Account erstellen</button>
-												</fieldset>
-											</form>
-						</div>
-					</div>		
-				</li>
-				<li class=user>
-					<!--Tab öffnet Modal Fenster zum einloggen-->
-					<a href=#openLogin class=nav-link>Login</a>
-					<!--Modal Box die beim Drücken auf den Button erscheint. Durch Drücken des "X" oder durch klicken
-					neben das Fenster schließt sich dieses wieder-->
-					<div id=openLogin class=modalDialog>
-						<div>
-							<!--Schließen der Modal Box-->
-							<a href=#close title=Close class=close>X</a>
-											<form action=login.php method=set>
-											<label for=username class=login-content>Username:</label>
-											<!--Textfeld für die Eingabe des Benutzernamens-->
-											<input type=text name=username class=login-content required><br>
-											<label for=password class=login-content>Password: </label>
-											<!--Textfeld für die Eingabe des Passwortes-->
-											<input type=password name=password class=login-content required><br>
-											<!--Submit Button zum Abschicken der Login-Informationen-->
-											<button type=submit class=login-content>Login</button>
-										</form>
-						</div>
-					</div>		
-				</li>
-				
-			</ul>
-			</nav>
-		</header>
 		<main>
-			<!--Linke Spalte mit Tabelle für Prestigepunkte-->
-			<section class=nav_side id=sidenav_left>
-				<h3>Prestigepunkte</h3>
-				<!--Tabelle die die Punkte der einzelnen Spieler anzeigt-->
-				<table>
-					<tr>
-						<th>Name</th>
-						<th>Punkte</th>
-					</tr>
-					<tr>
-						<td>TheCanadians</td>
-						<td>112</td>
-					</tr>
-				</table>
-				<h3>Inventar</h3>
-				<!--Tabelle für das Inventar der Spieler-->
-				<table>
-					<tr>
-						<th>Name</th>
-						<th>Anzahl</th>
-					</tr>
-				</table>
-			</section>
-			<!--Mittlere Spalte welche das Spielfeld anzeigt-->
-			<section class=nav_side id=sidenav_center>
-				<!--Tabelle für das Spielfeld Mesopotamien-->
 				<table class=meso_gamefield>
 					<tr>
 						<td></td>
@@ -122,60 +25,6 @@
 						<td></td>
 					</tr>
 				</table>
-			</section>
-			<!--Rechte Spalte die Spielfeldelemente anzeigt, wie das Ackerland und die drei Tempel-->
-			<section class=nav_side id=sidenav_right>
-				<h3>Felder</h3>
-				<!--Tabelle, die die Ackerfelder anzeigt-->
-				<table class=field>
-					<tr>
-						<th><img src=images/salt.png alt="Salz" id=field_1a class=field_img></th>
-						<th><img src=images/palm.jpg alt="Palme" id=field_2a class=field_img></th>
-						<th><img src=images/wheat.png alt="Weizen" id=field_3a class=field_img></th>
-						<th><img src=images/dattel.jpg alt="Datteln" id=field_4a class=field_img></th>
-						<th><img src=images/grapes.png alt="Wein" id=field_5a class=field_img></th>
-					</tr>
-					<tr>
-						<th><img src=images/wheat.png alt="Weizen" id=field_1b class=field_img></th>
-						<th><img src=images/dattel.jpg alt="Datteln" id=field_2b class=field_img></th>
-						<th><img src=images/salt.png alt="Salz" id=field_3b class=field_img></th>
-						<th><img src=images/palm.jpg alt="Palme" id=field_4b class=field_img></th>
-						<th><img src=images/grapes.png alt="Wein" id=field_5b class=field_img></th>
-					</tr>
-				</table>
-				<h3>Tempel</h3>
-				<h4>Marduk</h4>
-					<!--Tabelle für einen der Tempel. Alle drei Tempel sind identisch-->
-					<table class=temple id=marduk>
-						<tr>
-							<th id=temple_1a></th>
-							<th id=temple_1b></th>
-							<th id=temple_1c></th>
-							<th id=temple_1d></th>
-						</tr>
-					</table>
-				<h4>Ishtar</h4>
-					<table class=temple id=ishtar>
-						<tr>
-							<th id=temple_2a></th>
-							<th id=temple_2b></th>
-							<th id=temple_2c></th>
-							<th id=temple_2d></th>
-						</tr>
-					</table>
-				<h4>Tammouz</h4>
-					<table class=temple id=tammouz>
-						<tr>
-							<th id=temple_3a></th>
-							<th id=temple_3b></th>
-							<th id=temple_3c></th>
-							<th id=temple_3d></th>
-						</tr>
-					</table>
-			</section>
 		</main>
-		<footer>
-		
-		</footer>
 	</body>
 </html>
