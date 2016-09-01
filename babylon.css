@@ -1,0 +1,17 @@
+.bab_gamefield {
+	border-collapse: separate;
+	border-spacing: 5px;
+	background-color: blue;
+	margin: auto;
+}
+.bab_gamefield td{
+	background-color: #fff;
+	height: 10vw;
+	width: 10vw;
+}
+td.begin {
+	background-color: green;
+}
+td.space {
+	background-color: red;
+}

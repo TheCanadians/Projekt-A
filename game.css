@@ -1,0 +1,135 @@
+.game {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.w100 {
+	width: 100%;
+	float: left;
+}
+.w70 {
+	width: 70%;
+	float: left;
+}
+.w30 {
+	width: 30%;
+	float: left;
+}
+
+/* Navigationsleiste */
+.nav {
+	width: 100%;
+	float: left;
+	border-style: solid;
+	border-width; 0.3em;
+	border-color: black;
+	background-color: #30A6E6;
+}
+.nav_side {
+	padding; 0;
+	border-style: solid;
+	border-width; 0.3em;
+	border-color: black;
+	background-color: #30A6E6;
+	
+}
+
+/* Unterpunkte */
+.nav ul, .nav li {
+	margin: 0;
+	padding: 0;
+}
+.nav ul {
+	background: gray;
+	list-style: none;
+	width: 100%;
+}
+.nav li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+
+/* Verlinkungen */
+.nav a {
+	background: #30A6E6;
+	color: #FFFFFF;
+	display: block;
+	font: bold 12px/20px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+}
+.nav li:hover a {
+	background: #000000;
+}
+li.user {
+	float: right;
+}
+.navBut {
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: relative;
+	width: auto;
+	background: #30A6E6;
+	color: #FFFFFF;
+	display: block;
+	font: bold 12px/20px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	border: none;
+	border-radius: 0px;
+}
+.navBut:hover {
+	background: #000000;
+	cursor: pointer;
+}
+/* Seitennavigation */
+.last {
+	text-align: right;
+	padding-right: 10px;
+}
+.middle {
+	text-align: center;
+}
+
+/* */
+.login {
+	background-color:lightgrey;
+	border-radius:10px;
+	padding:10px
+}
+
+/* Formularinhalt */
+.login-content {
+	margin-top:1vh;
+}
+
+/* Felder für neuen Account erstellen */
+.acc {
+	margin:3px;
+	
+}
+
+/* Iframe */
+
+.fluid {
+	position: relative; 
+	padding-bottom: 45%;
+	height: 0; 
+	overflow: hidden; 
+	width: 100%;
+	height: auto;
+}
+.fluid IFRAME {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	padding: 10px;
+}
+
+#ButVerk {
+	margin-top: 5px;
+}

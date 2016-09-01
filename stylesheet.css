@@ -1,22 +1,27 @@
 /* CSS Einstellungen für alle Seiten */
-html {
+HTML, BODY {
+	height: 100%;
+	padding: 0;
+	position: relative;
+}
+HTML {
 	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #000;
 }
-body {
-	width: 100%;
-	background-color: lightgrey;
+BODY {
+	margin: 0;
+	overflow: hidden;
 }
-button {
+BUTTON {
 	border-radius: 5px;
 	background-color: #000;
 	color: #fff;
 }
-h1 {
+H1 {
 	text-align: center;
 }
-hr {
+HR {
 	display: block;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
@@ -24,210 +29,31 @@ hr {
 	border-width; 2px;
 }
 
-
-/* Highscore Tabelle */
-#highscore {
-	height: 100%;
-	display: inline-block;
-	float: right;
-	margin-right: 0;
-	padding: 1em;
-	background-color: #30A6E6;
-}
-
-/* CSS babylon.html */
-
-img#babylon {
-	height:100vh;
-	position:absolute;
-	opacity: 0.5;
-	z-index: -99999;
-}
-h3#index_message {
-	text-align: center;
-}
-
-
-
-/* CSS index.html */
-
-/* Bilder */
-#index_background {
-	max-width: 35%;
-	margin: 0px auto;
-	display: block;
-}
-
-
-
-/* Navigationsleiste */
-.nav {
-	width: 99%;
-	float: left;
-	margin-right: 1em;
-	padding; 0;
-	border-style: solid;
-	border-width; 0.3em;
-	border-color: black;
-	background-color: #30A6E6;
-}
-.nav_side {
-	padding; 0;
-	border-style: solid;
-	border-width; 0.3em;
-	border-color: black;
-	background-color: #30A6E6;
-	
-}
-/* Nav-Leiste */
-.nav_header {
-	background: #30A6E6;
-}
-
-/* Unterpunkte */
-.nav_header ul, .nav_header li {
-	margin: 0;
-	padding: 0;
-}
-.nav_header ul {
-	background: gray;
-	list-style: none;
-	width: 100%;
-}
-.nav_header li {
-	float: left;
-	position: relative;
-	width:auto;
-}
-
-/* Verlinkungen */
-.nav_header a {
-	background: #30A6E6;
-	color: #FFFFFF;
-	display: block;
-	font: bold 12px/20px sans-serif;
-	padding: 10px 25px;
-	text-align: center;
-	text-decoration: none;
-}
-.nav_header li:hover a {
-	background: #000000;
-}
-li.user {
-	float: right;
-}
-/* Seitennavigation */
-#sidenav_left {
-	height: 90vh;
-	width: 15vw;
-	padding: 1em;
-	background-color: #30A6E6;
-	float: left;
-	border-top: none;
-}
-#sidenav_right {
-	height: 90vh;
-	width: 15vw;
-	padding: 1em;
-	background-color: #30A6E6;
-	float:left;
-	margin-left: 0;
-	border-top: none;
-}
-#sidenav_center {
-	height: 90vh;
-	width: 62.55vw;
-	padding: 1em;
-	float: left;
-	margin: 0 0 0 0;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	background-color: grey;
-}
-
-/* */
-.login {
-	background-color:lightgrey;
-	border-radius:10px;
-	padding:10px
-}
-
-/* Formularinhalt */
-.login-content {
-	margin-top:1vh;
-}
-
-/* Felder für neuen Account erstellen */)
-.acc {
-	margin:3px;
-	
-}
-
-
-
 /* Tabellen */
 
-table {
+TABLE {
 	border-collapse:collapse;
 	margin-top:10px;
+	padding-right: 15px;
 	background-color: #fff;
 	width: 100%;
 }
-table, th, td {
+TABLE, TH, TD {
 	--border: 1px solid black;
 }
-td, th {
+TD, TH {
 	padding:5px;
 	text-align:left;
 	border-bottom: 1px solid #000;
 }
-tr:nth-child(even) {
+TR:nth-child(even) {
 	background-color: #fff;
 }
-th {
+TH {
 	background-color: #4CAF50;
 	color: white;
 }
-.field th{
-	background-color: #fff;
-}
-.field_img {
-	width: 2vw;
-}
-.temple table, th, td{
-	border: 1px solid black;
-}
-.temple th {
-	width: 2vw;
-	height: 3vh;
-}
-#marduk th{
-	background-color: #fff;
-}
-#ishtar th{
-	background-color: #fff;
-}
-#tammouz th{
-	background-color: #fff;
-}
-.bab_gamefield {
-	border-collapse: separate;
-	border-spacing: 5px;
-	background-color: blue;
-	margin: auto;
-}
-.bab_gamefield td{
-	background-color: #fff;
-	height: 10vw;
-	width: 10vw;
-}
-td.begin {
-	background-color: green;
-}
-td.space {
-	background-color: red;
-}
+
 
 
 /* Modalfenster */
@@ -281,5 +107,3 @@ td.space {
 .close:hover {
 	background: #00d9ff; 
 }
-
-	

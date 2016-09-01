@@ -1,0 +1,22 @@
+.field th{
+	background-color: #fff;
+}
+.field_img {
+	width: 2vw;
+}
+.temple table, th, td{
+	border: 1px solid black;
+}
+.temple th {
+	width: 2vw;
+	height: 3vh;
+}
+#marduk th{
+	background-color: #fff;
+}
+#ishtar th{
+	background-color: #fff;
+}
+#tammouz th{
+	background-color: #fff;
+}

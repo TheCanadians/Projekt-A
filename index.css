@@ -1,0 +1,8 @@
+h3#index_message {
+	text-align: center;
+}
+#index_background {
+	max-width: 35%;
+	margin: 0px auto;
+	display: block;
+}
