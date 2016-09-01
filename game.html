@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang=de>
+	<head>
+		<meta charset=UTF-8>
+		<title>Amyitis</title>
+		<link rel=stylesheet type="text/css" href=stylesheet.css>
+	</head>
+	<body>
+		<!-- Start Main Nav -->
+		<header class=w100>
+			<nav class=nav>
+				<ul>
+					<li>
+						<a href=www.ystari.com/amyitis/AmG.pdf>Regeln</a>
+					</li>
+					<li>
+						<a href=save.php>Spiel speichern</a>
+					</li>
+					<li class=user>
+						<!--Button zum Öffnen einer Modal Box für die Erstellung eines neuen Accounts-->
+						<a href=#openReg>Neuer Account</a>
+					</li>
+					<li class=user>
+					<!--Button zum Öffnen einer Modal Box für die Erstellung eines neuen Accounts-->
+					<a href=#openLogin class=nav-link>Login</a>
+					<!-- LOGIN OVERLAY -->
+					
+					
+					
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Ende Main Nav -->
+		<main>
+			<!-- Start Sidemenu -->
+			<div class=w30>
+				<!-- Tabelle mit der aktuellen Runde und Phase des Spiels -->
+				<table>
+					<tr>
+						<th>Runde</th>
+						<th>Phase</th>
+					</tr>
+					<tr>
+						<td id=round></td>
+						<td id=phase></td>
+					</tr>
+				</table>
+				<!-- Tabelle mit dem aktuellen Status (passt, spielt, wartet) und den Prestigepunkten der Spieler -->
+				<table>
+					<tr>
+						<th>Spieler</th>
+						<th>Status</th>
+						<th>Punkte</th>
+					</tr>
+				</table>
+				<hr>
+				<!-- Tabelle mit dem Inventar des Spielers -->
+				<table>
+					<tr>
+						<th>Item</th>
+						<th>Anzahl</th>
+					</tr>
+					<tr>
+						<td>Münzen</td>
+						<td id=münzen></td>
+					</tr>
+					<tr>
+						<td>Datteln</td>
+						<td id=datteln></td>
+					</tr>
+					<tr>
+						<td>Gerste</td>
+						<td id=gerste></td>
+					</tr>
+					<tr>
+						<td>Palmen</td>
+						<td id=palmen></td>
+					</tr>
+					<tr>
+						<td>Salz</td>
+						<td id=palmen></td>
+					</tr>
+					<tr>
+						<td>Wein</td>
+						<td id=wein></td>
+					</tr>
+					<tr>
+						<td>Kamele</td>
+						<td id=kamele></td>
+					</tr>
+					<tr>
+						<td>Pflanzen</td>
+						<td id=pflanzen></td>
+					</tr>
+					<tr>
+						<td>Karawanenführer</td>
+						<td id=karawane></td>
+					</tr>
+					<tr>
+						<td>Bankier</td>
+						<td id=bankier></td>
+					</tr>
+					<tr>
+						<td>Palast</td>
+						<td id=palast></td>
+					</tr>
+					<tr>
+						<td>Gärtner</td>
+						<td id=gärtner></td>
+					</tr>
+				</table>
+			</div>
+			<!-- Start Navigation Spielfeldmenü -->
+			<nav class=w70>
+				<ul>
+					<li>
+						<a href=babylon.html target=gameboard>Babylon</a>
+					</li>
+					<li>
+						<a href=meso.html target=gameboard>Mesopotamien</a>
+					</li>
+					<li>
+						<a href=tables.html target=gameboard>Sonstiges</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- iframe der das aktuell gewählte Spielfeld darstellt -->
+			<iframe src=babylon.html name=gameboard class=w70>
+			
+			</iframe>
+			<!-- Start Navigation Spielzug -->
+			<nav class=w70>
+				<ul>
+					<li>
+						<a href=#openRekrut>Rekrutieren</a>
+					</li>
+					<li>
+						<a href=#openHandel>Karawane bewegen</a>
+					</li>
+					<li>
+						<button type=submit formaction=gameHandler.php formmethod=post name=pass value=1>
+					</li>
+				</ul>
+			</nav>
+		</main>
+		
+<!-------------------------------------------------------------------------------------MODALE FENSTER-------------------------------------------------------------------------------->
+		
+		<!-- Modal Neuer Account -->
+		<!--Modal Box die beim Drücken auf den Button erscheint. Durch Drücken des "X" oder durch klicken
+		neben das Fenster schließt sich dieses wieder-->
+		<div id=openReg class=modalDialog>
+			<div>
+				<!--Schließen der Modal Box-->
+				<a href=#close title=Close class=close>X</a>
+				<form action=gameHandler.php method=post>
+					<!--Fasst die Felder zur Erstellung des neuen Accounts zusammen-->
+					<fieldset>
+						<legend>Account erstellen</legend>
+						<label for=acc_name>Accountname*: </label><br>
+						<!--Eingabefeld für den gewünschten Benutzernamen-->
+						<input type=text name=acc_name class=acc required><br>
+						<label for=pw>Passwort*: </label><br>
+						<!--Eingabefeld für das gewünschte Passwort-->
+						<input type=text name=pw class=acc required><br>
+						<label for=pw_c>Passwort bestätigen*: </label><br>
+						<!--Eingabefeld zum Bestätigen des gewünschten Passwortes um Schreibfehler zu vermeiden-->
+						<input type=text name=pw_c class=acc required><br>
+						<label for=email>E-Mail Adresse: </label><br>
+						<!--Eingabefeld für die E-Mail Adresse-->
+						<input type=text name=email class=acc><br>
+						<!--Submit Button zum Abschicken der Login-Informationen-->
+						<button type=submit>Account erstellen</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>		
+		<!-- Modal Rekrutieren -->
+		<div id=openRekrut class=modalDialog>
+			<div>
+				<!--Schließen der Modal Box-->
+				<a href=#close title=Close class=close>X</a>
+					<!-- Tabelle die zufällig mit den Berufsartenkarten gefüllt ist; Größe abhängig von der Spieleranzahl -->
+					<table>
+						
+					</table>
+			</div>
+		</div>
+		<!-- Modal Bauer -->
+		<div id=openW class=modalDialog>
+			<div>
+				<!--Schließen der Modal Box-->
+				<a href=#close title=Close class=close>X</a>
+					<!-- Tabelle mit zwei zufälligen Waren von denen der Spieler eine auswählen muss -->
+					<form action=gameHandler.php method=post>
+						<input type=image src=# alt=Submit id=Ware_01>
+						<input type=image src=# alt=Submit id=Ware_02>
+					</form>
+			</div>
+		</div>	
+		<!-- Modal Priester -->
+		<div id=openW class=modalDialog>
+			<div>
+				<!--Schließen der Modal Box-->
+				<a href=#close title=Close class=close>X</a>
+					<!-- Tabelle mit den drei Tempeln und dazugehörigen Buttons -->
+						<!-- Ishtar -->
+						<h3>Ishtar</h3>
+						<table>
+							<tr>
+								<td id=Ishtar_01></td>
+								<td id=Ishtar_02></td>
+								<td id=Ishtar_03></td>
+								<td id=Ishtar_04></td>
+							</tr>
+						</table>
+						<button type=submit formaction=gameHandler.php formmethod=post name=ishtarB value=0>
+						<!-- Marduk -->
+						<h3>Marduk</h3>
+						<table>
+							<tr>
+								<td id=Marduk_01></td>
+								<td id=Marduk_02></td>
+								<td id=Marduk_03></td>
+								<td id=Marduk_04></td>
+							</tr>
+						</table>
+						<button type=submit formaction=gameHandler.php formmethod=post name=mardukB value=1>
+						<!-- Tammouz -->
+						<h3>Tammouz</h3>
+						<table>
+							<td id=Tammouz_01></td>
+							<td id=Tammouz_02></td>
+							<td id=Tammouz_03></td>
+							<td id=Tammouz_04></td>
+						</table>
+						<button type=submit formaction=gameHandler.php formmethod=post name=tammouzB value=2>
+			</div>
+		</div>	
+		<!-- Modal Handel -->
+		<div id=openHandel class=modalDialog>
+			<div>
+				<!--Schließen der Modal Box-->
+				<a href=#close title=Close class=close>X</a>
+					<!-- Auswahl Kaufen oder Verkaufen -->
+					<a href=#kaufen data-dismiss=openHandel data-toggle=openHandel>Kaufen</a>
+					<a href=#verkaufen data-dismiss=openHandel data-toggle=openHandel>Verkaufen</a>
+			</div>
+		</div>
+		<!-- Modal Kaufen -->
+		<div id=kaufen class=modalDialog>
+			<div>
+				<!--Schließen der Modal Box-->
+				<a href=#close title=Close class=close>X</a>
+					<!-- Tabelle mit den Handelsmöglichkeiten; abhängig vom Feld auf dem der Spieler steht -->
+					<table>
+						
+					</table>
+			</div>
+		</div>
+		<!-- Modal Verkaufen -->
+		<div id=verkaufen class=modalDialog>
+			<div>
+				<!--Schließen der Modal Box-->
+				<a href=#close title=Close class=close>X</a>
+					<!-- Tabelle mit den Handelsmöglichkeiten -->	
+					<form action=gameHandler.php method=post>	
+						<table>
+							<tr>
+								<th>Waren</th>
+								<th>Anzahl</th>
+								<th>Verkauf</th>
+							</tr>
+							<tr>
+								<td>Datteln</td>
+								<td id=datteln></td>
+								<input type=number name=num_dat placeholder=0>
+							</tr>
+							<tr>
+								<td>Gerste</td>
+								<td id=gerste></td>
+								<input type=number name=num_ger placeholder=0>
+							</tr>
+							<tr>
+								<td>Palmen</td>
+								<td id=palmen></td>
+								<input type=number name=num_palm placeholder=0>
+							</tr>
+							<tr>
+								<td>Salz</td>
+								<td id=salz></td>
+								<input type=number name=num_salz placeholder=0>
+							</tr>
+							<tr>
+								<td>Wein</td>
+								<td id=wein></td>
+								<input type=number name=num_wein placeholder=0>
+							</tr>
+						</table>
+						<button type=submit>Verkaufen</button>
+					</form>
+			</div>
+		</div>
+		<!-- Modal Babylon pflanzen -->
+		<div id=kaufen class=modalDialog>
+			<div>
+				<!--Schließen der Modal Box-->
+				<a href=#close title=Close class=close>X</a>
+					<!-- Tabelle mit den Handelsmöglichkeiten; abhängig vom Feld auf dem der Spieler steht -->
+					<iframe src=babylon.html>
+					
+					</iframe>
+					<button type=submit formaction=gameHandler.php formmethod=post name=levelUpPflanze value=1>
+			</div>
+		</div>
+	</body>
+</html>
