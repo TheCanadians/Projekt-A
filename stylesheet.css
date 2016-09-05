@@ -1,8 +1,8 @@
 /* CSS Einstellungen für alle Seiten */
 HTML, BODY {
+	width: 100%;
 	height: 100%;
 	padding: 0;
-	position: relative;
 }
 HTML {
 	font-size: 16px;
@@ -34,7 +34,6 @@ HR {
 TABLE {
 	border-collapse:collapse;
 	margin-top:10px;
-	padding-right: 15px;
 	background-color: #fff;
 	width: 100%;
 }
