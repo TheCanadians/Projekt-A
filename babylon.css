@@ -1,8 +1,13 @@
+#babylon {
+	margin: 0;
+}
 .bab_gamefield {
 	border-collapse: separate;
 	border-spacing: 5px;
 	background-color: blue;
 	margin: auto;
+	padding: 0;
+	border-right: 5px solid blue;
 }
 .bab_gamefield td{
 	background-color: #fff;
