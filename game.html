@@ -6,22 +6,22 @@
 		<link rel=stylesheet type="text/css" href=stylesheet.css>
 		<link rel=stylesheet type="text/css" href=game.css>
 	</head>
-	<body class=game>
+	<body class="container body">
 		<!-- Start Main Nav -->
-		<header class=w100>
-			<nav class=nav>
-				<ul>
+		<header class="container item header">
+			<nav class="nav item">
+				<ul class="container mainnav">
 					<li>
 						<a href=www.ystari.com/amyitis/AmG.pdf>Regeln</a>
 					</li>
 					<li>
 						<a href=save.php>Spiel speichern</a>
 					</li>
-					<li class=user>
+					<li class="item user">
 						<!--Button zum Öffnen einer Modal Box für die Erstellung eines neuen Accounts-->
 						<a href=#openReg>Neuer Account</a>
 					</li>
-					<li class=user>
+					<li class="item user">
 					<!--Button zum Öffnen einer Modal Box für die Erstellung eines neuen Accounts-->
 					<a href=#openLogin class=nav-link>Login</a>
 					<!-- LOGIN OVERLAY -->
@@ -33,9 +33,9 @@
 			</nav>
 		</header>
 		<!-- Ende Main Nav -->
-		<main>
+		<main class="container item main">
 			<!-- Start Sidemenu -->
-			<div class=w30>
+			<div class="item w30">
 				<!-- Tabelle mit der aktuellen Runde und Phase des Spiels -->
 				<table>
 					<tr>
@@ -63,7 +63,7 @@
 						<th class=last>Anzahl</th>
 					</tr>
 					<tr>
-						<td>Münzen</td>
+						<td>M&uuml;nzen</td>
 						<td id=münzen class=last></td>
 					</tr>
 					<tr>
@@ -95,7 +95,7 @@
 						<td id=pflanzen class=last></td>
 					</tr>
 					<tr>
-						<td>Karawanenführer</td>
+						<td>Karawanenf&uuml;hrer</td>
 						<td id=karawane class=last></td>
 					</tr>
 					<tr>
@@ -107,15 +107,15 @@
 						<td id=palast class=last></td>
 					</tr>
 					<tr>
-						<td>Gärtner</td>
+						<td>G&auml;rtner</td>
 						<td id=gärtner class=last></td>
 					</tr>
 				</table>
 			</div>
 			<!-- Start Navigation Spielfeldmenü -->
-			<div class=w70>
-				<nav class=nav>
-					<ul>
+			<div class="item w70">
+				<nav class="nav">
+					<ul class="container mainnav">
 						<li>
 							<a href=babylon.html target=gameboard>Babylon</a>
 						</li>
@@ -134,8 +134,8 @@
 					</iframe>
 				</div>
 				<!-- Start Navigation Spielzug -->
-				<nav class="w70 nav">
-					<ul>
+				<nav class="nav">
+					<ul class="container mainnav">
 						<li>
 							<a href=#openRekrut>Rekrutieren</a>
 						</li>
@@ -169,7 +169,7 @@
 						<label for=pw>Passwort*: </label><br>
 						<!--Eingabefeld für das gewünschte Passwort-->
 						<input type=text name=pw class=acc required><br>
-						<label for=pw_c>Passwort bestätigen*: </label><br>
+						<label for=pw_c>Passwort best&auml;tigen*: </label><br>
 						<!--Eingabefeld zum Bestätigen des gewünschten Passwortes um Schreibfehler zu vermeiden-->
 						<input type=text name=pw_c class=acc required><br>
 						<label for=email>E-Mail Adresse: </label><br>
