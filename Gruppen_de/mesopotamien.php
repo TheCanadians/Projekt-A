@@ -3,8 +3,8 @@
 	<head>
 		<meta charset=UTF-8>
 		<title>Mesopotamien</title>
-		<link rel=stylesheet type="text/css" href=stylesheet.css>
-		<link rel=stylesheet type="text/css" href=meso.css>
+		<link rel=stylesheet type="text/css" href="../Stylesheets/stylesheet.css">
+		<link rel=stylesheet type="text/css" href="../Stylesheets/meso.css">
 	</head>
 	<body>
 		<main>

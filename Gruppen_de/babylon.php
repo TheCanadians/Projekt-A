@@ -3,8 +3,8 @@
 	<head>
 		<meta charset=UTF-8>
 		<title>Babylon</title>
-		<link rel=stylesheet type="text/css" href=stylesheet.css>
-		<link rel=stylesheet type="text/css" href=babylon.css>
+		<link rel=stylesheet type="text/css" href="../Stylesheets/stylesheet.css">
+		<link rel=stylesheet type="text/css" href="../Stylesheets/babylon.css">
 	</head>
 	<body>
 		<main id=babylon>

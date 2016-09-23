@@ -7,35 +7,60 @@ Legende: Gruppen										I..XVI
 		 
 Gruppen:
 
-		I 	- Startbildschirm: 	01, 02, 03
-		II 	- Hauptmenü:			04, 05, 06, 07, 08, 16
-		III - Account:			09, 10, 11, 12, 13, 14, 15
-		IV 	- Login:			17, 18, 19, 20
-		V	- Sidemenu:			21, 22, 23, 60
-		VI	- Spielfeldmenü:	24, 25, 26, 27
-		VII	- Spielzug:			29, 39, 49 
-		VIII- Rekrutieren:		30, 31
-		IX	- Bauer:			32, 33
-		X	- Priester:			34, 35, 36, 37, 38
-		XI	- Handel:			40, 41, 42, 43, 44
-		XII	- Pflanzen:			45, 46, 47, 48
-		XIII- Rundenende:		50, 51, 52
-		XIV	- Babylon:			(53), 54 
-		XV	- Mesopotamien:		(53), 55
-		XVI	- Sonstiges:		(53), 56, 57, 58, 59 
+		I 	- index: 	01, 02, 03
+		II 	- mainmenu:			04, 05, 06, 07, 08, 16
+		III - account:			09, 10, 11, 12, 13, 14, 15
+		IV 	- login:			17, 18, 19, 20
+		V	- sidemenu:			21, 22, 23, 60
+		VI	- gamefield:	24, 25, 26, 27
+		VII	- turn:			29, 39, 49 
+		VIII- recruit:		30, 31
+		IX	- farmer:			32, 33
+		X	- priest:			34, 35, 36, 37, 38
+		XI	- trade:			40, 41, 43
+		XII	- plants:			45, 46, 47, 48
+		XIII- roundend:		50, 51, 52
+		XIV	- babylon:			(53), 54 
+		XV	- mesopotamien:		(53), 55
+		XVI	- tables:		(53), 56, 57, 58, 59 
+		XVII- temple:		57, 58, 59 
+		XVIII-fields:		56
+		XIX - buy:			42
+		XX  - sell:			44
 
 Ansichten:
 
 	view_index
 		Gruppe I
 	view_game
-		Gruppen II, (III), (IV), V, VI, VII, (VIII), (IX), (X), (XI), (XII), (XIII)
-	view_babylon
-		Gruppe XIV
-	view_mesopotamien
-		Gruppe XV
-	view_tables
-		Gruppe XVI 
+		Gruppen II, V, VI, [XIV, XV, XVI]
+	view_account
+		Gruppen III
+	view_login
+		Gruppen IV
+	view_turn
+		Gruppen VII
+	view_recruit
+		Gruppen VIII
+	view_farmer
+		Gruppen IX
+	view_priest
+		Gruppen X
+	view_trade
+		Gruppen XI 
+	view_plants
+		Gruppen XII
+	view_roundend
+		Gruppen XIII
+	view_temple
+		Gruppen XVII
+	view_fields
+		Gruppen XVIII
+	view_buy
+		Gruppen XIX
+	view_sell
+		Gruppen XX
+	
 			
 Liste strukturelle Elemente:
 
@@ -86,13 +111,13 @@ Liste strukturelle Elemente:
 			39 - Button "Karawane bewegen" öffnet modales Fenster
 				40 - Modales Fenster "Handel"
 					41 - Button "Verkauf"
-					42 - Tabelle 2xS (S=Anzahl der unterschiedlichen Waren des Spielers bei denen die Anzahl > 0 ist) mit den Waren und deren Anzahl
+						42 - Tabelle 2xS (S=Anzahl der unterschiedlichen Waren des Spielers bei denen die Anzahl > 0 ist) mit den Waren und deren Anzahl
 					43 - Button "Kaufen"
-					44 - Tabelle Yx3 (Y=Anzahl der Handelsmöglichkeiten, unterschiedlich je nach Feld auf dem der Spieler steht) mit den Handelsbedingungen (bspw. Palast | -> | Gerste; heißt: eine Palastaufwertung für 1 x Gerste)
-						45 - wenn eine Pflanze gekauft wurde: öffnet neues modales Fenster
-							46 - Modales Fenster "Babylon"
-								47 - Tabelle 4x4 mit den Gärten, die Felder auf denen angebaut werden kann sind markiert
-								48 - Button "Pflanze aufwerten" (wertet die Pflanzenkarte auf wenn der Spieler einen Gärtner besitzt)
+						44 - Tabelle Yx3 (Y=Anzahl der Handelsmöglichkeiten, unterschiedlich je nach Feld auf dem der Spieler steht) mit den Handelsbedingungen (bspw. Palast | -> | Gerste; heißt: eine Palastaufwertung für 1 x Gerste)
+							45 - wenn eine Pflanze gekauft wurde: öffnet neues modales Fenster
+								46 - Modales Fenster "Babylon"
+									47 - Tabelle 4x4 mit den Gärten, die Felder auf denen angebaut werden kann sind markiert
+									48 - Button "Pflanze aufwerten" (wertet die Pflanzenkarte auf wenn der Spieler einen Gärtner besitzt)
 			49 - Button "Passen" setzt den Status des eigenen Spielers auf "passen"
 		50 - Modales Fenster "Ende der Runde" 
 			51 - Anzeige wie viele Waren der Spieler mit in die nächste Runde nehmen darf 
