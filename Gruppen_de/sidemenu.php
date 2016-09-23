@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<meta charset=UTF-8>
-		<title>Side Menu</title>
-		<link rel=stylesheet type="text/css" href="../Stylesheets/stylesheet.css">
-		<link rel=stylesheet type="text/css" href="../Stylesheets/game.css">
+	<link rel=stylesheet type="text/css" href="../Stylesheets/stylesheet.css">
+	<link rel=stylesheet type="text/css" href="../Stylesheets/game.css">
 </head>
 <body>
 	<!-- Start Sidemenu -->
