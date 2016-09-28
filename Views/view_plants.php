@@ -7,7 +7,6 @@
 		<link rel=stylesheet type="text/css" href="../Stylesheets/game.css">
 </head>
 <body>
-	
-	<button type=submit formaction=gameHandler.php formmethod=post name=levelUpPflanze value=1>
+	<?php include '../Gruppen_de/plants.php'; ?>
 </body>
 </html>

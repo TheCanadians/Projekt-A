@@ -8,21 +8,7 @@
 	
 </head>
 <body>
-
-	<header>
-		<h1>Amyitis</h1>
-		<hr>
-	</header>
-	<main>
-		<a href=babylon.html>
-			<img src=images/amyitis_background.jpeg alt="Amyitis Hintergrund" id=index_background>
-		</a>
-		<hr>
-		<h3 id=index_message>Klicke auf das Bild um zu starten!</h3>
-	</main>
-	<footer>
-	
-	</footer>
+	<?php include '../Gruppen_de/index.html';?>
 </body>
 </html>
 

@@ -7,9 +7,6 @@
 		<link rel=stylesheet type="text/css" href="../Stylesheets/game.css">
 </head>
 <body>
-	<!-- Tabelle mit den Handelsmöglichkeiten; abhängig vom Feld auf dem der Spieler steht -->
-	<table>
-						
-	</table>
+	<?php include '../Gruppen_de/buy.php'; ?>
 </body>
 </html>

@@ -2,13 +2,11 @@
 <html>
 <head>
 		<meta charset=UTF-8>
-		<title>Amyitis - Trade</title>
+		<title>Amyitis - Account</title>
 		<link rel=stylesheet type="text/css" href="../Stylesheets/stylesheet.css">
 		<link rel=stylesheet type="text/css" href="../Stylesheets/game.css">
 </head>
 <body>
-	<!-- Auswahl Kaufen oder Verkaufen -->
-	<a href=buy.php>Kaufen</a>
-	<a href=sell.php>Verkaufen</a>
+	<?php include '../Gruppen_de/account.html'; ?>
 </body>
 </html>
