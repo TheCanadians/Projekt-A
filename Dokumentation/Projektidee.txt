@@ -116,26 +116,23 @@ Spielende:
 	-> Jeder Spieler bekommt außerdem 1 Prestigepunkt für jede Ware die sich noch in seinem Inventar befindet.
 	- Es gewinnt der Spieler mit den meisten Prestigepunkten.
 	
-===================================
-=== Feedback Alpers, 2016-07-14 ===
-===================================
 
-Stellen Sie bitte alle Feedbacks der Vergangenheit wieder her. Vorher ist ein weiteres Feedback von mir nicht möglich.
 
 ===================================
-=== Feedback Alpers, 2016-06-08 ===
+=== Feedback Alpers, 2016-04-07 ===
 ===================================
 
-Schade, Sie haben hier zwar eine sehr umfangreiche (aber dabei noch relativ knapp gehaltene) Beschreibung 
-des Spiels notiert, aber es handelt sich noch um die Beschreibung des Brettspiels.
-(Wenn die Aufgabe die Entwicklung eines Brettspiels wäre, 
-dann wäre diese Lösung weitaus umfangreicher als nötig.) 
-Für die Beschreibung müssen Sie diese Beschreibung jetzt so anpassen, 
-dass daraus die Grundlage einer webbasierten Anwendung wird, 
-die wie in den FAQ des Lernraums beschrieben interaktiv ist.
-P.S. Bitte fügen Sie den Inhalt der zusätzlichen Dateien im Verzeichnis Dokumentation 
-noch in dieses Dokument oder die strukt.html ein und löschen Sie dann die Dateien, 
-damit das Verzeichnis übersichtlicher wird.
+Das ist im Kern eine Datenbankanwendung, die kaum Interaktionsmöglichkeiten bietet. 
+Von daher ist es als "interaktive Anwendung" eher nicht als Projekt geeignet.
+Wichtig ist auch, dass Sie vorerst eine eigene Idee vorstellen und an der Stelle ist es auch schade, 
+dass Sie etwas vorstellen, das es bereits gibt: 
+Diese Funktionalität bietet Ihnen heute eine Vielzahl kostenloser oder kostenpflichtiger Programme. (Beispielsweise MS Outlook)
+Die Gruppenarbeit wird dieses Semester anders organisiert als im letzten Semester. 
+Das hat etwas mit der Verteilung der Veranstaltungen über das Semester zu tun.
+Einen formalen Mangel gibt es allerdings noch: 
+Sie sollten diese Datei in das Verzeichnis Dokumentation einfügen. Holen Sie das bitte nach.
+Sie können jetzt zwei Dinge tun: 
+http://www.scamadviser.com/is-freenoob.com-a-fake-site.html
 
 ===================================
 === Feedback Alpers, 2016-04-28 ===
@@ -153,17 +150,89 @@ Hier wird weder klar, was im Spiel passiert
 noch (besonders wichtig) welche Interaktionsmöglichkeiten es gibt. Bitte arbeiten Sie das noch nach.
 
 ===================================
-=== Feedback Alpers, 2016-04-07 ===
+=== Feedback Alpers, 2016-06-08 ===
 ===================================
 
-Das ist im Kern eine Datenbankanwendung, die kaum Interaktionsmöglichkeiten bietet. 
-Von daher ist es als "interaktive Anwendung" eher nicht als Projekt geeignet.
-Wichtig ist auch, dass Sie vorerst eine eigene Idee vorstellen und an der Stelle ist es auch schade, 
-dass Sie etwas vorstellen, das es bereits gibt: 
-Diese Funktionalität bietet Ihnen heute eine Vielzahl kostenloser oder kostenpflichtiger Programme. (Beispielsweise MS Outlook)
-Die Gruppenarbeit wird dieses Semester anders organisiert als im letzten Semester. 
-Das hat etwas mit der Verteilung der Veranstaltungen über das Semester zu tun.
-Einen formalen Mangel gibt es allerdings noch: 
-Sie sollten diese Datei in das Verzeichnis Dokumentation einfügen. Holen Sie das bitte nach.
-Sie können jetzt zwei Dinge tun: 
-http://www.scamadviser.com/is-freenoob.com-a-fake-site.html
+Schade, Sie haben hier zwar eine sehr umfangreiche (aber dabei noch relativ knapp gehaltene) Beschreibung 
+des Spiels notiert, aber es handelt sich noch um die Beschreibung des Brettspiels.
+(Wenn die Aufgabe die Entwicklung eines Brettspiels wäre, 
+dann wäre diese Lösung weitaus umfangreicher als nötig.) 
+Für die Beschreibung müssen Sie diese Beschreibung jetzt so anpassen, 
+dass daraus die Grundlage einer webbasierten Anwendung wird, 
+die wie in den FAQ des Lernraums beschrieben interaktiv ist.
+P.S. Bitte fügen Sie den Inhalt der zusätzlichen Dateien im Verzeichnis Dokumentation 
+noch in dieses Dokument oder die strukt.html ein und löschen Sie dann die Dateien, 
+damit das Verzeichnis übersichtlicher wird.
+
+===================================
+=== Feedback Alpers, 2016-07-14 ===
+===================================
+
+Stellen Sie bitte alle Feedbacks der Vergangenheit wieder her. Vorher ist ein weiteres Feedback von mir nicht möglich.
+
+===================================
+=== Feedback Alpers, 2016-10-05 ===
+===================================
+
+Das zentrale Problem ist leider immer noch vorhanden: Sie beschreiben hier sehr umfangreiche Regeln und benennen "Materialarten". Das würde ausreichen, wenn es sich um ein Brettspiel handeln würde und wir die Materialien des Brettspiels vor uns liegen hätten. Genau das ist aber nicht der Fall und deshalb ist die erste Aufgabe hier, dass Sie die Bestandteile des Spiels beschreiben.
+
+Schauen wir uns das mal im Detail an. Das folgende ist der einzig beschreibende Teil Ihres Spiels.
+
+=== 1. Die Einleitung ===
+
+=== Beginn ===
+http://www.brettspiele-report.de/amyitis/
+
+Amyitis ist ein Brettspiel aus dem Jahre 2007, bei welchem das Ziel des Spiels ist am meisten (Prestige-)Punkte zu sammeln.
+
+Ziel des Spiels:
+	Es gewinnt der Spieler der am Ende des Spiels die meisten Prestigepunkte besitzt.
+=== Ende ===
+
+Zur Erinnerung: Hier sollte eine stichpunktartige Auflistung enthalten sein, die als Grundlage der weiteren Softwareentwicklung dient.
+
+Sie führen dagegen zunächst einen Link auf.
+
+Danach erzählen Sie von einem anderen Spiel, bei dem es um das Sammeln von "Prestigepunkten" geht, verlieren aber kein Wort darüber, was Prestigepunkte sein sollen. Sie verlieren auch kein Wort darüber, was Spieler im Spiel tun und sagen somit nichts über das Spiel aus. Spätestens jetzt haben Sie die meisten Leser vorloren.
+
+In der dritten Zeile wiederholen Sie dann die Aussage, dass es um das Sammeln von "Prestigepunkten" geht.
+
+Stattdessen sollten Sie an dieser Stelle zusammefassen, worum es im Spiel geht.
+
+Hier ein Beispiel, eine passende Zusammenfassung für das Spiel Siedler von Catan: "Die Spieler sind Siedler auf einer Insel. Im Laufe des Spiels versuchen sie Straßen, Gebäude und andere Einrichtungen aufzubauen, um so eine erfolgreiche Besiedelung der Insel abzuschließen."
+
+Hier eine passende Zusammenfassung für das Spiel Civilization: "Die Spieler übernehmen jeweils ein Volk in der Steinzeit und versuchen dieses am schnellsten bis in die Neuzeit zu entwickeln. Dazu treiben Sie Handel und erwerben mit den Gewinnen kulturelle, technische und andere Fortschritte."
+
+=== 2. Die Beschreibung / Stichpunkte ===
+
+Hier führen Sie als einzigen Oberpunkt folgendes auf:
+
+=== Beginn ===
+Materialarten:
+(0,I,II,III,etc. sind die Kosten der Karten)
+=== Ende ===
+
+Alles danach bis zu den Regeln ist eingerückt, was bedeutet, dass es sich um Materialarten handelt.
+
+Hier haben wir zwei Probleme:
+
+1.) Da es noch keinen Hinweis darauf gibt, welche Rolle die Materialarten im Spiel spielen ist auch unklar, was dieser Eintrag generell bedeuten soll. (Bis zu diesem Punkt haben Sie durchgehend nur von "Prestigepunkten" gesprochen.)
+2.) Danach folgt eine Reihe römischer Ziffern, gefolgt von einem Kommentar, der leider nicht hilfreich ist, weil unklar ist, was es mit "den" Karten auf sich hat und wie "die" Kosten ins Spiel kommen.
+
+Tatsächlich haben Sie die Beschreibung zum Großteil in den Regeln versteckt. Hier ein Beispiel:
+
+===
+Spielende:
+	- Das Spiel endet bei 2 Spielern wenn nur noch 3 Felder auf dem Babylon-Spielfeld frei sind  ...
+===
+
+An dieser Stelle schreiben Sie etwas über die Anzahl Spieler, worauf Sie im ersten Teil nicht eingehen.
+Wichtiger aber ist die Tatsache, dass Sie hier zum von einem Spielfeld sprechen, auf das Sie oben nicht eingehen.
+
+=== Zusammenfassung ===
+
+Im Kern haben Sie hier die Regeln ausgearbeitet aber keine Beschreibung des Spiels bzw. Sie haben gerade nicht die Grundlage ausgearbeitet, um eine Struktur im Sinne der Aufgabenstellung zu entwickeln. Sie könnten damit zwar eine Klassenstruktur im Sinne der prototypbasierten objektorientierten Programmierung entwickeln, aber das wird Ihnen hier nur wenig nützen, weil Sie ja keine objektorientierte Sprache nutzen können.
+
+Um es nochmal anders zu formulieren: Im Kern haben Sie zwar eine Beschreibung dessen erstellt, was im Spiel passieren kann, aber es fehlt der Teil, in dem es um die Antwort auf die Frage geht, womit das passieren kann.
+
+Vielleicht haben Sie auch den Begriff der stichpunktartigen Aufzählung missverstanden; es genügt leider nicht, jeweils ein Wort bzw. einen Begriff aufzuführen, um eine Beschreibung zu erhalten.
