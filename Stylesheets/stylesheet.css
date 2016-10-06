@@ -11,7 +11,7 @@ HTML {
 }
 BODY {
 	margin: 0;
-	overflow: hidden;
+	overflow: auto;
 }
 BUTTON {
 	border-radius: 5px;
