@@ -1,3 +1,118 @@
+=== Projektidee 2016-10-06 ===
+
+=== Projektidee 2016-10-06 ===
+
+Die Projektidee befasst sich mit der Umsetzung des Brettspieles "Amyitis"
+
+--- Zusammenfassung ---
+
+"Amyitis" ist ein strategisches Brettspiel, bei dem der Spieler Rohstoffe erwirtschaftet, 
+um die hängenden Gärten von Babylon zu bepflanzen und seinen Palast auszubauen.
+Rohstoffe sind Datteln, Gerste, Palmen, Salz, Wein und Gold(Währung).
+Er rekrutiert Bauern, Händler, Priester und Bankiers, die dem Spieler helfen Rohstoffe zu erwirtschaften, 
+welche er in anderen orientalischen Städten, die er mit seiner Karawane bereist, 
+gegen verschiedenste Güter und Dienstleistungen eintauschen kann.
+
+Das Spiel kann mit 2 bis 4 Spielern gespielt werden.
+Die Spieler spielen gegeneinander für begrenzte Rohstoffe und Punkte.
+Punkte werden durch den Ausbau ihres Palastes, die Bepflanzung der Gärten oder den Verkauf von Rohstoffen gewonnen,
+sowie die Dominanz über die religiösen Tempel und die Äcker Babylons.
+Der Spieler mit den meisten Punkten am Ende des Spiels gewinnt.
+
+--- Userinteraktionen ---
+
+- Spielername, und Spielerfarbe bestimmen
+- nächste Aktion wählen
+
+--- Vor Spielbeginn ---
+
+Alle Spieler bekommen einen Grundwert an Rohstoffen zugeteilt.
+
+--- Spielablauf ---
+
+Eine Runde ist in 3 Phasen eingeteilt, die wie eigene Runden funktionieren, heißt die Spieler handeln der Reihe nach.
+In den Phasen 2 und 3 hat der Spieler mehrere Interaktionsmöglichkeiten. Die Phasen sind:
+
+1. "Aufstellung": Gold und Punkte werden verteilt
+2. "Aktionen": Passen, Gehilfen (Bauern, etc.) rekrutieren (wenn genug Gold vorhanden ist) oder mit der Karawane in die nächste Stadt reisen
+3. "Rundenende": Punkte werden je nach Mächteverhältnis in den Tempeln, sowie auf dem Acker verteilt, Rohstoffe werden begrenzt
+
+1. --- Aufstellung ---
+
+	Gold und Punkte werden je nach Anzahl der Bankiers, die einem zur Verfügung stehen an den Spieler ausgezahlt.
+	Für einen Bankier gibt es 1 Gold und Punkt, sowie für jeden weiteren Bankier 1 weiteres Gold und Punkt.
+	
+2. --- Aktionen ---
+
+	Hier können Spieler eine von drei Aktionen wählen:
+	
+	1) Eine Runde passen
+	2) Einen Gehilfen rekrutieren
+	3) Die Karawane weiterziehen lassen
+	
+	1) --- Passen ---
+	
+		Der Spieler macht in dieser Runde der Phase nichts, entweder weil er nicht möchte oder keine Möglichkeiten hat etwas zu tun.
+		
+	2) --- Rekrutieren ---
+	
+		Der Spieler bekommt eine Auswahl von Gehilfen, die er, mit Hilfe von Gold, anwerben kann.
+		Zu den Gehilfen gehören Bauern, Priester, Händler und Bankiere die alle verschiedene, einmalige Fähigkeiten haben.
+			Bauer: 	Belegt eins von zwei dem Spieler zur Auswahl stehenden Feldern auf der Acker und bekommt den dazugehörigen und auf dem Feld abgebildeten Rohstoff.
+					Ist nach der Wahl des Spielers eine Reihe des Ackers komplett "voll", bzw. wurden alle Rohstoffe bereits verteilt, so kann der Spieler der die meisten Rohstoffe erwirtschaftet hat eine seiner Pflanzen die er in den Gärten gepflanzt hat um eine Stufe erhöhen.
+			Priester: Der Spieler belegt ein Feld in einem der drei Tempel (Der Nutzen der Tempel wird in Phase 3 näher erläutert).
+			Händler: Der Spieler wertet seine Karawane auf und kann nun weiter in einem Zug reisen.
+			
+	3) --- Karawane ---
+	
+		Der Spieler bewegt seine Karawane weiter in die nächste Stadt die er erreichen kann (ist die Karawane aufgewertet kann sie weiter reisen).
+		Die Karawane muss eine Stadt weiterreisen, sie darf nicht in der Stadt verweilen in der sie gerade ist.
+		Der Spieler muss in der Stadt handeln in die er reist. Dabei hat er verschiedene Handelsmöglichkeiten:
+			1) Verkauf von Rohstoffen: Der Spieler verkauft Rohstoffe (außer Gold) an die Stadt und erhält dafür Punkte. Für jede 3 Waren die er verkauft erhält er 1 Punkt.
+			2) Ankauf von Rohstoffen, etc.: Jede Stadt bietet verschiedene Dinge zum Kauf an, wie z.B. Rohstoffe, Paläste oder Pflanzen.
+											Die Städte nehmen im Gegenzug nur bestimmte Rohstoffe entgegen. Kauft der Spieler einen Palast, wird der Palast den er schon besitzt aufgewertet und gibt mehr Punkte.
+											Pflanzen dürfen sofort in den hängenden Gärten angepflanzt werden, wenn folgende Bedingungen zutreffen:
+												- Es ist ein Feld in den Gärten frei
+												- Das Feld muss bewässert sein (d.h. es muss am Wasser liegen oder eine direkte Grenze zu einem Feld haben, das bewässert ist)
+												- Die Pflanze muss die gleiche oder eine höhere Stufe als das Feld haben (Pflanzen werden mit Gärtner aufgewertet)
+											Das pflanzen von Pflanzen in den Gärten gibt dem Spieler Vorteile, wie der Ausbau seines Palastes oder Rohstoffe.
+3. --- Rundenende ---
+
+	Der Spieler nach dem Startspieler (Spieler 2) wählt einen Tempel, in welchem er kostenlos ein Feld belegt.
+	Alle anderen Tempel bekommen ein neutrales Feld.
+	Es wird ermittelt wer in welchem Tempel die meisten Felder belegt und dementsprechend Belohnungen verteilt:
+		Ishtar-Tempel:
+			1. Der Spieler wählt ob entweder seine Karawane aufgewertet wird oder er 1 Gold bekommt
+			2. Bekommt die verbleibende Belohnung
+		Marduk-Tempel:
+			1. Erhält 2 Punkte
+			2. Erhält 1 Punkt
+		Tammouz-Tempel:
+			1. Belegt ein Feld des Ackers und bekommt den entsprechenden Rohstoff.
+			2. Bekommt einen zufälligen Rohstoff.
+		Gleichstand:
+			- Es bekommt derjenige die Belohnung, dessen belegtes Feld am weitesten "rechts" liegen (auf einem der hinteren Felder der Tabelle).
+	Die Spieler dürfen, je nach Stufe ihrer Karawane, nur begrenzt viele Rohstoffe (ausgenommen Gold) wählen, die sie mit in die nächste Runde nehmen.
+	Pro Stufe der Karawane 2 Rohstoffe (einzelne Rohstoffe, keine Rohstoffgruppen). Waren, die der Spieler nicht mitnehmen kann gehen in den Weiten der Wüste verloren.
+	
+--- Spielende --- 
+
+	Das Spiel endet bei 2 Spielern wenn nur noch 3 Felder in den Gärten frei sind und bei 3 oder 4 Spielern, wenn nur noch 4 Felder frei sind.
+	Die aktuelle Runde wird daraufhin noch zu Ende gespielt.
+	Spieler erhalten noch Punkte für ihre belegten Felder in den Gärten und die Anzahl ihrer Rohstoffe:
+		Bei 2 Spielern:
+			5 oder 6 belegte Felder und Rohstoffe: 5 Punkte
+			7 belegte Felder und Rohstoffe oder mehr: 10 Punkte
+		Bei 3 Spielern:
+			4 oder 5 belegte Felder und Rohstoffe: 5 Punkte
+			6 belegte Felder und Rohstoffe oder mehr: 10 Punkte
+		Bei 4 Spielern:
+			3 oder 4 belegte Felder und Rohstoffe: 5 Punkte
+			5 belegte Felder und Rohstoffe oder mehr: 10 Punkte
+	Jeder Spieler bekommt außerdem 1 Prestigepunkt für jede Ware die sich noch in seinem Inventar befindet.
+	Es gewinnt der Spieler mit den meisten Punkten.
+
+
 === Projektidee 2016-08-02 ===
 
 http://www.brettspiele-report.de/amyitis/
