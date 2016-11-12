@@ -8,7 +8,7 @@
 	
 </head>
 <body>
-	<?php include '../Gruppen_de/index.html';?>
+	<?php include 'Gruppen_de/index.html';?>
 </body>
 </html>
 

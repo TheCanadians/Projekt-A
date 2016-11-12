@@ -7,7 +7,7 @@
 		<link rel=stylesheet type="text/css" href="../Stylesheets/game.css">
 </head>
 <body>
-	<?php include '../Gruppen_de/backToGame.html'; ?>
-	<?php include '../Gruppen_de/recruit.php'; ?>
+	<?php include 'Gruppen_de/backToGame.html'; ?>
+	<?php include 'Gruppen_de/recruit.php'; ?>
 </body>
 </html>

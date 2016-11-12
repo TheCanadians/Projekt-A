@@ -7,6 +7,6 @@
 		<link rel=stylesheet type="text/css" href="../Stylesheets/game.css">
 </head>
 <body>
-	<?php include '../Gruppen_de/roundend.php'; ?>
+	<?php include 'Gruppen_de/roundend.php'; ?>
 </body>
 </html>
