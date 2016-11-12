@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 		<meta charset=UTF-8>
-		<title>Amyitis - Account</title>
+		<title>Amyitis - Login</title>
 		<link rel=stylesheet type="text/css" href="Stylesheets/stylesheet.css">
 		<link rel=stylesheet type="text/css" href="Stylesheets/game.css">
-</head>
-<body>
-	<?php include 'Gruppen_de/backToGame.html'; ?>
-	<?php include 'Gruppen_de/account.html'; ?>
-</body>
+	</head>
+	<body>
+		<?php include 'Gruppen_de/backToGame.html'; ?>
+		<?php include 'Gruppen_de/form_newGame.php'; ?>
+	</body>
 </html>

@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang=de>
-	<head>
-		<meta charset=UTF-8>
-		<title>Tables</title>
-		<link rel=stylesheet type="text/css" href="../Stylesheets/stylesheet.css">
-		<link rel=stylesheet type="text/css" href="../Stylesheets/tables.css">
-	</head>
 	<body>
 		<section class=nav_side id=sidenav_right>
 				<h3>Felder</h3>

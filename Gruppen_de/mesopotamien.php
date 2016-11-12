@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang=de>
-	<head>
-		<meta charset=UTF-8>
-		<title>Mesopotamien</title>
-		<link rel=stylesheet type="text/css" href="../Stylesheets/stylesheet.css">
-		<link rel=stylesheet type="text/css" href="../Stylesheets/meso.css">
-	</head>
 	<body>
 		<main>
 				<table class=meso_gamefield>

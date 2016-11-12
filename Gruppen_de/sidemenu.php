@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel=stylesheet type="text/css" href="../Stylesheets/stylesheet.css">
-	<link rel=stylesheet type="text/css" href="../Stylesheets/game.css">
-</head>
 <body>
 	<!-- Start Sidemenu -->
 	<div class="item w30">

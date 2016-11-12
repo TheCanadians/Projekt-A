@@ -1,22 +1,15 @@
 === Projektidee 2016-10-06 ===
 
-=== Projektidee 2016-10-06 ===
-
 Die Projektidee befasst sich mit der Umsetzung des Brettspieles "Amyitis"
 
 --- Zusammenfassung ---
 
-"Amyitis" ist ein strategisches Brettspiel, bei dem der Spieler Rohstoffe erwirtschaftet, 
-um die hängenden Gärten von Babylon zu bepflanzen und seinen Palast auszubauen.
+Mein Projekt orientiert sich an dem strategischen Brettspiel "Amyitis" und ist eine webbasierte Anwendunge bei der der Spieler Rohstoffe erwirtschaftet, um die hängenden Gärten von Babylon zu bepflanzen und seinen Palast auszubauen.
 Rohstoffe sind Datteln, Gerste, Palmen, Salz, Wein und Gold(Währung).
-Er rekrutiert Bauern, Händler, Priester und Bankiers, die dem Spieler helfen Rohstoffe zu erwirtschaften, 
-welche er in anderen orientalischen Städten, die er mit seiner Karawane bereist, 
-gegen verschiedenste Güter und Dienstleistungen eintauschen kann.
+Er rekrutiert Bauern, Händler, Priester und Bankiers, die dem Spieler helfen Rohstoffe zu erwirtschaften, welche er in anderen orientalischen Städten, die er mit seiner Karawane bereist, gegen verschiedenste Güter und Dienstleistungen eintauschen kann.
 
-Das Spiel kann mit 2 bis 4 Spielern gespielt werden.
-Die Spieler spielen gegeneinander für begrenzte Rohstoffe und Punkte.
-Punkte werden durch den Ausbau ihres Palastes, die Bepflanzung der Gärten oder den Verkauf von Rohstoffen gewonnen,
-sowie die Dominanz über die religiösen Tempel und die Äcker Babylons.
+Das Spiel kann mit 2 bis 4 Spielern gespielt werden. Die Spieler spielen gegeneinander für begrenzte Rohstoffe und Punkte.
+Punkte werden durch den Ausbau ihres Palastes, die Bepflanzung der Gärten oder den Verkauf von Rohstoffen gewonnen, sowie für die Dominanz über die Tempel und die Äcker Babylons vergeben.
 Der Spieler mit den meisten Punkten am Ende des Spiels gewinnt.
 
 --- Userinteraktionen ---
@@ -111,6 +104,28 @@ In den Phasen 2 und 3 hat der Spieler mehrere Interaktionsmöglichkeiten. Die Ph
 			5 belegte Felder und Rohstoffe oder mehr: 10 Punkte
 	Jeder Spieler bekommt außerdem 1 Prestigepunkt für jede Ware die sich noch in seinem Inventar befindet.
 	Es gewinnt der Spieler mit den meisten Punkten.
+	
+--- KI ---
+
+	Der Spieler soll die Möglichkeit haben, gegen menschliche Gegner, wie auch gegen computergesteuerte KI anzutreten. Der Herausforderungslevel der KI kann am Anfang des Spiels vom Spieler gewählt werden.
+	
+--- KI-Verhalten ---
+
+	Die KI fokussiert sich zufällig auf einen Bereich des Spiels und versucht dort die Gegenspieler zu dominieren. So liegt der Fokus der KI z.B. auf:
+	- Der Dominierung der Äcker und Tempel
+	- Schnelles Bepflanzen der hängenden Gärten
+	- Schneller Ausbau des Palastes
+	- Anhäufung und Verkauf von Ressourcen für Punkte
+	
+--- Profil ---
+
+	Mit einem angelegtem Account können die Spieler ihr Spiel speichern um es später fortführen zu können. Auf dem persönlichen Profil ist einsehbar wie lange der Spieler Amyitis bereits gespielt hat, sein persönlicher Highscore und seine insgesamt erspielten Punkte.
+	
+--- Highscore ---
+
+	Auf der Highscore Liste werden die 10 Spieler angezeigt, die in einem Amyitis-Spiel die meisten Punkte erzielen konnten.
+	
+
 
 
 === Projektidee 2016-08-02 ===

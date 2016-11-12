@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang=de>
-	<head>
-		<meta charset=UTF-8>
-		<title>Babylon</title>
-		<link rel=stylesheet type="text/css" href="../Stylesheets/stylesheet.css">
-		<link rel=stylesheet type="text/css" href="../Stylesheets/babylon.css">
-	</head>
 	<body>
 		<main id=babylon>
 				<table class=bab_gamefield>

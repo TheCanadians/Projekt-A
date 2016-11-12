@@ -8,15 +8,15 @@ Legende: strukturelle Elemente							1..60
 		 
 Liste strukturelle Elemente:
 
-	01 - Überschrift
+	01 - Ãœberschrift
 	02 - Bild das beim darauf Klicken die Seite mit dem Spiel öffnet
 	03 - Schriftzug mit Info wie man zum Spiel kommt
 	04 - Navigation Hauptmenü
 	05 - Link zu den Regeln
-	06 - Link "Spiel speichern"
-	07 - Link "Spiel laden"
+	06 - Button "Spiel speichern"
+	07 - Button "Spiel laden"
 	08 - Link "Neuer Account"
-	10 - Formular
+	10 - Formular "Account erstellen"
 	11 - Input für Accountname (required)
 	12 - Input für Passwort (required)
 	13 - Input für Passwort bestätigen (required)
@@ -48,30 +48,52 @@ Liste strukturelle Elemente:
 	41 - Button "Verkauf" öffnet neues Fenster
 	42 - Tabelle 2xS (S=Anzahl der unterschiedlichen Waren des Spielers bei denen die Anzahl > 0 ist) mit den Waren und deren Anzahl
 	43 - Button "Kaufen" öffnet neues Fenster
-	44 - Tabelle Yx3 (Y=Anzahl der Handelsmöglichkeiten, unterschiedlich je nach Feld auf dem der Spieler steht) mit den Handelsbedingungen (bspw. Palast | -> | Gerste; heißt: eine Palastaufwertung für 1 x Gerste)
+	44 - Tabelle Yx3 (Y=Anzahl der Handelsmöglichkeiten, unterschiedlich je nach Feld auf dem der Spieler steht) mit den Handelsbedingungen (bspw. Palast | -> | Gerste; heiÃŸt: eine Palastaufwertung für 1 x Gerste)
 	45 - wenn eine Pflanze gekauft wurde: öffnet neues Fenster
 	46 - Fenster "Babylon"
 	47 - Tabelle 4x4 mit den Gärten, die Felder auf denen angebaut werden kann sind markiert
 	48 - Button "Pflanze aufwerten" (wertet die Pflanzenkarte auf wenn der Spieler einen Gärtner besitzt)
-	49 - Link "Passen" setzt den Status des eigenen Spielers auf "passen"
+	49 - Input "Passen" setzt den Status des eigenen Spielers auf "passen"
 	50 - Fenster "Ende der Runde" 
 	51 - Anzeige wie viele Waren der Spieler mit in die nächste Runde nehmen darf 
-	52 - Tabelle 3x5 mit den Waren des Spielers und deren Anzahl, sowie einem input-Feld wie viele der Ware er mit in die nächste Runde nehmen will (darf nicht <0, größer als die Menge der Ware sein und die maximale Anzahl behaltener Waren darf die Anzahl der Waren die der Spieler mit in die nächste Runde nehmen darf nicht überschreiten)
+	52 - Tabelle 3x5 mit den Waren des Spielers und deren Anzahl, sowie einem input-Feld wie viele der Ware er mit in die nächste Runde nehmen will (darf nicht <0, gröÃŸer als die Menge der Ware sein und die maximale Anzahl behaltener Waren darf die Anzahl der Waren die der Spieler mit in die nächste Runde nehmen darf nicht überschreiten)
 	53 - Zentrales Element des Spielfeldes (iframe) zeigt je nach "Spielfeldmenü" (s.o.) das jeweilige Spielfeld an
 	54 - 4x4 Tabelle welche die hängenden Gärten zeigt, in jedem Tabellenfeld ist die Stufe der zu pflanzenden Pflanze (1,2,3) angezeigt oder die Farbe des Spielers der dieses Feld bereits bepflanzt hat
 	55 - 3x3 Tabelle mit den einzelnen Städten. In jedem Tabellenfeld ist eine eigene 2x2 Tabelle welche anzeigt welche Waren/Pflanzen für wieviel welcher Ware gekauft werden können.
-	56 - 2x5 Tabelle der "Äcker" zeigt Bilder der Waren die noch zu haben sind, alle anderen Felder haben die Farbe des Spielers der es besetzt hat.
+	56 - 2x5 Tabelle der "Ã„cker" zeigt Bilder der Waren die noch zu haben sind, alle anderen Felder haben die Farbe des Spielers der es besetzt hat.
 	57 - 1x4 Tabelle des Tempels "Ishtar" welche die Farbe des Spielers anzeigt der es besetzt hat.
 	58 - 1x4 Tabelle des Tempels "Marduk" welche die Farbe des Spielers anzeigt der es besetzt hat.
 	59 - 1x4 Tabelle des Tempels "Tammouz" welche die Farbe des Spielers anzeigt der es besetzt hat.
 	61 - Navigation Zurück zum Hauptmenü
 	62 - Link "Zurück zum Spielfeld"
+	63 - Link "Profil"
+	64 - Label das anzeigt wie viele Stunden und Minuten der Spieler Amyitis bereits gespielt hat
+	65 - Label der den persönlichen Punkte Highscore des Spielers anzeigt
+	66 - Label der die insgesamt erspielten Punkte des Spielers anzeigt
+	67 - Link "Passwort ändern" 
+	68 - Input "Accountname ändern"
+	69 - Formular "Accountname"
+	70 - Button "Bestätigen" Bestätigt Accountnamenänderung
+	71 - Formular "Passwort ändern"
+	72 - Input "altes Passwort"
+	73 - Input "neues Passwort"
+	74 - Input "neues Passwort bestätigen"
+	75 - Link "Neues Spiel"
+	76 - Formular "Spieldaten"
+	77 - Select input mit den options 2, 3, 4
+	78 - Input "Spielername"
+	79 - RadioButton "KI"
+	80 - RadioButton "Mensch"
+	81 - Button "Bestätigen" bestätigt die Namen und Farben der Spieler und startet das Spiel
+	82 - ColorPicker 
+	83 - Button "Bestätigen" um die Änderung des Passwortes zu bestätigen
+	84 - Button "Bestätigen um die Anzahl an Spielern festzulegen
 
 		 
 Gruppen:
 
 	I 	- index: 			01, 02, 03
-	II 	- mainmenu:			04, 05, 06, 07, 08, 16
+	II 	- mainmenu:			04, 05, 06, 07, 08, 16, 63, 75
 	III - account:			09, 10, 11, 12, 13, 15
 	IV 	- login:			17, 18, 19, 20
 	V	- sidemenu:			21, 22, 23, 60
@@ -91,6 +113,9 @@ Gruppen:
 	XIX - buy:				42
 	XX  - sell:				44
 	XXI - backToGame:		61, 62
+	XXII- profil:			64, 65, 66, 67, 68, 69, 70
+	XXIII-newPasswort:		71, 72, 73, 74, 83
+	XXIV- newGame:			76, 77, 78, 79, 80, 81, 82, 84
 
 Ansichten:
 
@@ -124,6 +149,12 @@ Ansichten:
 		Gruppen XIX, XXI
 	sell
 		Gruppen XX, XXI
+	profil
+		Gruppen XXII, XXI
+	newPasswort
+		Gruppen XXIII, XXI
+	newGame
+		Gruppen XXIV, XXI
 	
 -->
 
@@ -160,7 +191,7 @@ Wenn Sie das entsprechend umgesetzt haben, setzen Sie sich bitte an die folgende
 
 Auf den ersten Blick sieht das sehr gut (weil systematisch und knapp) aus. 
 Allerdings besteht der Sinn dieser Aufgabe darin, 
-dass Sie später Änderungen schnell einpflegen können und genau da liegt der Hase im Pfeffer:
+dass Sie später Ã„nderungen schnell einpflegen können und genau da liegt der Hase im Pfeffer:
 - Sie haben die strukturellen Elemente nicht als eigenständige Liste notiert. 
 Wenn Sie also später neue strukturelle Elemente hinzufügen wollen, 
 haben Sie keine Möglichkeit, schnell zu prüfen, ob Sie diese Elemente bereits als Teil Ihres Projektes haben. 
@@ -169,7 +200,7 @@ Bitte tragen Sie deshalb die Liste der strukturellen Elemente nach.
 (Die brauchen Sie nicht zusätzlich in der Liste der Ansichten aufzuführen, da sie bereits bei den Gruppen notiert sein werden.)
 - Als nächstes haben Sie zweimal die Gruppen/Ansichten notiert. 
 Bitte prüfen Sie, welche der beiden Listen aktuell ist (oder ob es sich ggf. um eine zufällige Kopie handelt.)
-- Bitte fügen Sie noch eine Überschrift ein, um zu verdeutlichen, wo die Definition der Gruppen beginnt. 
+- Bitte fügen Sie noch eine Ãœberschrift ein, um zu verdeutlichen, wo die Definition der Gruppen beginnt. 
 (Momentan bin ich nicht sicher, ob Sie da oben Gruppen definiert haben oder ob der entsprechende Teil ein veralteter Teil der strukt.html ist.)
 - Leider haben Sie oben geschrieben, dass Sie die Ansichten mit römischen Ziffern notiert haben. 
 Bitte ändern Sie das entsprechend der Vorgaben ab: Demnach sollen Gruppen mit römischen Ziffern notiert werden.
@@ -181,11 +212,11 @@ Momentan habe ich noch keine Wertung eingetragen, aber das liegt einzig daran, d
 === Feedback Alpers, 2016-10-05 ===
 ===================================
 
-Überarbeiten Sie bitte zunächst die Projektbeschreibung.
+Ãœberarbeiten Sie bitte zunächst die Projektbeschreibung.
 
 Jetzt zu diesem Teil:
 
-Leider haben Sie den Teil mit der Auflistung der strukturellen Elemente noch nicht so umgesetzt, wie es gedacht und gesagt war: Führen Sie eine einfache Liste der strukturellen Elemente auf. So lange Sie da irgendwelche Strukturen einbauen (Tabulatoren, Überschriften u.a.) ist klar erkennbar, dass Sie von den Ansichten ausgehend Gruppen entwickeln, dann aus den Gruppen die strukturellen Elemente. So arbeiten Designer, aber wir machen kein Design, sondern Softwareentwicklung.
+Leider haben Sie den Teil mit der Auflistung der strukturellen Elemente noch nicht so umgesetzt, wie es gedacht und gesagt war: Führen Sie eine einfache Liste der strukturellen Elemente auf. So lange Sie da irgendwelche Strukturen einbauen (Tabulatoren, Ãœberschriften u.a.) ist klar erkennbar, dass Sie von den Ansichten ausgehend Gruppen entwickeln, dann aus den Gruppen die strukturellen Elemente. So arbeiten Designer, aber wir machen kein Design, sondern Softwareentwicklung.
 
 Das Sie somit in der falchen Reihenfolge vorgehen zeigt sich auch dadurch, dass bei Ihnen die Ansichten fast durchgehend nur aus einer Gruppe bestehen.
 

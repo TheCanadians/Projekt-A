@@ -3,8 +3,12 @@
 	<head>
 		<meta charset=UTF-8>
 		<title>Amyitis</title>
-		<link rel=stylesheet type="text/css" href="../Stylesheets/game.css">
-		<link rel=stylesheet type="text/css" href="../Stylesheets/stylesheet.css">
+		<link rel=stylesheet type="text/css" href="Stylesheets/game.css">
+		<link rel=stylesheet type="text/css" href="Stylesheets/stylesheet.css">
+		<link rel=stylesheet type="text/css" href="Stylesheets/index.css">
+		<link rel=stylesheet type="text/css" href="Stylesheets/meso.css">
+		<link rel=stylesheet type="text/css" href="Stylesheets/babylon.css">
+		<link rel=stylesheet type="text/css" href="Stylesheets/tables.css">
 	</head>
 	<body class="container body">
 		<!-- Start Main Nav -->
