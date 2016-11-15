@@ -1,0 +1,430 @@
+*=== Projektidee 2016-10-06 ===
+
+Die Projektidee befasst sich mit der Umsetzung des Brettspieles "Amyitis"
+
+--- Zusammenfassung ---
+
+Mein Projekt orientiert sich an dem strategischen Brettspiel "Amyitis" und ist eine webbasierte Anwendunge bei der der Spieler Rohstoffe erwirtschaftet, um die hängenden Gärten von Babylon zu bepflanzen und seinen Palast auszubauen.
+Rohstoffe sind Datteln, Gerste, Palmen, Salz, Wein und Gold(Währung).
+Er rekrutiert Bauern, Händler, Priester und Bankiers, die dem Spieler helfen Rohstoffe zu erwirtschaften, welche er in anderen orientalischen Städten, die er mit seiner Karawane bereist, gegen verschiedenste Güter und Dienstleistungen eintauschen kann.
+
+Das Spiel kann mit 2 bis 4 Spielern gespielt werden. Die Spieler spielen gegeneinander für begrenzte Rohstoffe und Punkte.
+Punkte werden durch den Ausbau ihres Palastes, die Bepflanzung der Gärten oder den Verkauf von Rohstoffen gewonnen, sowie für die Dominanz über die Tempel und die Äcker Babylons vergeben.
+Der Spieler mit den meisten Punkten am Ende des Spiels gewinnt.
+
+--- Userinteraktionen ---
+
+- Spielername, und Spielerfarbe bestimmen
+- nächste Aktion wählen
+
+--- Vor Spielbeginn ---
+
+Alle Spieler bekommen einen Grundwert an Rohstoffen zugeteilt.
+
+--- Spielablauf ---
+
+Eine Runde ist in 3 Phasen eingeteilt, die wie eigene Runden funktionieren, heißt die Spieler handeln der Reihe nach.
+In den Phasen 2 und 3 hat der Spieler mehrere Interaktionsmöglichkeiten. Die Phasen sind:
+
+1. "Aufstellung": Gold und Punkte werden verteilt
+2. "Aktionen": Passen, Gehilfen (Bauern, etc.) rekrutieren (wenn genug Gold vorhanden ist) oder mit der Karawane in die nächste Stadt reisen
+3. "Rundenende": Punkte werden je nach Mächteverhältnis in den Tempeln, sowie auf dem Acker verteilt, Rohstoffe werden begrenzt
+
+1. --- Aufstellung ---
+
+	Gold und Punkte werden je nach Anzahl der Bankiers, die einem zur Verfügung stehen an den Spieler ausgezahlt.
+	Für einen Bankier gibt es 1 Gold und Punkt, sowie für jeden weiteren Bankier 1 weiteres Gold und Punkt.
+	
+2. --- Aktionen ---
+
+	Hier können Spieler eine von drei Aktionen wählen:
+	
+	1) Eine Runde passen
+	2) Einen Gehilfen rekrutieren
+	3) Die Karawane weiterziehen lassen
+	
+	1) --- Passen ---
+	
+		Der Spieler macht in dieser Runde der Phase nichts, entweder weil er nicht möchte oder keine Möglichkeiten hat etwas zu tun.
+		
+	2) --- Rekrutieren ---
+	
+		Der Spieler bekommt eine Auswahl von Gehilfen, die er, mit Hilfe von Gold, anwerben kann.
+		Zu den Gehilfen gehören Bauern, Priester, Händler und Bankiere die alle verschiedene, einmalige Fähigkeiten haben.
+			Bauer: 	Belegt eins von zwei dem Spieler zur Auswahl stehenden Feldern auf der Acker und bekommt den dazugehörigen und auf dem Feld abgebildeten Rohstoff.
+					Ist nach der Wahl des Spielers eine Reihe des Ackers komplett "voll", bzw. wurden alle Rohstoffe bereits verteilt, so kann der Spieler der die meisten Rohstoffe erwirtschaftet hat eine seiner Pflanzen die er in den Gärten gepflanzt hat um eine Stufe erhöhen.
+			Priester: Der Spieler belegt ein Feld in einem der drei Tempel (Der Nutzen der Tempel wird in Phase 3 näher erläutert).
+			Händler: Der Spieler wertet seine Karawane auf und kann nun weiter in einem Zug reisen.
+			
+	3) --- Karawane ---
+	
+		Der Spieler bewegt seine Karawane weiter in die nächste Stadt die er erreichen kann (ist die Karawane aufgewertet kann sie weiter reisen).
+		Die Karawane muss eine Stadt weiterreisen, sie darf nicht in der Stadt verweilen in der sie gerade ist.
+		Der Spieler muss in der Stadt handeln in die er reist. Dabei hat er verschiedene Handelsmöglichkeiten:
+			1) Verkauf von Rohstoffen: Der Spieler verkauft Rohstoffe (außer Gold) an die Stadt und erhält dafür Punkte. Für jede 3 Waren die er verkauft erhält er 1 Punkt.
+			2) Ankauf von Rohstoffen, etc.: Jede Stadt bietet verschiedene Dinge zum Kauf an, wie z.B. Rohstoffe, Paläste oder Pflanzen.
+											Die Städte nehmen im Gegenzug nur bestimmte Rohstoffe entgegen. Kauft der Spieler einen Palast, wird der Palast den er schon besitzt aufgewertet und gibt mehr Punkte.
+											Pflanzen dürfen sofort in den hängenden Gärten angepflanzt werden, wenn folgende Bedingungen zutreffen:
+												- Es ist ein Feld in den Gärten frei
+												- Das Feld muss bewässert sein (d.h. es muss am Wasser liegen oder eine direkte Grenze zu einem Feld haben, das bewässert ist)
+												- Die Pflanze muss die gleiche oder eine höhere Stufe als das Feld haben (Pflanzen werden mit Gärtner aufgewertet)
+											Das pflanzen von Pflanzen in den Gärten gibt dem Spieler Vorteile, wie der Ausbau seines Palastes oder Rohstoffe.
+3. --- Rundenende ---
+
+	Der Spieler nach dem Startspieler (Spieler 2) wählt einen Tempel, in welchem er kostenlos ein Feld belegt.
+	Alle anderen Tempel bekommen ein neutrales Feld.
+	Es wird ermittelt wer in welchem Tempel die meisten Felder belegt und dementsprechend Belohnungen verteilt:
+		Ishtar-Tempel:
+			1. Der Spieler wählt ob entweder seine Karawane aufgewertet wird oder er 1 Gold bekommt
+			2. Bekommt die verbleibende Belohnung
+		Marduk-Tempel:
+			1. Erhält 2 Punkte
+			2. Erhält 1 Punkt
+		Tammouz-Tempel:
+			1. Belegt ein Feld des Ackers und bekommt den entsprechenden Rohstoff.
+			2. Bekommt einen zufälligen Rohstoff.
+		Gleichstand:
+			- Es bekommt derjenige die Belohnung, dessen belegtes Feld am weitesten "rechts" liegen (auf einem der hinteren Felder der Tabelle).
+	Die Spieler dürfen, je nach Stufe ihrer Karawane, nur begrenzt viele Rohstoffe (ausgenommen Gold) wählen, die sie mit in die nächste Runde nehmen.
+	Pro Stufe der Karawane 2 Rohstoffe (einzelne Rohstoffe, keine Rohstoffgruppen). Waren, die der Spieler nicht mitnehmen kann gehen in den Weiten der Wüste verloren.
+	
+--- Spielende --- 
+
+	Das Spiel endet bei 2 Spielern wenn nur noch 3 Felder in den Gärten frei sind und bei 3 oder 4 Spielern, wenn nur noch 4 Felder frei sind.
+	Die aktuelle Runde wird daraufhin noch zu Ende gespielt.
+	Spieler erhalten noch Punkte für ihre belegten Felder in den Gärten und die Anzahl ihrer Rohstoffe:
+		Bei 2 Spielern:
+			5 oder 6 belegte Felder und Rohstoffe: 5 Punkte
+			7 belegte Felder und Rohstoffe oder mehr: 10 Punkte
+		Bei 3 Spielern:
+			4 oder 5 belegte Felder und Rohstoffe: 5 Punkte
+			6 belegte Felder und Rohstoffe oder mehr: 10 Punkte
+		Bei 4 Spielern:
+			3 oder 4 belegte Felder und Rohstoffe: 5 Punkte
+			5 belegte Felder und Rohstoffe oder mehr: 10 Punkte
+	Jeder Spieler bekommt außerdem 1 Prestigepunkt für jede Ware die sich noch in seinem Inventar befindet.
+	Es gewinnt der Spieler mit den meisten Punkten.
+	
+--- KI ---
+
+	Der Spieler soll die Möglichkeit haben, gegen menschliche Gegner, wie auch gegen computergesteuerte KI anzutreten. Der Herausforderungslevel der KI kann am Anfang des Spiels vom Spieler gewählt werden.
+	
+--- KI-Verhalten ---
+
+	Die KI fokussiert sich zufällig auf einen Bereich des Spiels und versucht dort die Gegenspieler zu dominieren. So liegt der Fokus der KI z.B. auf:
+	- Der Dominierung der Äcker und Tempel
+	- Schnelles Bepflanzen der hängenden Gärten
+	- Schneller Ausbau des Palastes
+	- Anhäufung und Verkauf von Ressourcen für Punkte
+	
+--- Profil ---
+
+	Mit einem angelegtem Account können die Spieler ihr Spiel speichern um es später fortführen zu können. Auf dem persönlichen Profil ist einsehbar wie lange der Spieler Amyitis bereits gespielt hat, sein persönlicher Highscore und seine insgesamt erspielten Punkte.
+	
+--- Highscore ---
+
+	Auf der Highscore Liste werden die 10 Spieler angezeigt, die in einem Amyitis-Spiel die meisten Punkte erzielen konnten.
+	
+
+
+
+=== Projektidee 2016-08-02 ===
+
+http://www.brettspiele-report.de/amyitis/
+
+Amyitis ist ein Brettspiel aus dem Jahre 2007, bei welchem das Ziel des Spiels ist am meisten (Prestige-)Punkte zu sammeln.
+
+Ziel des Spiels:
+	Es gewinnt der Spieler der am Ende des Spiels die meisten Prestigepunkte besitzt.
+	
+Materialarten:
+(0,I,II,III,etc. sind die Kosten der Karten)
+	Waren:
+		- Datteln
+		- Gerste
+		- Palmen
+		- Salz
+		- Wein (Joker-Ware: kann jede beliebige Ware ersetzen)
+	Kamele
+	Talente/Münzen
+	Karten:
+		- Bauern
+		- Priester
+		- Händler
+		- Pflanzen
+		- Bankier (geben mehr "Einkommen" -> mehr Talente und Prestigepunkte pro Runde)
+			-> Bankier I
+			-> Bankier II
+			-> Bankier III
+		- Karawanenführer (können die Karawane zusätzliche Felder bewegen und erhöhen die Anzahl der Waren die der Spieler am Ende der Runde in seinem Inventar haben darf)
+			-> Karawanenführer 0
+			-> Karawanenführer I
+			-> Karawanenführer II
+		- Palast (bringen 2,3,4,5,7,10 Prestigepunkte pro Runde)
+			-> Palast I
+			-> Palast II
+			-> Palast III 
+			-> Palast IV
+			-> Palast V
+			-> Palast VI
+		- Gärtner (verbessern die Qualität der Pflanzen um 1)
+	
+Spielablauf:
+	Das Spiel verläuft über mehrere Runden. Jede Runde besteht aus 3 Phasen.
+		Phase 1: Aufstellung
+			- Talente (Guthaben/Geld) und Prestigepunkte werden auf Basis vorhandener Bankierkarten verteilt.
+		Phase 2: Aktionen 
+			Phase 2 läuft so lange bis alle Spieler den Passen-Knopf gedrückt haben (vergleichbar mit Poker, wenn alle Spieler passen).
+			Aktionsmöglichkeiten:
+				1: Passen-Knopf drücken 
+					-> Spieler setzt die Runde aus; Spielername erscheint in der Liste der "passenden" Spieler.
+				2: Rekrutieren
+					-> Spieler kann eine von x Karten (x abhängig von der Anzahl der Spieler) auswählen (erscheinen in einem Overlay); Kosten der Karten (in Talenten) stehen daneben; erste Karte ist immer kostenlos.
+						-> Eine weitere zufällige Karte erscheint an Stelle der vorher genommenen Karte und kostet jetzt 1 Talent mehr. 
+						-> Wenn die dritte Karte aus der "Reihe" genommen wurde erscheint keine weitere Karte.
+					-> Je nach gezogener Karte müssen nun unterschiedliche Folgeaktionen ausgeführt werden:
+						Bauer:
+							- Spieler belegt eines von 2 Feldern auf der "Acker"-Tabelle (alle anderen Felder sind ausgegraut) und bekommt die zugehörige Ware. Wurde eine Ware genommen ist die nächste Ware in der Tabelle aktiv und die vorherige bekommt die Farbe des Spielers.
+							- Wenn eine Tabellenreihe komplett mit den Farben der Spieler ausgefüllt ist, bekommt derjenige dessen Farbe die meisten Felder belegt eine Gärtnerkarte. Danach wird die Tabelle wieder auf den Anfangszustand zurückgesetzt.
+						Priester:
+							- Spieler belegt ein Feld in einer der drei "Tempel"-Tabellen (alle anderen Felder sind ausgegraut). Bereits belegte Felder bekommen die Farbe des Spielers.
+							- Es wird immer nur das erste Feld neu belegt, alle anderen belegten Felder wandern weiter nach rechts. 
+								-> Sind alle Felder belegt und ein Spieler wählt ein weiteres Feld in diesem Tempel, so wird das letzte belegte Feld "rausgeschoben" und alle anderen Felder um eine Position nach rechts verschoben.
+							- In Phase 3 bekommt der Spieler mit den meisten belegten Feldern eine Belohnung.
+						Händler:
+							- Spieler bekommt ein Kamel
+				3: Karawane bewegen:
+					- bewegt sich maximal x Felder nach vorne (x = Kamele + 2 * Karawanenführerlevel).
+					- MUSS sich mindestens ein Feld nach vorne bewegen.
+					- Auf dem Feld auf dem die Karawane stehen bleibt MUSS gehandelt werden.
+						Handelmöglichkeiten:
+							1) Verkauf an Babylon:
+								- Verkauf von identischen oder unterschiedlichen Waren gegen Prestigepunkte
+								- Prestigepunkte = 3 * x Waren
+							2) Kauf von Karten:
+								- Je nach Stadt wo die Karawane hält können unterschiedliche Karten gekauft werden für Waren, die ebenfalls festgelegt sind.
+								- Besitzt der Spieler bereits eine Karte der entsprechenden Sorte wird diese sofort aufgewertet (bspw. wird eine Palastkarte II zu einer Palastkarte III).
+								- Wählt der Spieler eine Palastkarte bekommt er die entsprechende Anzahl an Prestigepunkten sofort.
+							3) Kauf von Pflanzen:
+								- Kauf wie beim Kauf von Karten (s. 2)).
+								- die Pflanze wird sofort auf dem Babylon-Spielfeld angepflanzt.
+		Phase 3: Ende der Runde
+			- Spieler 2 wählt kostenlos ein Tempelfeld aus und belegt dieses (nach den Priesterregeln).
+			- Die anderen beiden Tempel bekommen ein graues Feld (nach den Priesterregeln).
+			- Die Mehrheiten in den Tempeln werden ermittelt und der Erst- und Zweitplatzierte führen die zum Tempel gehörigen Aktionen durch.
+				-> Ishtar-Tempel:
+					1. Erhält ein Kamel oder ein Talent/Münze
+					2. Bekommt die verbleibende Belohnung
+				-> Marduk-Tempel:
+					1. Erhält 2 Prestigepunkte
+					2. Erhält 1 Prestigepunkt
+				-> Tammouz-Tempel:
+					1. Belegt ein Feld der "Acker"-Tabelle und bekommt die entsprechende Ware.
+					2. Bekommt eine zufällige Ware.
+				-> Gleichstand:
+					- Es bekommt derjenige die Belohnung, dessen Würfel am weitesten "rechts" liegen (auf einem der hinteren Felder der Tabelle).
+			- Je nach Karawanenführerlevel darf der Spieler nur begrenzt viele Waren mit in die nächste Runde nehmen.
+				-> Level 0 und I: höchstens 2 Waren.
+				-> Level II: höchstens 4 Waren.
+				- überzählige Waren werden abgelegt (Spieler dürfen wählen welche Waren sie ablegen).
+				- Anzahl der Kamele und Talente/Münzen ist nicht beschränkt.
+			- Der nächste Spieler beginnt die neue Runde.
+		
+Spielende:
+	- Das Spiel endet bei 2 Spielern wenn nur noch 3 Felder auf dem Babylon-Spielfeld frei sind und bei 3 oder 4 Spielern, wenn nur noch 4 Felder frei sind.
+	- Die aktuelle Runde wird daraufhin noch zu Ende gespielt.
+	- Spieler erhalten noch Prestigepunkte für ihre belegten Felder auf dem Babylon-Spielfeld und ihre Waren:
+		-> Bei 2 Spielern:
+			-> 5 oder 6 belegte Felder und Waren: 5 Punkte
+			-> 7 belegte Felder und Waren oder mehr: 10 Punkte
+		-> Bei 3 Spielern:
+			-> 4 oder 5 belegte Felder und Waren: 5 Punkte
+			-> 6 belegte Felder und Waren oder mehr: 10 Punkte
+		-> Bei 4 Spielern:
+			-> 3 oder 4 belegte Felder und Waren: 5 Punkte
+			-> 5 belegte Felder und Waren oder mehr: 10 Punkte
+	-> Jeder Spieler bekommt außerdem 1 Prestigepunkt für jede Ware die sich noch in seinem Inventar befindet.
+	- Es gewinnt der Spieler mit den meisten Prestigepunkten.
+	
+
+
+===================================
+=== Feedback Alpers, 2016-04-07 ===
+===================================
+
+Das ist im Kern eine Datenbankanwendung, die kaum Interaktionsmöglichkeiten bietet. 
+Von daher ist es als "interaktive Anwendung" eher nicht als Projekt geeignet.
+Wichtig ist auch, dass Sie vorerst eine eigene Idee vorstellen und an der Stelle ist es auch schade, 
+dass Sie etwas vorstellen, das es bereits gibt: 
+Diese Funktionalität bietet Ihnen heute eine Vielzahl kostenloser oder kostenpflichtiger Programme. (Beispielsweise MS Outlook)
+Die Gruppenarbeit wird dieses Semester anders organisiert als im letzten Semester. 
+Das hat etwas mit der Verteilung der Veranstaltungen über das Semester zu tun.
+Einen formalen Mangel gibt es allerdings noch: 
+Sie sollten diese Datei in das Verzeichnis Dokumentation einfügen. Holen Sie das bitte nach.
+Sie können jetzt zwei Dinge tun: 
+http://www.scamadviser.com/is-freenoob.com-a-fake-site.html
+
+===================================
+=== Feedback Alpers, 2016-04-28 ===
+===================================
+
+Bitte belassen Sie die komplette Kommunikation rund um die Projektidee in dieser Datei, 
+damit nachvollziehbar ist, wie das Projekt sich weiterentwickelt hat und warum.
+Wenn Sie weitegehende Dateien haben, 
+dann verschieben Sie die bitte in ein eigenständiges Verzeichnis, 
+damit andere Studierende sich leicht in Ihrem Repository zurecht finden können.
+Hier das Feedback zu Ihrer Projektbeschreibung:
+Leider ist das im Grunde eine etwas unsortierte Aufstellung der strukturellen Elemente, 
+die in der strukt.html notiert werden sollen. 
+Hier wird weder klar, was im Spiel passiert 
+noch (besonders wichtig) welche Interaktionsmöglichkeiten es gibt. Bitte arbeiten Sie das noch nach.
+
+===================================
+=== Feedback Alpers, 2016-06-08 ===
+===================================
+
+Schade, Sie haben hier zwar eine sehr umfangreiche (aber dabei noch relativ knapp gehaltene) Beschreibung 
+des Spiels notiert, aber es handelt sich noch um die Beschreibung des Brettspiels.
+(Wenn die Aufgabe die Entwicklung eines Brettspiels wäre, 
+dann wäre diese Lösung weitaus umfangreicher als nötig.) 
+Für die Beschreibung müssen Sie diese Beschreibung jetzt so anpassen, 
+dass daraus die Grundlage einer webbasierten Anwendung wird, 
+die wie in den FAQ des Lernraums beschrieben interaktiv ist.
+P.S. Bitte fügen Sie den Inhalt der zusätzlichen Dateien im Verzeichnis Dokumentation 
+noch in dieses Dokument oder die strukt.html ein und löschen Sie dann die Dateien, 
+damit das Verzeichnis übersichtlicher wird.
+
+===================================
+=== Feedback Alpers, 2016-07-14 ===
+===================================
+
+Stellen Sie bitte alle Feedbacks der Vergangenheit wieder her. Vorher ist ein weiteres Feedback von mir nicht möglich.
+
+===================================
+=== Feedback Alpers, 2016-10-05 ===
+===================================
+
+Das zentrale Problem ist leider immer noch vorhanden: Sie beschreiben hier sehr umfangreiche Regeln und benennen "Materialarten". Das würde ausreichen, wenn es sich um ein Brettspiel handeln würde und wir die Materialien des Brettspiels vor uns liegen hätten. Genau das ist aber nicht der Fall und deshalb ist die erste Aufgabe hier, dass Sie die Bestandteile des Spiels beschreiben.
+
+Schauen wir uns das mal im Detail an. Das folgende ist der einzig beschreibende Teil Ihres Spiels.
+
+=== 1. Die Einleitung ===
+
+=== Beginn ===
+http://www.brettspiele-report.de/amyitis/
+
+Amyitis ist ein Brettspiel aus dem Jahre 2007, bei welchem das Ziel des Spiels ist am meisten (Prestige-)Punkte zu sammeln.
+
+Ziel des Spiels:
+	Es gewinnt der Spieler der am Ende des Spiels die meisten Prestigepunkte besitzt.
+=== Ende ===
+
+Zur Erinnerung: Hier sollte eine stichpunktartige Auflistung enthalten sein, die als Grundlage der weiteren Softwareentwicklung dient.
+
+Sie führen dagegen zunächst einen Link auf.
+
+Danach erzählen Sie von einem anderen Spiel, bei dem es um das Sammeln von "Prestigepunkten" geht, verlieren aber kein Wort darüber, was Prestigepunkte sein sollen. Sie verlieren auch kein Wort darüber, was Spieler im Spiel tun und sagen somit nichts über das Spiel aus. Spätestens jetzt haben Sie die meisten Leser vorloren.
+
+In der dritten Zeile wiederholen Sie dann die Aussage, dass es um das Sammeln von "Prestigepunkten" geht.
+
+Stattdessen sollten Sie an dieser Stelle zusammefassen, worum es im Spiel geht.
+
+Hier ein Beispiel, eine passende Zusammenfassung für das Spiel Siedler von Catan: "Die Spieler sind Siedler auf einer Insel. Im Laufe des Spiels versuchen sie Straßen, Gebäude und andere Einrichtungen aufzubauen, um so eine erfolgreiche Besiedelung der Insel abzuschließen."
+
+Hier eine passende Zusammenfassung für das Spiel Civilization: "Die Spieler übernehmen jeweils ein Volk in der Steinzeit und versuchen dieses am schnellsten bis in die Neuzeit zu entwickeln. Dazu treiben Sie Handel und erwerben mit den Gewinnen kulturelle, technische und andere Fortschritte."
+
+=== 2. Die Beschreibung / Stichpunkte ===
+
+Hier führen Sie als einzigen Oberpunkt folgendes auf:
+
+=== Beginn ===
+Materialarten:
+(0,I,II,III,etc. sind die Kosten der Karten)
+=== Ende ===
+
+Alles danach bis zu den Regeln ist eingerückt, was bedeutet, dass es sich um Materialarten handelt.
+
+Hier haben wir zwei Probleme:
+
+1.) Da es noch keinen Hinweis darauf gibt, welche Rolle die Materialarten im Spiel spielen ist auch unklar, was dieser Eintrag generell bedeuten soll. (Bis zu diesem Punkt haben Sie durchgehend nur von "Prestigepunkten" gesprochen.)
+2.) Danach folgt eine Reihe römischer Ziffern, gefolgt von einem Kommentar, der leider nicht hilfreich ist, weil unklar ist, was es mit "den" Karten auf sich hat und wie "die" Kosten ins Spiel kommen.
+
+Tatsächlich haben Sie die Beschreibung zum Großteil in den Regeln versteckt. Hier ein Beispiel:
+
+===
+Spielende:
+	- Das Spiel endet bei 2 Spielern wenn nur noch 3 Felder auf dem Babylon-Spielfeld frei sind  ...
+===
+
+An dieser Stelle schreiben Sie etwas über die Anzahl Spieler, worauf Sie im ersten Teil nicht eingehen.
+Wichtiger aber ist die Tatsache, dass Sie hier zum von einem Spielfeld sprechen, auf das Sie oben nicht eingehen.
+
+=== Zusammenfassung ===
+
+Im Kern haben Sie hier die Regeln ausgearbeitet aber keine Beschreibung des Spiels bzw. Sie haben gerade nicht die Grundlage ausgearbeitet, um eine Struktur im Sinne der Aufgabenstellung zu entwickeln. Sie könnten damit zwar eine Klassenstruktur im Sinne der prototypbasierten objektorientierten Programmierung entwickeln, aber das wird Ihnen hier nur wenig nützen, weil Sie ja keine objektorientierte Sprache nutzen können.
+
+Um es nochmal anders zu formulieren: Im Kern haben Sie zwar eine Beschreibung dessen erstellt, was im Spiel passieren kann, aber es fehlt der Teil, in dem es um die Antwort auf die Frage geht, womit das passieren kann.
+
+Vielleicht haben Sie auch den Begriff der stichpunktartigen Aufzählung missverstanden; es genügt leider nicht, jeweils ein Wort bzw. einen Begriff aufzuführen, um eine Beschreibung zu erhalten.
+
+======================================
+=== Wertung 1: Formale Vorgaben: - ===
+======================================
+- Missachtung der Konventionen für Dateinamen, Verzeichnisstruktur usw. (je -1 Pk.)
+
+=================================================
+=== Wertung 2: Projektentwurf: gesamt: 5 / 10 ===
+=================================================
+- Knappe und klare Stichpunkte 0 bis 2 Pk.: 0
+- Umfang der eigentlichen Anwendung 0 bis 3 Pk.: 3
+- Aspekte verteilter Anwendungen 0 bis 3 Pk.: 1 (da Spieleranzahl stark beschränkt)
+- Aspekte adaptiver Anwendungen 0 bis 2 Pk.: 1
+=== (Malus beim Projektentwurf) ===
+- Werbeslogans u.ä. bis zu 3 Pk. Abzug: 0
+- Design- oder Layoutvorgaben bis zu 5 Pk. Abzug: 0
+- Voraussetzung bekannten Wissens bis zu 5 Pk. Abzug: 0 
+
+================================================================
+=== Wertung 3: Ausarbeitung der strukt. Elem. gesamt: 4 / 10 ===
+================================================================
+- Knappe Form 0 bis 3 Pk.: 2
+- Für je 5 unterschiedl. strukt. Elem (keine Gruppierungen) 1 Pk., 0 bis 7 Pk.: 2
+=== (Malus bei strukt. Elem.) ===
+- Vermischung strukt. Elem., Gruppierung, Abläufe usw. bis zu 5 Pk. Abzug: 0
+
+=======================================
+=== Wertung 4: Microservices: 5 / 5 ===
+=======================================
+- für jeden für die Kernanwendung sinnvollen Microservice 1 Pk.: 5
+=== (Malus bei strukt. Elem.) ===
+- Wenn Micrservices vergessen wurden, die für verteilte adaptive Anwendungen eine Voraussetzung sind, je 1 Pk. Abzug:
+
+=========================================
+=== Wertung 5: Ansichten/Views: 5 / 5 ===
+=========================================
+- für jede sinnvolle Ansicht 1 Pk.: 5
+
+Aufgabe 6 und 7 setzen voraus, dass in Aufgabe 1 - 5 insgesamt min. 20 Punkte erreicht wurden.
+Tipp: Dennoch ist es sinnvoll, dass Sie Microservices direkt in HTML mit PHP- und MySQL-Anbindung umsetzen. Denn so können Sie erkennen, wo Ihre Planung Schwächen hat.
+
+=================================
+=== Wertung 6: HTML 5: 4 / 10 ===
+=================================
+- Umsetzung pro Microservice je 1 Pk. (max. 10): 4
+- Missachtung von Änderungen von HTML 4.01 zu 5 (-5 bis 0 Pk.): 0
+- Abweichung von den Vorgaben in der strukt.txt (je -1/2 Pk.): 0
+
+Es fällt auf, dass Sie praktisch nie PHP nutzen, sondern selbst 10 bis auf den Text identische Listeneinträge manuell in HTML coden, und dass es derart viele effektiv leere Dateien gibt.
+
+====================================
+=== Wertung 7: PHP/MySQL: 2 / 30 ===
+====================================
+- Funktionalität von Formularen 0 bis 5 Pk.: 2
+- Funktionalität für Microservices 0 bis 5 Pk.: 0
+- Realisierung einer Programmlogik 0 bis 10 Pk.: 0
+- Erzeugung einer DB 0 bis 5 Pk.: 0
+- Anbindung einer Transaktion, um Variablen in der Anwendung zu verwenden 0 bis 5 Pk.: 0
+
+Damit haben Sie 25 von 35 nötigen Punkten erreicht. 
+
+Die fehlenden 10 Punkte können Sie wie beschrieben über die Umsetzung eines Projektes erreichen, das Sie in den nächsten Tagen erhalten werden. Sollten dann immer noch Punkte fehlen, können Sie an Ihrem Projekt weiterarbeiten. Sprechen Sie mich in dem Fall zeitnah an.
