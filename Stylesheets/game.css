@@ -112,12 +112,26 @@ main .nav {
 	border: none;
 	border-radius: 0px;
 }
-.nav li:hover a {
+.nav li:hover:enabled a {
 	background: #000000;
 }
-.nav input:hover {
+.nav li:hover a.disabled {
+	background: #777777;
+}
+.nav li a.disabled {
+	background: #777777;
+}
+.nav input:hover:enabled {
 	background: #000000;
 	cursor: pointer;
+}
+.nav input:disabled {
+	background: #777777;
+	cursor: default;
+}
+.nav input:hover:disabled {
+	background: #777777;
+	cursor: default;
 }
 /* Seitennavigation */
 .last {

@@ -1,36 +1,47 @@
 <?php
+session_start();
+$pdo = new PDO('mysql:host=localhost;dbname=amyitis', 'root', '');
 
-$logfile = fopen('logfile.txt', 'r');
-$username = $_POST['acc_name'];
-$password = $_POST['pw'];
-$logfile_players_array = file('logfile.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-$length = count($logfile_players_array);
-$login = false;
-
-foreach ($logfile_players_array as $user) {
-	$user_data = explode('|', $user);
-	if ($user_data[0] == $username && $user_data[1] == $password) {
-		$login = true;
-		break;
+if(isset($_GET['login'])) {
+	$email = $_POST['email'];
+	$passwort = $_POST['passwort'];
+	
+	$sql = $pdo->prepare("SELECT * FROM users WHERE email = :email");
+	$result = $sql->execute(array('email' => $email));
+	$user = $sql->fetch();
+	
+	if($user !== false && password_verify($passwort, $user['passwort'])) {
+		$_SESSION['userid'] = $user['id'];
+		die('Login erfolgreich. Weiter zu <a href="../gameboard.php">Zum Spiel</a>');
 	}
-}
-
-if ($login == true) {
-	header("Location: ../Views/view_startbildschirm.php");
-}
-else {
-	echo "Fehler!";
+	else {
+		$errorMessage = "Email oder Passwort ungültig<br>";
+	}
 }
 
 ?>
 
 <!DOCTYPE html>
 <html lang=de>
-	<head>
-		<meta charset=utf-8>
-		<title>Fehler</title>
-	</head>
-	<body>
+<head>
+	<title>Login</title>
+</head>
+<body>
 	
-	</body>
+<?php 
+if(isset($errorMessage)) {
+	echo $errorMessage;
+}
+?>
+
+<form action="?login=1" method="post">
+	<label for="email">Email:</label><br>
+	<input type="email" size="40" maxlength="250" name="email"><br><br>
+	
+	<label for="passwort">Passwort:</label><br>
+	<input type="password" size="40" maxlength="250" name="passwort"><br>
+	
+	<input type="submit" value="Submit">
+</form>	
+</body>
 </html>

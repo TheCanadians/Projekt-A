@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+$userid = "";
+if(!isset($_SESSION['userid'])) {
+	
+}
+else {
+$userid = $_SESSION['userid'];
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <body>
@@ -8,27 +20,48 @@
 						<a href="www.ystari.com/amyitis/AmG.pdf">Regeln</a>
 					</li>
 					<li>
-						<a href="../newGame.php">Neues Spiel</a>
+						<a href="newGame.php">Neues Spiel</a>
 					</li>
+<?php
+if(strlen($userid) == 0) {
+}
+else {
+	echo '
 					<li>
-						<form action="../Formulare/form_save.php" method=post>
-							<button type=submit>Spiel speichern</button>
+						<form action="Formulare/form_save.php" method=post>
+							<input type="submit" value="Spiel speichern">
 						</form>
 					</li>
 					<li>
-						<form action="../Formulare/form_load.php" method=post>
-							<button type=submit>Spiel laden</button>
+						<form action="Formulare/form_load.php" method=post>
+							<input type="submit" value="Spiel laden">
 						</form>
+					</li>';
+}
+
+if(strlen($userid) == 0) {
+	echo '
+					<li class="item right">
+						<a href="Formulare/form_register.php">Neuer Account</a>
 					</li>
 					<li class="item right">
-						<a href="../account.html">Neuer Account</a>
+						<a href="Formulare/form_login.php" class=nav-link>Login</a>					
+					</li>';
+}
+else {
+}
+if($userid == "") {
+}
+else {
+	echo '
+					<li class="item right">
+						<a href="profil.php">Profil</a>
 					</li>
 					<li class="item right">
-						<a href="../login.html" class=nav-link>Login</a>					
-					</li>
-					<li class="item right">
-						<a href="../profil.php">Profil</a>
-					</li>
+						<a href="Formulare/form_logout.php">Logout</a>
+					</li>';
+}
+?>
 				</ul>
 			</nav>
 
